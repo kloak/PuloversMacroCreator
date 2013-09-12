@@ -781,14 +781,7 @@
 	RecKey_TT =	Tilbaketasten for å fjerne
 	RecNewKey_TT =	Tilbaketasten for å fjerne
 	JoyKey_TT =	Trykk på en knapp på joysticken
-	OnFinish_TT =	
-	(LTrim	
-		nedleggelse alternativer
-		Når avspillingen fullføres...
-	)	
 	ReptC_TT =	0 = uendelig
-	IfDirB_TT =	Gjør Hurtigtaster virker, avhengig av`ntype vindu som er aktivt eller eksisterer (Ctrl+H)
-	KeepHKOn_TT =	Hold Hurtigtaster alltid aktivert
 	A_List_TT =	Velg Makro (Ctrl+1~0)
 	OSHK_TT =	Velg Makro
 	OSHKEd_TT =	Velg Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = uendelig
 	ExpView_TT =	Avansert Redigeringsprogram
 	ExpView2_TT =	Avansert Redigeringsprogram
-	OSPlay_TT =	Spill av / Pause
-	OSStop_TT =	Stopp
-	OSRec_TT =	Start / Stopp Record
-	OSRecNew_TT =	Registrer ny makro
-	OSRecOpt_TT =	Innspillingsalternativer
-	OSPlayOpt_TT =	Videoavspillingsalternativer
-	OSClear_TT =	Slett liste
 	OSProgB_TT =	Vise Progress Bar
-	OSFast_TT =	Fremskynde
-	OSSlow_TT =	Tregere
 	OSTrans_TT =	opasitet
-	ToggleTB_TT =	Vis / skjul Title Bar
-	ToggleMW_TT =	Vis / skjul hovedvinduet
 	MRel_TT =	
 	(LTrim	
 		Bevegelser i forhold til nåværende posisjon.

@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace, за да изчистите
 	RecNewKey_TT =	Backspace, за да изчистите
 	JoyKey_TT =	Натиснете бутон на джойстика
-	OnFinish_TT =	
-	(LTrim	
-		изключване опции
-		Когато възпроизвеждането облицовки...
-	)	
 	ReptC_TT =	0 = безкрайно
-	IfDirB_TT =	Hotkeys работят в зависимост от`nвид на прозореца, който е активен или съществува (Ctrl+H)
-	KeepHKOn_TT =	Пазете Hotkeys активира винаги
 	A_List_TT =	Изберете Макроса (Ctrl+1~0)
 	OSHK_TT =	Изберете Макроса
 	OSHKEd_TT =	Изберете Макроса
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = безкрайно
 	ExpView_TT =	Разширения Редактор
 	ExpView2_TT =	Разширения Редактор
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Спиране
-	OSRec_TT =	Start / Stop Запис
-	OSRecNew_TT =	Записвате нови макроси
-	OSRecOpt_TT =	Запис Опции
-	OSPlayOpt_TT =	Опции за възпроизвеждане
-	OSClear_TT =	Изчисти списъка
 	OSProgB_TT =	Покажи прогрес бар
-	OSFast_TT =	Ускоряване
-	OSSlow_TT =	Намалете
 	OSTrans_TT =	непрозрачност
-	ToggleTB_TT =	Показване / скриване на дял Bar
-	ToggleMW_TT =	Показване / скриване на главния прозорец
 	MRel_TT =	
 	(LTrim	
 		Движенията, отнасящи се до текущата позиция.

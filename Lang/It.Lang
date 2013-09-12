@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace per cancellare
 	RecNewKey_TT =	Backspace per cancellare
 	JoyKey_TT =	Premere un pulsante sul joystick
-	OnFinish_TT =	
-	(LTrim	
-		opzioni di spegnimento
-		Quando termina la riproduzione...
-	)	
 	ReptC_TT =	0 = infinito
-	IfDirB_TT =	Tasti di scelta rapida Fare funzionare a seconda del tipo`ndi finestra che è attiva o esiste (Ctrl+H)
-	KeepHKOn_TT =	Tasti di scelta rapida Tenere sempre attivo
 	A_List_TT =	Selezionare Macro (Ctrl+1~0)
 	OSHK_TT =	Selezionare Macro
 	OSHKEd_TT =	Selezionare Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = infinito
 	ExpView_TT =	Editor Avanzato
 	ExpView2_TT =	Editor Avanzato
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Arresto
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Registra nuova macro
-	OSRecOpt_TT =	Opzioni di Registrazione
-	OSPlayOpt_TT =	Opzioni di riproduzione
-	OSClear_TT =	Cancella elenco
 	OSProgB_TT =	Mostra barra di avanzamento
-	OSFast_TT =	Accelerare
-	OSSlow_TT =	Rallentare
 	OSTrans_TT =	opacità
-	ToggleTB_TT =	Mostra / Nascondi barra del titolo
-	ToggleMW_TT =	Mostra / Nascondi finestra principale
 	MRel_TT =	
 	(LTrim	
 		Movimenti relativi alla posizione corrente.

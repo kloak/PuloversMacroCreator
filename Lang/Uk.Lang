@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace, щоб очистити
 	RecNewKey_TT =	Backspace, щоб очистити
 	JoyKey_TT =	Натиснути кнопку на джойстику
-	OnFinish_TT =	
-	(LTrim	
-		параметри завершення роботи
-		Коли закінчується відтворення...
-	)	
 	ReptC_TT =	0 = нескінченне
-	IfDirB_TT =	Зробити Гарячі клавіші працювати в залежності від `Ntype вікна, який є активним або існує (Ctrl+H)
-	KeepHKOn_TT =	Тримайте гарячі клавіші Завжди активоване
 	A_List_TT =	Вибрати Макрос (Ctrl+1~0)
 	OSHK_TT =	Вибрати Макрос
 	OSHKEd_TT =	Вибрати Макрос
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = нескінченне
 	ExpView_TT =	Додаткові Функції
 	ExpView2_TT =	Додаткові Функції
-	OSPlay_TT =	Відтворення / Пауза
-	OSStop_TT =	Стоп
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Record New Macro
-	OSRecOpt_TT =	Параметри Запису
-	OSPlayOpt_TT =	параметри відтворення
-	OSClear_TT =	Очистити список
 	OSProgB_TT =	Показати Progress Bar
-	OSFast_TT =	Прискорити
-	OSSlow_TT =	Уповільнювати
 	OSTrans_TT =	непрозорість
-	ToggleTB_TT =	Показати / Приховати рядок заголовка
-	ToggleMW_TT =	Показати / приховати головне вікно
 	MRel_TT =	
 	(LTrim	
 		Рух по відношенню до поточного стану.

@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace, aby usunąć
 	RecNewKey_TT =	Backspace, aby usunąć
 	JoyKey_TT =	Naciśnij przycisk na joysticku
-	OnFinish_TT =	
-	(LTrim	
-		opcje wyłączania
-		Po zakończeniu odtwarzania...
-	)	
 	ReptC_TT =	0 = nieskończony
-	IfDirB_TT =	Producent Hotkeys pracy w zależności od rodzaju`nokna, które jest aktywne lub istnieje (Ctrl+H)
-	KeepHKOn_TT =	Zachowaj Hotkeys zawsze aktywna
 	A_List_TT =	Wybierz Makro (Ctrl+1~0)
 	OSHK_TT =	Wybierz Makro
 	OSHKEd_TT =	Wybierz Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = nieskończony
 	ExpView_TT =	Zaawansowany Edytor
 	ExpView2_TT =	Zaawansowany Edytor
-	OSPlay_TT =	odtwarzanie / pauza
-	OSStop_TT =	Zatrzymać
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Zarejestruj nowe makro
-	OSRecOpt_TT =	Opcje Nagrywania
-	OSPlayOpt_TT =	Opcje odtwarzania
-	OSClear_TT =	Wyczyść listę
 	OSProgB_TT =	Wyświetlić pasek postępu
-	OSFast_TT =	Przyśpieszyć
-	OSSlow_TT =	Zwolnij
 	OSTrans_TT =	nieprzezroczystość
-	ToggleTB_TT =	Pokaż / Ukryj pasek tytułu
-	ToggleMW_TT =	Pokaż / Ukryj okno główne
 	MRel_TT =	
 	(LTrim	
 		Zmiany w stosunku do aktualnej pozycji.

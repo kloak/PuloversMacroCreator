@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace για εκκαθάριση
 	RecNewKey_TT =	Backspace για εκκαθάριση
 	JoyKey_TT =	Πατήστε ένα κουμπί στο χειριστήριο
-	OnFinish_TT =	
-	(LTrim	
-		Επιλογές τερματισμού
-		Όταν τελειώσει η αναπαραγωγή...
-	)	
 	ReptC_TT =	0 = άπειρο
-	IfDirB_TT =	Κάντε Hotkeys λειτουργεί ανάλογα με τον `ntype του παραθύρου που είναι ενεργή ή υπάρχει (Ctrl+H)
-	KeepHKOn_TT =	Κρατήστε Hotkeys ενεργοποιείται πάντα
 	A_List_TT =	Επιλέξτε Macro (Ctrl+1~0)
 	OSHK_TT =	Επιλέξτε Macro
 	OSHKEd_TT =	Επιλέξτε Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = άπειρο
 	ExpView_TT =	Προηγμένο Επεξεργαστή
 	ExpView2_TT =	Προηγμένο Επεξεργαστή
-	OSPlay_TT =	Αναπαραγωγή / Παύση
-	OSStop_TT =	Stop
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Record New Macro
-	OSRecOpt_TT =	Επιλογές Εγγραφής
-	OSPlayOpt_TT =	Επιλογές αναπαραγωγής
-	OSClear_TT =	Clear List
 	OSProgB_TT =	Προβολή γραμμή προόδου
-	OSFast_TT =	Επιταχύνετε
-	OSSlow_TT =	Slow Down
 	OSTrans_TT =	αδιαφάνεια
-	ToggleTB_TT =	Εμφάνιση / Απόκρυψη γραμμής τίτλου
-	ToggleMW_TT =	Εμφάνιση / Απόκρυψη κύριο παράθυρο
 	MRel_TT =	
 	(LTrim	
 		Κινήσεις σε σχέση με την τρέχουσα θέση.

@@ -781,14 +781,7 @@
 	RecKey_TT =	Retour arrière pour effacer
 	RecNewKey_TT =	Retour arrière pour effacer
 	JoyKey_TT =	Appuyez sur un bouton sur la manette
-	OnFinish_TT =	
-	(LTrim	
-		Options d'arrêt
-		Quand se termine la lecture...
-	)	
 	ReptC_TT =	0 = infini
-	IfDirB_TT =	Assurez-Hotkeys travailler en fonction du type`nde fenêtre qui est active ou existe (Ctrl+H)
-	KeepHKOn_TT =	Gardez toujours activé Hotkeys
 	A_List_TT =	Sélectionner Macro (Ctrl+1~0)
 	OSHK_TT =	Sélectionner Macro
 	OSHKEd_TT =	Sélectionner Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = infini
 	ExpView_TT =	Éditeur Avancé
 	ExpView2_TT =	Éditeur Avancé
-	OSPlay_TT =	Lecture / Pause
-	OSStop_TT =	Arrêter
-	OSRec_TT =	Démarrer / Arrêter l'enregistrement
-	OSRecNew_TT =	Nouvelle macro
-	OSRecOpt_TT =	Options d'enregistrement
-	OSPlayOpt_TT =	Options de lecture
-	OSClear_TT =	Supprimer la liste
 	OSProgB_TT =	Afficher la barre de progression
-	OSFast_TT =	Accélérer
-	OSSlow_TT =	Ralentir
 	OSTrans_TT =	opacité
-	ToggleTB_TT =	Afficher / Masquer la barre de titre
-	ToggleMW_TT =	Afficher / Masquer la fenêtre principale
 	MRel_TT =	
 	(LTrim	
 		Mouvements relatifs à la position actuelle.

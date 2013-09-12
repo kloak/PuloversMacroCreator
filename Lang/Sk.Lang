@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace pre vymazanie
 	RecNewKey_TT =	Backspace pre vymazanie
 	JoyKey_TT =	Stlačte tlačidlo na joysticku
-	OnFinish_TT =	
-	(LTrim	
-		Vypnutie možnosti
-		Ak prehrávanie skončí...
-	)	
 	ReptC_TT =	0 = nekonečno
-	IfDirB_TT =	Urobiť Klávesové skratky fungovať v závislosti na`ntype z okna, ktoré je aktívne alebo neexistuje (Ctrl+H)
-	KeepHKOn_TT =	Majte Klávesové skratky aktivovaný vždy
 	A_List_TT =	Zvoľte Makro (Ctrl +1 ~ 0)
 	OSHK_TT =	Vyberte makro
 	OSHKEd_TT =	Vyberte makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = nekonečno
 	ExpView_TT =	Rozšírené Editor
 	ExpView2_TT =	Rozšírené Editor
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Stop
-	OSRec_TT =	Start / Stop záznamu
-	OSRecNew_TT =	Záznam nového makra
-	OSRecOpt_TT =	Možnosti nahrávania
-	OSPlayOpt_TT =	Možnosti prehrávania
-	OSClear_TT =	Vymazať zoznam
 	OSProgB_TT =	Zobraziť Progress Bar
-	OSFast_TT =	Zrýchliť
-	OSSlow_TT =	Spomaliť
 	OSTrans_TT =	Nepriehľadnosť
-	ToggleTB_TT =	Zobraziť / skryť Title Bar
-	ToggleMW_TT =	Zobraziť / skryť hlavné okno
 	MRel_TT =	
 	(LTrim	
 		Pohyby vzhľadom k aktuálnej pozícii.

@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace鍵來清除
 	RecNewKey_TT =	Backspace鍵來清除
 	JoyKey_TT =	按下操縱桿上的按鈕
-	OnFinish_TT =	
-	(LTrim	
-		關機選項
-		當播放結束...
-	)	
 	ReptC_TT =	0 =無限
-	IfDirB_TT =	進行熱鍵取決於`N型的窗口，是主動或存在（按Ctrl+H）
-	KeepHKOn_TT =	保持始終處於激活熱鍵
 	A_List_TT =	選擇“宏”（Ctrl+1~0）
 	OSHK_TT =	選擇“宏”
 	OSHKEd_TT =	選擇“宏”
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 =無限
 	ExpView_TT =	高級編輯
 	ExpView2_TT =	高級編輯
-	OSPlay_TT =	播放/暫停
-	OSStop_TT =	停止
-	OSRec_TT =	啟動/停止錄影
-	OSRecNew_TT =	錄製新宏
-	OSRecOpt_TT =	錄製選項
-	OSPlayOpt_TT =	播放選項
-	OSClear_TT =	清除列表
 	OSProgB_TT =	顯示進度條
-	OSFast_TT =	加快
-	OSSlow_TT =	減緩
 	OSTrans_TT =	透明度
-	ToggleTB_TT =	顯示/隱藏標題欄
-	ToggleMW_TT =	顯示/隱藏主窗口
 	MRel_TT =	
 	(LTrim	
 		相對於當前位置的變動。

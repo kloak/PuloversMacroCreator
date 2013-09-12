@@ -781,14 +781,7 @@
 	RecKey_TT =	Backsteg för att radera
 	RecNewKey_TT =	Backsteg för att radera
 	JoyKey_TT =	Tryck på en knapp på joysticken
-	OnFinish_TT =	
-	(LTrim	
-		avstängningsalternativen
-		När uppspelningen slutar...
-	)	
 	ReptC_TT =	0 = oändlig
-	IfDirB_TT =	Gör Snabbtangenter fungerar beroende på`ntyp av fönster som är aktivt eller existerar (Ctrl+H)
-	KeepHKOn_TT =	Håll snabbtangenter alltid aktiverat
 	A_List_TT =	Välj Makro (Ctrl+1~0)
 	OSHK_TT =	Välj Makro
 	OSHKEd_TT =	Välj Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = oändlig
 	ExpView_TT =	Avancerad Redigerare
 	ExpView2_TT =	Avancerad Redigerare
-	OSPlay_TT =	Spela upp / pausa
-	OSStop_TT =	Stopp
-	OSRec_TT =	Start / stopp Spela
-	OSRecNew_TT =	Spela in nytt makro
-	OSRecOpt_TT =	Inspelningsalternativen
-	OSPlayOpt_TT =	Visningsalternativ
-	OSClear_TT =	Rensa lista
 	OSProgB_TT =	Visa framstegs Takt
-	OSFast_TT =	Snabba upp
-	OSSlow_TT =	Sakta Ner
 	OSTrans_TT =	opacitet
-	ToggleTB_TT =	Visa / dölj Titel Bar
-	ToggleMW_TT =	Visa / dölj huvudfönstret
 	MRel_TT =	
 	(LTrim	
 		Rörelser i förhållande till nuvarande position.

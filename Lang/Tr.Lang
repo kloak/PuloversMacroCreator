@@ -781,14 +781,7 @@
 	RecKey_TT =	Temizlemek için Backspace
 	RecNewKey_TT =	Temizlemek için Backspace
 	JoyKey_TT =	Joystick üzerindeki bir düğmeye basın
-	OnFinish_TT =	
-	(LTrim	
-		kapatma seçenekleri
-		Ne zaman çalma bitirir...
-	)	
 	ReptC_TT =	0 = sonsuz
-	IfDirB_TT =	Hotkeys aktif veya bulunduğu pencerenin`ntip (Ctrl+H) bağlı olarak çalışmasını sağlayın
-	KeepHKOn_TT =	Daima Aktif Hotkeys tutun
 	A_List_TT =	Makro Seçin (Ctrl+1~0)
 	OSHK_TT =	Makro Seçin
 	OSHKEd_TT =	Makro Seçin
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = sonsuz
 	ExpView_TT =	Gelişmiş Editörü
 	ExpView2_TT =	Gelişmiş Editörü
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Dur
-	OSRec_TT =	Kayıt Başlat / Durdur
-	OSRecNew_TT =	Yeni Makro Kaydet
-	OSRecOpt_TT =	Kayıt Seçenekleri
-	OSPlayOpt_TT =	Yürütme Seçenekleri
-	OSClear_TT =	Listeyi Temizle
 	OSProgB_TT =	İlerleme Çubuğu Ekran
-	OSFast_TT =	Hızlandırma
-	OSSlow_TT =	Yavaşlatmak
 	OSTrans_TT =	donukluk
-	ToggleTB_TT =	Göster / Gizle Başlık Çubuğu
-	ToggleMW_TT =	Ana pencerede göster / gizle
 	MRel_TT =	
 	(LTrim	
 		Geçerli konuma göre Hareketleri.

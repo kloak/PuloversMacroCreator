@@ -781,14 +781,7 @@
 	RecKey_TT =	退格键清除
 	RecNewKey_TT =	退格键清除
 	JoyKey_TT =	按下操纵杆上的按钮
-	OnFinish_TT =	
-	(LTrim	
-		关机选项
-		当播放结束...
-	)	
 	ReptC_TT =	0 =无限
-	IfDirB_TT =	热键工作依赖于_类型的窗口，是积极的，或存在（按Ctrl+H）
-	KeepHKOn_TT =	保持热键始终处于激活状态
 	A_List_TT =	选择“宏”（Ctrl+1~0）
 	OSHK_TT =	选择“宏”
 	OSHKEd_TT =	选择“宏”
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 =无限
 	ExpView_TT =	高级编辑
 	ExpView2_TT =	高级编辑
-	OSPlay_TT =	播放/暂停
-	OSStop_TT =	停止
-	OSRec_TT =	开始/停止录制
-	OSRecNew_TT =	录制新宏
-	OSRecOpt_TT =	录制选项
-	OSPlayOpt_TT =	播放选项
-	OSClear_TT =	清除列表
 	OSProgB_TT =	显示进度条
-	OSFast_TT =	加快
-	OSSlow_TT =	减缓
 	OSTrans_TT =	不透明
-	ToggleTB_TT =	显示/隐藏标题栏
-	ToggleMW_TT =	显示/隐藏主窗口
 	MRel_TT =	
 	(LTrim	
 		相对于当前位置的变动。

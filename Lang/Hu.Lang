@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace törölni
 	RecNewKey_TT =	Backspace törölni
 	JoyKey_TT =	Nyomja meg a gombot a joystick
-	OnFinish_TT =	
-	(LTrim	
-		shutdown lehetőségek
-		Ha a lejátszás befejeződik...
-	)	
 	ReptC_TT =	0 = végtelen
-	IfDirB_TT =	Győződjön Gyorsbillentyűk munka függően`ntípusú ablak aktív, illetve létezik (Ctrl+H)
-	KeepHKOn_TT =	Tartsa gyorsbillentyűk aktiválva Mindig
 	A_List_TT =	Makró Kiválasztása (Ctrl+1~0)
 	OSHK_TT =	Makró Kiválasztása
 	OSHKEd_TT =	Makró Kiválasztása
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = végtelen
 	ExpView_TT =	Fejlett Szerkesztő
 	ExpView2_TT =	Fejlett Szerkesztő
-	OSPlay_TT =	Lejátszás / Szünet
-	OSStop_TT =	Megáll
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Új makró rögzítése
-	OSRecOpt_TT =	Felvételi Mód
-	OSPlayOpt_TT =	Lejátszási opciók
-	OSClear_TT =	Kódolatlan List
 	OSProgB_TT =	Kijelző Progress Bar
-	OSFast_TT =	Felgyorsul
-	OSSlow_TT =	Lelassít
 	OSTrans_TT =	átlátszatlanság
-	ToggleTB_TT =	Megjelenítése / elrejtése címsor
-	ToggleMW_TT =	Megjelenítése / elrejtése főablak
 	MRel_TT =	
 	(LTrim	
 		Mozgásokat képest aktuális pozícióját.

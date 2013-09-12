@@ -745,7 +745,7 @@ Else
 	HistoryMacro1.Add()
 }
 Menu, Tray, Icon
-Gui, 1:Show, % ((WinState) ? "Maximize" : MainWinSize " " MainWinPos) ((HideWin) ? "Hide" : ""), %AppName% v%CurrentVersion% %CurrentFileName%
+Gui, 1:Show, % ((WinState) ? "Maximize" : MainWinSize " " MainWinPos) ((HideWin) ? "Hide" : ""), %CurrentFileName% - %AppName% v%CurrentVersion%
 GoSub, LoadData
 TB_Edit(tbFile, "Preview", ShowPrev)
 ,	TB_Edit(TbSettings, "HideMainWin", HideMainWin), TB_Edit(TbSettings, "OnScCtrl", OnScCtrl)
@@ -1709,7 +1709,7 @@ Gui, chMacro:Listview, InputList%A_List%
 HistoryMacro1 := new LV_Rows()
 HistoryMacro1.Add()
 GuiControl, 1:, Capt, 0
-Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "" : "Hide"), %AppName% v%CurrentVersion% %CurrentFileName%
+Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "" : "Hide"), %CurrentFileName% - %AppName% v%CurrentVersion%
 SplitPath, CurrentFileName,, wDir
 SetWorkingDir %wDir%
 Gui, chMacro:Submit, NoHide
@@ -1795,7 +1795,7 @@ Loop, %TabCount%
 ,	LV_Data := PMCSet . PMC.LVGet("InputList" A_Index).Text . "`n"
 	FileAppend, %LV_Data%, %CurrentFileName%
 }
-Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "NA" : "Hide"), %AppName% v%CurrentVersion% %CurrentFileName%
+Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "NA" : "Hide"), %CurrentFileName% - %AppName% v%CurrentVersion%
 SplitPath, CurrentFileName,, wDir
 SetWorkingDir %wDir%
 SavePrompt := False
@@ -11164,7 +11164,7 @@ If WinExist("ahk_id" PMCWinID)
 Else
 {
 	Menu, Tray, Rename, %y_Lang002%, %y_Lang001%
-	Gui, 1:Show,, %AppName% v%CurrentVersion% %CurrentFileName%
+	Gui, 1:Show,, %CurrentFileName% - %AppName% v%CurrentVersion%
 	GoSub, GuiSize
 }
 return

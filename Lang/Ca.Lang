@@ -781,14 +781,7 @@
 	RecKey_TT =	Retrocés per esborrar
 	RecNewKey_TT =	Retrocés per esborrar
 	JoyKey_TT =	Premeu un botó a la palanca de comandament
-	OnFinish_TT =	
-	(LTrim	
-		Opcions d'apagada
-		Quan finalitzi la reproducció...
-	)	
 	ReptC_TT =	0 = infinit
-	IfDirB_TT =	Feu Hotkeys funcionen depenent del `nType de la finestra que està activa o no existeix (Ctrl+H)
-	KeepHKOn_TT =	Mantingui Hotkeys Sempre Activat
 	A_List_TT =	Seleccioneu Macro (Ctrl+1~0)
 	OSHK_TT =	Seleccioneu Macro
 	OSHKEd_TT =	Seleccioneu Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = infinit
 	ExpView_TT =	Editor Avançat
 	ExpView2_TT =	Editor Avançat
-	OSPlay_TT =	Reproduir / Pausa
-	OSStop_TT =	Aturi
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Gravar nova macro
-	OSRecOpt_TT =	Opcions de Gravació
-	OSPlayOpt_TT =	Opcions de reproducció
-	OSClear_TT =	Esborrar llista
 	OSProgB_TT =	Mostra la barra de progrés
-	OSFast_TT =	Accelerar
-	OSSlow_TT =	Alentir
 	OSTrans_TT =	opacitat
-	ToggleTB_TT =	Mostra / Oculta la barra de títol
-	ToggleMW_TT =	Mostra / oculta la finestra principal
 	MRel_TT =	
 	(LTrim	
 		Moviments relatius a la posició actual.

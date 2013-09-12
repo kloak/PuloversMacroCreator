@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace jasno
 	RecNewKey_TT =	Backspace jasno
 	JoyKey_TT =	Pritisnite gumb na ročici
-	OnFinish_TT =	
-	(LTrim	
-		Možnosti zaustavitev
-		Ko se predvajanje konča.
-	)	
 	ReptC_TT =	0 = neskončno
-	IfDirB_TT =	Naredite Bližnjice delovalo, odvisno od`ntype okna, ki se aktivno ali obstaja (Ctrl+D)
-	KeepHKOn_TT =	Imejte Bližnjice vedno aktivira
 	A_List_TT =	Izberite Macro (Ctrl +1 ~ 0)
 	OSHK_TT =	Izberite makro
 	OSHKEd_TT =	Izberite makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = neskončno
 	ExpView_TT =	Napredno Editor
 	ExpView2_TT =	Napredno Editor
-	OSPlay_TT =	Predvajanje / premor
-	OSStop_TT =	Stop
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Posnemi nov makro
-	OSRecOpt_TT =	Možnosti snemanja
-	OSPlayOpt_TT =	Možnosti predvajanja
-	OSClear_TT =	Jasno Seznam
 	OSProgB_TT =	Prikaže vrstica napredka
-	OSFast_TT =	Speed Up
-	OSSlow_TT =	Slow Down
 	OSTrans_TT =	Motnost
-	ToggleTB_TT =	Prikaži / skrij Naslov Bar
-	ToggleMW_TT =	Prikaži / skrij glavno okno
 	MRel_TT =	
 	(LTrim	
 		Premikanje glede na trenutni položaj.

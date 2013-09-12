@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace to clear
 	RecNewKey_TT =	Backspace to clear
 	JoyKey_TT =	Press a button on the joystick
-	OnFinish_TT =	
-	(LTrim	
-		Shutdown options
-		When playback finishes...
-	)	
 	ReptC_TT =	0 = infinite
-	IfDirB_TT =	Make Hotkeys work depending on the`ntype of window that is active or exists (Ctrl+H)
-	KeepHKOn_TT =	Keep Hotkeys Always Activated
 	A_List_TT =	Select Macro (Ctrl+1~0)
 	OSHK_TT =	Select Macro
 	OSHKEd_TT =	Select Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = infinite
 	ExpView_TT =	Advanced Editor
 	ExpView2_TT =	Advanced Editor
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Stop
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Record New Macro
-	OSRecOpt_TT =	Recording Options
-	OSPlayOpt_TT =	Playback Options
-	OSClear_TT =	Clear List
 	OSProgB_TT =	Display Progress Bar
-	OSFast_TT =	Speed Up
-	OSSlow_TT =	Slow Down
 	OSTrans_TT =	Opacity
-	ToggleTB_TT =	Show / Hide Title Bar
-	ToggleMW_TT =	Show / Hide Main Window
 	MRel_TT =	
 	(LTrim	
 		Movements relative to current position.

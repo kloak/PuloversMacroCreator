@@ -781,14 +781,7 @@
 	RecKey_TT =	Povratna izbiti
 	RecNewKey_TT =	Povratna izbiti
 	JoyKey_TT =	Pritisnite tipku na palici
-	OnFinish_TT =	
-	(LTrim	
-		shutdown opcije
-		Kad reprodukcija završi...
-	)	
 	ReptC_TT =	0 = beskonačno
-	IfDirB_TT =	Provjerite Hotkeys raditi ovisno o `nType od prozora koji je aktivan ili ne postoji (Ctrl+H)
-	KeepHKOn_TT =	Hotkeys Uvijek držite Aktiviran
 	A_List_TT =	Odabir Makro (Ctrl+1~0)
 	OSHK_TT =	Odabir Makro
 	OSHKEd_TT =	Odabir Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = beskonačno
 	ExpView_TT =	Napredni Uređivač
 	ExpView2_TT =	Napredni Uređivač
-	OSPlay_TT =	Reprodukcija / pauza
-	OSStop_TT =	Stop
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Zapis New Macro
-	OSRecOpt_TT =	Opcije Snimanja
-	OSPlayOpt_TT =	Playback Options
-	OSClear_TT =	Jasno Popis
 	OSProgB_TT =	Prikaz Progress Bar
-	OSFast_TT =	Ubrzati
-	OSSlow_TT =	Usporiti
 	OSTrans_TT =	neprozirnost
-	ToggleTB_TT =	Show / Hide Naslov Bar
-	ToggleMW_TT =	Show / Hide glavni prozor
 	MRel_TT =	
 	(LTrim	
 		Promjene u odnosu na trenutnu poziciju.

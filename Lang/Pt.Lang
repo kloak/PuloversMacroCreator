@@ -29,11 +29,11 @@
 ; Macro Sub Menu		
 	r_lang001 =	&Gravar Macro
 	r_lang002 =	&Ativar Macros
-	r_lang003 =	&Reproduzir Macro Atual
+	r_lang003 =	&Executar Macro Atual
 	r_lang004 =	&Temporizador
-	r_lang005 =	R&eproduzir a Partir da Linha Selecionada
-	r_lang006 =	Re&produzir Até a Linha Selecionada
-	r_lang007 =	Repr&oduzir Linhas Selecionadas
+	r_lang005 =	Executar a Partir da Linha Selecionada
+	r_lang006 =	Executar Até a Linha Selecionada
+	r_lang007 =	Executar Linhas Selecionadas
 	r_lang008 =	Ata&lhos Condicionais
 	r_lang009 =	A&dicionar Macro
 	r_lang010 =	&Fechar Macro
@@ -106,7 +106,7 @@
 	v_lang009 =	R&estaurar Layout
 		
 	v_lang010 =	&Arquivo
-	v_lang011 =	&Gravar e Reproduzir
+	v_lang011 =	&Gravar e Executar
 	v_lang012 =	&Opções
 	v_lang013 =	&Comandos
 	v_lang014 =	&Editar
@@ -150,8 +150,8 @@
 	w_Lang002 =	Script
 	w_Lang003 =	Opções
 	w_Lang004 =	Gravar
-	w_Lang005 =	Reproduzir
-	w_Lang006 =	Reproduzir
+	w_Lang005 =	Executar
+	w_Lang006 =	Execução
 	w_Lang007 =	Manual
 	w_Lang008 =	Parar
 	w_Lang009 =	Exibir a barra de controles
@@ -165,7 +165,7 @@
 	w_Lang017 =	Aplicar
 	w_Lang018 =	Inserir
 	w_Lang019 =	Editar
-	w_Lang020 =	Opções de desligamento (Quando a reprodução terminar...)
+	w_Lang020 =	Opções de desligamento (Quando a execução terminar...)
 	w_Lang021 =	Não fazer nada
 	w_Lang022 =	Fechar aplicativo
 	w_Lang023 =	Desligar
@@ -193,7 +193,7 @@
 	w_Lang045 =	Configurações (Ctrl+G)
 	w_Lang046 =	Gravar Macro (Ctrl+R)
 	w_Lang047 =	Ativar Macros (Ctrl+Enter)
-	w_Lang048 =	Reproduzir Macro Atual (Ctrl+Shift+Enter)
+	w_Lang048 =	Executar Macro Atual (Ctrl+Shift+Enter)
 	w_Lang049 =	Temporizador (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Texto (F3)
@@ -215,7 +215,7 @@
 	w_Lang067 =	Interface COM (Shift+F11)
 	w_Lang068 =	Executar Scriptlet (Ctrl+F11)
 	w_Lang069 =	Mensages do Windows (F12)
-	w_Lang070 =	Adicionar a tecla Windows ao atalho "Reproduzir"
+	w_Lang070 =	Adicionar a tecla Windows ao atalho "Executar"
 	w_Lang071 =	Usar um botão do joystick como atalho
 	w_Lang072 =	Adicionar Macro (Ctrl+T)
 	w_Lang073 =	Fechar Macro (Ctrl+W)
@@ -315,7 +315,7 @@
 	c_Lang071 =	Variações
 	c_Lang072 =	Pré-Visualização
 	c_Lang073 =	Loop
-	c_Lang074 =	* Não funciona na Reprodução Manual.
+	c_Lang074 =	* Não funciona na Execução Manual.
 	c_Lang075 =	Parar
 	c_Lang076 =	Continuar
 	c_Lang077 =	Pular
@@ -356,10 +356,10 @@
 	c_Lang112 =	Mudo
 	c_Lang113 =	Volume +
 	c_Lang114 =	Volume -
-	c_Lang115 =	Reproduzir / Pausar
+	c_Lang115 =	Executar / Pausar
 	c_Lang116 =	Voltar Faixa
 	c_Lang117 =	Avançar Faixa
-	c_Lang118 =	Parar Reprodução
+	c_Lang118 =	Parar Execução
 	c_Lang119 =	E-mail
 	c_Lang120 =	Aplicativo 1
 	c_Lang121 =	Aplicativo 2
@@ -484,10 +484,10 @@
 	t_Lang032 =	Gravar ControlClick
 	t_Lang033 =	Tecla de Gravação Relativa
 	t_Lang034 =	Alternar
-	t_Lang035 =	Reproduzir
+	t_Lang035 =	Executar
 	t_Lang036 =	Acelerar
 	t_Lang037 =	Reduzir
-	t_Lang038 =	Retornar Mouse após a reprodução
+	t_Lang038 =	Retornar Mouse após executar
 	t_Lang039 =	Coordenadas do Mouse
 	t_Lang040 =	Janela
 	t_Lang041 =	Tela
@@ -527,7 +527,7 @@
 	t_Lang075 =	T&odas as Macros Macros
 	t_Lang076 =	Sobre
 	t_Lang077 =	&Expressão Regular
-	t_Lang078 =	Reproduzir uma vez
+	t_Lang078 =	Executar uma vez
 	t_Lang079 =	A cada X (mili)segundos
 	t_Lang080 =	Temporizador
 	t_Lang081 =	Pausa
@@ -561,9 +561,9 @@
 	t_Lang109 =	Segurar
 	t_Lang110 =	Soltar
 	t_Lang111 =	Inserir Tecla
-	t_Lang112 =	Reproduzir / Pausar
+	t_Lang112 =	Executar / Pausar
 	t_Lang113 =	Parar
-	t_Lang114 =	Opções de Reprodução
+	t_Lang114 =	Opções de Execução
 	t_Lang115 =	Iniciar / Parar Gravação
 	t_Lang116 =	Gravar Nova Macro
 	t_Lang117 =	Opções de Gravação
@@ -681,7 +681,7 @@
 	d_Lang048 =	Insira um Handle e um CLSID.
 	d_Lang049 =	Nome de Rótulo Inválido.
 	d_Lang050 =	Rótulo Duplicado.
-	d_Lang051 =	Para reproduzir uma Macro pressione o Atalho correspondente (Auto/Man).
+	d_Lang051 =	Para executar uma Macro pressione o Atalho correspondente (Auto/Man).
 	d_Lang052 =	Para iniciar a gravação pressione uma Tecla de Gravação.
 	d_Lang053 =	Não exibir esta mensagem novamente.
 	d_Lang054 =	Por favor selecione uma janela do Excel!
@@ -746,7 +746,7 @@
 	Start_Tips =	
 	(LTrim	
 		Você pode criar Macros utilizando os botões de comando na janela principal ou usar o gravador para copiar suas ações. Vá até Opções > Configurações > Gravar para selecionar quais entradas serão gravadas.
-		Para utilizar o gravador para tarefas rápidas vá em Opções > Configurações > Gravação e marque a opção "Limpar Lista". Em seguida, clique no botão Gravar na janela principal e use F10 para limpar a Macro atual e iniciar uma nova com a mesma hotkey. Você também pode marcar a opção "Sempre Ativo" na janela principal para manter as teclas de gravação e reprodução ativas.
+		Para utilizar o gravador para tarefas rápidas vá em Opções > Configurações > Gravação e marque a opção "Limpar Lista". Em seguida, clique no botão Gravar na janela principal e use F10 para limpar a Macro atual e iniciar uma nova com a mesma hotkey. Você também pode marcar a opção "Sempre Ativo" na janela principal para manter as teclas de gravação e execução ativas.
 		Para obter ajuda para um comando específico clique com o botão direito do mouse em qualquer lugar em uma janela de comando para mostrar links para a Ajuda online AutoHotkey.
 		Marque a opção "Capturar Teclas" para inserir teclas e combinações à sua Macro diretamente na da janela principal.
 		Digite teclas e combinações na Caixa de Atalhos na parte inferior e pressione o botão Inserir para adicioná-las às linhas selecionadas.
@@ -757,38 +757,31 @@
 		Você pode editar várias linhas selecionadas usando as opções na barra de edição na parte inferior.
 		Selecione uma ou mais linhas para adicionar novos comandos em cima delas.
 		Você pode mover as linhas com clique-e-arraste.
-		Dê um duplo clique no ícone da bandeja para ativar hotkeys ou parar a reprodução / gravação. Clique nele com o botão do meio durante a reprodução ou gravação para fazer pausar.
+		Dê um duplo clique no ícone da bandeja para ativar hotkeys ou parar a execução / gravação. Clique nele com o botão do meio durante a execução ou gravação para fazer pausar.
 		Você pode exportar suas Macros para scripts AutoHotkey funcionais ou executáveis stand-alone através da janela de exportação.
-		Para gravar e reproduzir o Mouse usando coordenadas absolutas vá em Opções > Configurações > Padrões e ajuste Coordenadas do Mouse para Tela.
+		Para gravar e executar o Mouse usando coordenadas absolutas vá em Opções > Configurações > Padrões e ajuste Coordenadas do Mouse para Tela.
 		Você pode abrir, copiar, mover ou apagar arquivos e pastas usando um dos comandos em Inserir > Executar / Arquivo / Texto / Misc.
 		Para gravar Down e Up estado de cada chave vá para Opções > Configurações > Gravação e marque "Capturar estado da tecla (press. / solta)" opção.
-		Você pode usar teclas de atalho para acelerar ou desacelerar Reprodução. Vá até Opções > Configurações > Reprodução para definir as chaves e velocidade.
+		Você pode usar teclas de atalho para acelerar ou desacelerar Execução. Vá até Opções > Configurações > Execução para definir as chaves e velocidade.
 		Para ajustar a área de captura utilizando a ferramenta "Capturar Imagem" vá em Opções > Configurações > Imagens e selecione "Press. Enter para capturar". Depois de desenhar o controle do uso do retângulo+setas para mover as teclas de seta de seleção e Shift+para redimensioná-la.
 		Seleção rápida: Selecione uma linha e clique no cabeçalho da coluna para selecionar linhas semelhantes baseadas no texto da célula de coluna.
 		A janela Executar / Arquivo / Texto / Misc. tem muitos outros comandos úteis, como Desligar e URLDownloadToFile.
 		Use a função "Screenshot" na janela de funções (Inserir > Declaração Se / Variáveis / Funções) para fazer uma screenshot de parte da tela. O primeiro parâmetro é o caminho e o nome do arquivo de destino com uma extensão png. O segundo parâmetro são as coordenadas da tela separadas por barra vertical, por exemplo, 100|200|50|100 (X|Y|Largura|Altura).
 		Clique no cabeçalho da coluna Índice de ligar / desligar Ajuda marcas e cores para Loops e declarações. Duplo-Clique no cabeçalho da coluna Ação para ligar / desligar recuo para Loops e declarações.
-		Você pode depurar suas macros utilizando a tecla de excução manual e as opções de reprodução no menu Macro. Você também pode desativar ações, desmarcando-as na lista da Macro.
+		Você pode depurar suas macros utilizando a tecla de excução manual e as opções de execução no menu Macro. Você também pode desativar ações, desmarcando-as na lista da Macro.
 		Para fazer suas Macros funcionarem apenas em uma determinada janela vá em Macro > Atalho Condicionais.
 		Você pode definir suas próprias variáveis globais para serem carregadas ao iniciar e para serem exportadas. Vá em Opções > Configurações > Variáveis Globais do Usuário para adicioná-las.
 		Você pode executar funções avançadas como SubStr e RegExReplace da janela Funções (Inserir > Declaração Se / Variáveis / Funções). Ou executar suas próprias funções a partir de scripts AutoHotkey externos.
 	)	
 ; Tooltips		
-	AutoKey_TT =	Atalho para reproduzir Macro
-	ManKey_TT =	Atalho para reproduzir Macro "passo-a-passo"
-	AbortKey_TT =	Atalho para parar reprodução
-	PauseKey_TT =	Atalho para pausar reprodução
+	AutoKey_TT =	Atalho para executar a Macro
+	ManKey_TT =	Atalho para executar uma Macro "passo-a-passo"
+	AbortKey_TT =	Atalho para parar execução
+	PauseKey_TT =	Atalho para pausar execução
 	RecKey_TT =	Backspace para apagar
 	RecNewKey_TT =	Backspace para apagar
 	JoyKey_TT =	Pressione um botão no joystick
-	OnFinish_TT =	
-	(LTrim	
-		Opções de desligamento
-		Quando a reprodução terminar...
-	)	
 	ReptC_TT =	0 = infinito
-	IfDirB_TT =	Faz os Atalhos funcionarem dependendo`ndo tipo de janela ativa ou existente.
-	KeepHKOn_TT =	Manter Atalhos Sempre Ativos
 	A_List_TT =	Selecionar Macro (Ctrl+1~0)
 	OSHK_TT =	Selecionar Macro
 	OSHKEd_TT =	Selecionar Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = infinito
 	ExpView_TT =	Editor Avançado
 	ExpView2_TT =	Editor Avançado
-	OSPlay_TT =	Reproduzir / Pausar
-	OSStop_TT =	Parar
-	OSRec_TT =	Iniciar / Parar Gravação
-	OSRecNew_TT =	Gravar Nova Macro
-	OSRecOpt_TT =	Opções de Gravação
-	OSPlayOpt_TT =	Opções de Reprodução
-	OSClear_TT =	Limpar Lista
 	OSProgB_TT =	Mostrar Barra de Progresso
-	OSFast_TT =	Acelerar
-	OSSlow_TT =	Reduzir
 	OSTrans_TT =	Opacidade
-	ToggleTB_TT =	Mostrar / Ocultar Barra de Título
-	ToggleMW_TT =	Mostrar / Ocultar Janela Principal
 	MRel_TT =	
 	(LTrim	
 		Movimentos relativos à posição atual.

@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace untuk menghapus
 	RecNewKey_TT =	Backspace untuk menghapus
 	JoyKey_TT =	Tekan tombol pada joystick
-	OnFinish_TT =	
-	(LTrim	
-		Pilihan Shutdown
-		Ketika selesai pemutaran...
-	)	
 	ReptC_TT =	0 = tak terbatas
-	IfDirB_TT =	Membuat Hotkeys bekerja tergantung pada`ntype jendela yang aktif atau ada (Ctrl+H)
-	KeepHKOn_TT =	Jauhkan Hotkeys Selalu Diaktifkan
 	A_List_TT =	Pilih Makro (Ctrl +1 ~ 0)
 	OSHK_TT =	Pilih Makro
 	OSHKEd_TT =	Pilih Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = tak terbatas
 	ExpView_TT =	Editor canggih
 	ExpView2_TT =	Editor canggih
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Berhenti
-	OSRec_TT =	Start / Stop Rekam
-	OSRecNew_TT =	Rekam New Macro
-	OSRecOpt_TT =	Pilihan Recording
-	OSPlayOpt_TT =	Pilihan pemutaran
-	OSClear_TT =	Hapus Daftar
 	OSProgB_TT =	Tampilan Progress Bar
-	OSFast_TT =	Speed Up
-	OSSlow_TT =	Slow Down
 	OSTrans_TT =	Kegelapan
-	ToggleTB_TT =	Tampilkan / Sembunyikan Title Bar
-	ToggleMW_TT =	Tampilkan / Sembunyikan Jendela Utama
 	MRel_TT =	
 	(LTrim	
 		Gerakan relatif terhadap posisi saat ini.

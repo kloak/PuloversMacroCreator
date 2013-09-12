@@ -781,14 +781,7 @@
 	RecKey_TT =	삭제하는 백 스페이스
 	RecNewKey_TT =	삭제하는 백 스페이스
 	JoyKey_TT =	조이스틱 버튼을 눌러
-	OnFinish_TT =	
-	(LTrim	
-		종료 옵션
-		재생시 마감...
-	)	
 	ReptC_TT =	0 = 무한
-	IfDirB_TT =	키가 활성 상태 또는 존재 창`n타입 (Ctrl 키를+H)에 따라 작동합니다
-	KeepHKOn_TT =	항상 활성화 키 보관
 	A_List_TT =	매크로를 선택 (Ctrl+1~0)
 	OSHK_TT =	매크로를 선택
 	OSHKEd_TT =	매크로를 선택
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = 무한
 	ExpView_TT =	고급 편집기
 	ExpView2_TT =	고급 편집기
-	OSPlay_TT =	재생 / 일시 중지
-	OSStop_TT =	정지
-	OSRec_TT =	기록 시작 / 중지
-	OSRecNew_TT =	새 매크로 기록
-	OSRecOpt_TT =	레코딩 옵션
-	OSPlayOpt_TT =	재생 옵션
-	OSClear_TT =	지우기 목록
 	OSProgB_TT =	진행률 표시 줄을 표시합니다
-	OSFast_TT =	속도를 더하다
-	OSSlow_TT =	천천히,
 	OSTrans_TT =	불투명
-	ToggleTB_TT =	표시 / 숨기기 제목 표시 줄
-	ToggleMW_TT =	메인 창 표시 / 숨기기
 	MRel_TT =	
 	(LTrim	
 		현재 위치를 기준으로 움직임.

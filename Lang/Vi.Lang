@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace để xóa
 	RecNewKey_TT =	Backspace để xóa
 	JoyKey_TT =	Nhấn một nút trên điều khiển
-	OnFinish_TT =	
-	(LTrim	
-		Tắt tùy chọn
-		Khi kết thúc phát...
-	)	
 	ReptC_TT =	0 = vô hạn
-	IfDirB_TT =	Làm Hotkeys làm việc tùy thuộc vào loại`ncủa cửa sổ đang hoạt động hay tồn tại (Ctrl + H)
-	KeepHKOn_TT =	Luôn luôn giữ Hotkeys Activated
 	A_List_TT =	Chọn vĩ mô (Ctrl +1 ~ 0)
 	OSHK_TT =	Chọn Macro
 	OSHKEd_TT =	Chọn Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = vô hạn
 	ExpView_TT =	Biên tập viên cao cấp
 	ExpView2_TT =	Biên tập viên cao cấp
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Thôi
-	OSRec_TT =	Start / Stop Ghi
-	OSRecNew_TT =	Kỷ lục mới Macro
-	OSRecOpt_TT =	Tùy chọn ghi âm
-	OSPlayOpt_TT =	Tùy chọn phát lại
-	OSClear_TT =	Danh sách rõ ràng
 	OSProgB_TT =	Hiển thị Progress Bar
-	OSFast_TT =	Tăng tốc độ
-	OSSlow_TT =	Slow Down
 	OSTrans_TT =	Opacity
-	ToggleTB_TT =	Hiện / Ẩn thanh tiêu đề
-	ToggleMW_TT =	Hiện / Ẩn Cửa sổ chính
 	MRel_TT =	
 	(LTrim	
 		Chuyển động tương đối so với vị trí hiện tại.

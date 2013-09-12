@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace untuk membersihkan
 	RecNewKey_TT =	Backspace untuk membersihkan
 	JoyKey_TT =	Tekan butang pada kayu bedik
-	OnFinish_TT =	
-	(LTrim	
-		Pilihan Shutdown
-		Apabila selesai main...
-	)	
 	ReptC_TT =	0 = tidak terhingga
-	IfDirB_TT =	Buat hotkeys bekerja bergantung kepada jenis`ndaripada tingkap yang aktif atau wujud (Ctrl+H)
-	KeepHKOn_TT =	Pastikan hotkeys Sentiasa Diaktifkan
 	A_List_TT =	Pilih Macro (Ctrl +1 ~ 0)
 	OSHK_TT =	Pilih Makro
 	OSHKEd_TT =	Pilih Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = tidak terhingga
 	ExpView_TT =	Editor Advanced
 	ExpView2_TT =	Editor Advanced
-	OSPlay_TT =	Main / Jeda
-	OSStop_TT =	Hentikan
-	OSRec_TT =	Mula / Henti Rekod
-	OSRecNew_TT =	Rekod Baru Makro
-	OSRecOpt_TT =	Rakaman Pilihan
-	OSPlayOpt_TT =	Pilihan main balik
-	OSClear_TT =	Senarai jelas
 	OSProgB_TT =	Paparan Kemajuan Bar
-	OSFast_TT =	Percepat
-	OSSlow_TT =	Lambat Turun
 	OSTrans_TT =	Kelegapan
-	ToggleTB_TT =	Papar / Sembunyi Title Bar
-	ToggleMW_TT =	Paparkan / Sembunyikan Tetingkap Utama
 	MRel_TT =	
 	(LTrim	
 		Pergerakan relatif kepada kedudukan semasa.

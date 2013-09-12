@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace om te wissen
 	RecNewKey_TT =	Backspace om te wissen
 	JoyKey_TT =	Druk op een knop op de joystick
-	OnFinish_TT =	
-	(LTrim	
-		shutdown opties
-		Wanneer het afspelen is voltooid...
-	)	
 	ReptC_TT =	0 = oneindig
-	IfDirB_TT =	Maak Sneltoetsen werken, afhankelijk van het`ntype venster dat actief is of bestaat (Ctrl+H)
-	KeepHKOn_TT =	Houd Sneltoetsen altijd geactiveerd
 	A_List_TT =	Selecteert Macro (Ctrl+1~0)
 	OSHK_TT =	Selecteert Macro
 	OSHKEd_TT =	Selecteert Macro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = oneindig
 	ExpView_TT =	Geavanceerde Editor
 	ExpView2_TT =	Geavanceerde Editor
-	OSPlay_TT =	play / pause
-	OSStop_TT =	Stoppen
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Nieuwe macro opnemen
-	OSRecOpt_TT =	Opnamemogelijkheden
-	OSPlayOpt_TT =	afspelen Opties
-	OSClear_TT =	Lijst wissen
 	OSProgB_TT =	Weergave Progress Bar
-	OSFast_TT =	Versnellen
-	OSSlow_TT =	Langzamer gaan
 	OSTrans_TT =	ondoorzichtigheid
-	ToggleTB_TT =	Show / Hide Title Bar
-	ToggleMW_TT =	Show / Hide hoofdvenster
 	MRel_TT =	
 	(LTrim	
 		Bewegingen ten opzichte van de huidige positie.

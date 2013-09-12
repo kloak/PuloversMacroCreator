@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace zrušte
 	RecNewKey_TT =	Backspace zrušte
 	JoyKey_TT =	Stiskněte tlačítko na joysticku
-	OnFinish_TT =	
-	(LTrim	
-		vypnutí možnosti
-		Pokud přehrávání skončí...
-	)	
 	ReptC_TT =	0 = nekonečno
-	IfDirB_TT =	Značka Hotkeys pracovat v závislosti na typu`nokna, který je aktivní, nebo existuje (Ctrl+H)
-	KeepHKOn_TT =	Mějte klávesových zkratek vždy aktivní
 	A_List_TT =	Vyberte Makro (Ctrl+1~0)
 	OSHK_TT =	Vyberte Makro
 	OSHKEd_TT =	Vyberte Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = nekonečno
 	ExpView_TT =	Pokročilý Editor
 	ExpView2_TT =	Pokročilý Editor
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Zastavit
-	OSRec_TT =	Start / Stop Záznam
-	OSRecNew_TT =	Záznam nového makra
-	OSRecOpt_TT =	Volby pro Záznam
-	OSPlayOpt_TT =	Možnosti přehrávání
-	OSClear_TT =	Vymazat seznam
 	OSProgB_TT =	Zobrazit Progress Bar
-	OSFast_TT =	Urychlit
-	OSSlow_TT =	Zpomalit
 	OSTrans_TT =	neprůhlednost
-	ToggleTB_TT =	Zobrazit / skrýt Title Bar
-	ToggleMW_TT =	Zobrazit / skrýt hlavní okno
 	MRel_TT =	
 	(LTrim	
 		Pohyby v poměru k aktuální pozici.

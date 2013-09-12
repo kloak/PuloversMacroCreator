@@ -781,14 +781,7 @@
 	RecKey_TT =	Backspace poistaa
 	RecNewKey_TT =	Backspace poistaa
 	JoyKey_TT =	Paina painiketta joystick
-	OnFinish_TT =	
-	(LTrim	
-		shutdown vaihtoehtoja
-		Kun toisto päättyy...
-	)	
 	ReptC_TT =	0 = ääretön
-	IfDirB_TT =	Tee Pikanäppäimet toimivat riippuen`ntyyppinen ikkuna, joka on aktiivinen tai olemassa (Ctrl+H)
-	KeepHKOn_TT =	Pidä pikanäppäimet aina päällä
 	A_List_TT =	Valitse Makro (Ctrl+1~0)
 	OSHK_TT =	Valitse Makro
 	OSHKEd_TT =	Valitse Makro
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 = ääretön
 	ExpView_TT =	Kehittynyt Editori
 	ExpView2_TT =	Kehittynyt Editori
-	OSPlay_TT =	Play / Pause
-	OSStop_TT =	Lopettaa
-	OSRec_TT =	Start / Stop Record
-	OSRecNew_TT =	Nauhoita uusi makro
-	OSRecOpt_TT =	Tallennusmahdollisuudet
-	OSPlayOpt_TT =	Toistoasetukset
-	OSClear_TT =	Tyhjennä luettelo
 	OSProgB_TT =	Näyttö Progress Bar
-	OSFast_TT =	Nopeuttaa
-	OSSlow_TT =	Hidastaa
 	OSTrans_TT =	sameus
-	ToggleTB_TT =	Näytä / Piilota Otsikko Bar
-	ToggleMW_TT =	Näytä / Piilota pääikkuna
 	MRel_TT =	
 	(LTrim	
 		Liikkeet suhteessa nykyiseen asentoon.

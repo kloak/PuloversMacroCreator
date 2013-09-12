@@ -781,14 +781,7 @@
 	RecKey_TT =	クリアするには、Backspaceキー
 	RecNewKey_TT =	クリアするには、Backspaceキー
 	JoyKey_TT =	ジョイスティックのボタンを押し
-	OnFinish_TT =	
-	(LTrim	
-		シャットダウンオプション
-		再生が終了すると...
-	)	
 	ReptC_TT =	0 =無限大
-	IfDirB_TT =	ホットキーがアクティブであるか、または存在します（Ctrl+H）ウィンドウの_のタイプに応じて動作させる
-	KeepHKOn_TT =	ホットキーは常​​に有効に保つ
 	A_List_TT =	マクロを選択（Ctrl+1~0）
 	OSHK_TT =	マクロを選択
 	OSHKEd_TT =	マクロを選択
@@ -825,19 +818,8 @@
 	TimeoutM_TT =	0 =無限大
 	ExpView_TT =	高度なエディタ
 	ExpView2_TT =	高度なエディタ
-	OSPlay_TT =	再生/一時停止
-	OSStop_TT =	停止
-	OSRec_TT =	録音の開始/停止
-	OSRecNew_TT =	新しいマクロの記録
-	OSRecOpt_TT =	録画オプション
-	OSPlayOpt_TT =	再生オプション
-	OSClear_TT =	一覧をクリアする
 	OSProgB_TT =	プログレスバーを表示
-	OSFast_TT =	スピードアップ
-	OSSlow_TT =	速度を落とす
 	OSTrans_TT =	不透明
-	ToggleTB_TT =	表示/非表示のタイトルバー
-	ToggleMW_TT =	メインウィンドウの表示/非表示
 	MRel_TT =	
 	(LTrim	
 		現在位置からの相対的な動き。
