@@ -63,6 +63,8 @@ http://www.autohotkey.com/board/topic/54431-scite4autohotkey-v3004-updated-aug-1
 T800 for Html Help utils.
 http://www.autohotkey.com/board/topic/17984-html-help-utils
 
+Thiago Talma for some improvements to the code, debugging and many suggestions.
+
 Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jörg Schmalenberger (German).
 */
 
@@ -961,7 +963,7 @@ FloatPrev := !FloatPrev
 If (FloatPrev)
 {
 	RbMacro.ModifyBand(2, "Style", "Hidden")
-	If (PrevWinSize = "W H")
+	If InStr(PrevWinSize, "H0")
 		PrevWinSize := "W450 H500"
 	Gui, 2:Show, %PrevWinSize%, %c_Lang072% - %AppName%
 }
@@ -985,8 +987,7 @@ TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	TbPrev.ModifyButton(8, "Hide")
 ,	sciPrev := new scintilla(hSciPrev)
 ,	sciPrev.SetMarginWidthN(0, 10)
-,	sciPrev.SetMarginTypeN(1, 2) 
-,	sciPrev.SetMarginWidthN(1, 5)
+,	sciPrev.SetMarginWidthN(1, 0)
 ,	sciPrev.SetWrapMode(TextWrap)
 ,	sciPrev.SetLexer(200)
 ,	sciPrev.StyleClearAll()
@@ -995,7 +996,7 @@ TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	sciPrev.StyleSetFore(13, 0x009B4E), sciPrev.StyleSetBold(13, True)
 ,	sciPrev.StyleSetFore(16, 0x008080)
 ,	sciPrev.StyleSetFore(15, 0xDD1144)
-,	sciPrev.StyleSetFore(33, 0x808080),	sciPrev.StyleSetSize(33, 6)
+,	sciPrev.StyleSetFore(33, 0x808080),	sciPrev.StyleSetSize(33, 7)
 ,	sciPrev.SetKeywords(0, SyHi_Com)
 ,	sciPrev.SetKeywords(1, SyHi_Fun)
 ,	sciPrev.SetKeywords(2, SyHi_Keys)
@@ -1012,6 +1013,7 @@ TB_Define(TbPrevF, hTbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	tbPrevF.ModifyButtonInfo(1, "Text", t_Lang125),	tbPrevF.ModifyButtonInfo(1, "Image", 93)
 ,	sciPrevF := new scintilla(hSciPrevF)
 ,	sciPrevF.SetMarginWidthN(0, 10)
+,	sciPrevF.SetMarginWidthN(1, 0)
 ,	sciPrevF.SetWrapMode(TextWrap)
 ,	sciPrevF.SetLexer(200)
 ,	sciPrevF.StyleClearAll()
@@ -1020,6 +1022,7 @@ TB_Define(TbPrevF, hTbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	sciPrevF.StyleSetFore(13, 0x009B4E), sciPrevF.StyleSetBold(13, True)
 ,	sciPrevF.StyleSetFore(16, 0x008080)
 ,	sciPrevF.StyleSetFore(15, 0xDD1144)
+,	sciPrev.StyleSetFore(33, 0x808080),	sciPrev.StyleSetSize(33, 7)
 ,	sciPrevF.SetKeywords(0, SyHi_Com)
 ,	sciPrevF.SetKeywords(1, SyHi_Fun)
 ,	sciPrevF.SetKeywords(2, SyHi_Keys)
@@ -2880,6 +2883,7 @@ rbrtryn for the ChooseColor function.
 PhiLho and skwire for the function to Get/Set the order of columns.
 fincs for GenDocs and SciLexer.dll custom builds.
 T800 for Html Help utils.
+Thiago Talma for some improvements to the code, debugging and many suggestions.
 Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jörg Schmalenberger (German).
 )
 Gui, 34:Add, Groupbox, Section xm+58 W360 H130 Center, GNU General Public License
