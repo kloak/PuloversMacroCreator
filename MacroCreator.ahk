@@ -682,14 +682,14 @@ GoSub, b_Start
 GoSub, DefineControls
 GoSub, DefineToolbars
 OnMessage(WM_COMMAND, "TB_Messages")
-OnMessage(WM_MOUSEMOVE, "ShowTooltip")
-OnMessage(WM_RBUTTONDOWN, "ShowContextHelp")
-OnMessage(WM_LBUTTONDOWN, "DragToolbar")
-OnMessage(WM_MBUTTONDOWN, "CloseTab")
-OnMessage(WM_ACTIVATE, "WinCheck")
-OnMessage(WM_COPYDATA, "Receive_Params")
-OnMessage(WM_HELP, "CmdHelp")
-OnMessage(0x404, "AHK_NOTIFYICON")
+,	OnMessage(WM_MOUSEMOVE, "ShowTooltip")
+,	OnMessage(WM_RBUTTONDOWN, "ShowContextHelp")
+,	OnMessage(WM_LBUTTONDOWN, "DragToolbar")
+,	OnMessage(WM_MBUTTONDOWN, "CloseTab")
+,	OnMessage(WM_ACTIVATE, "WinCheck")
+,	OnMessage(WM_COPYDATA, "Receive_Params")
+,	OnMessage(WM_HELP, "CmdHelp")
+,	OnMessage(0x404, "AHK_NOTIFYICON")
 If KeepHkOn
 	Menu, Tray, Check, %w_Lang014%
 
@@ -718,15 +718,13 @@ If %0%
 		If (%A_Index% = "-b")
 			ShowCtrlBar := 1
 	}
-	Param := RTrim(Param, "`n")
+	Files := RTrim(Param, "`n")
 	If !MultInst && (TargetID := WinExist("ahk_exe " A_ScriptFullPath))
 	{
-		Send_Params(Param, TargetID)
+		Send_Params(Files, TargetID)
 		ExitApp
 	}
-	PMC.Import(Param)
-	CurrentFileName := LoadedFileName
-	GoSub, FileRead
+	GoSub, OpenFile
 }
 Else If !MultInst && (TargetID := WinExist("ahk_exe " A_ScriptFullPath))
 {
@@ -1695,6 +1693,7 @@ Loop, Parse, SelectedFileName, `n
 		Files .= FilePath . A_LoopField "`n"
 }
 Files := RTrim(Files, "`n")
+OpenFile:
 PMC.Import(Files)
 CurrentFileName := LoadedFileName, Files := ""
 GoSub, b_Start
@@ -8585,19 +8584,19 @@ Gui, chMacro:ListView, InputList%TabCount%
 HistoryMacro%TabCount% := new LV_Rows(), HistoryMacro%TabCount%.Add()
 Gui, chMacro:ListView, InputList%A_List%
 GuiAddLV(TabCount)
-Menu, CopyTo, Uncheck, % CopyMenuLabels[A_List]
+Try Menu, CopyTo, Uncheck, % CopyMenuLabels[A_List]
 GuiControl, chMacro:Choose, A_List, %TabCount%
 Gui, chMacro:Submit, NoHide
 GoSub, chMacroGuiSize
 CopyMenuLabels[TabCount] := TabName
 Menu, CopyTo, Add, % CopyMenuLabels[TabCount], CopyList
-Menu, CopyTo, Check, % CopyMenuLabels[A_List]
+Try Menu, CopyTo, Check, % CopyMenuLabels[A_List]
 GuiControl, 28:+Range1-%TabCount%, OSHK
 
 TabSel:
 GoSub, SaveData
 Gui, 1:Submit, NoHide
-Menu, CopyTo, Uncheck, % CopyMenuLabels[A_List]
+Try Menu, CopyTo, Uncheck, % CopyMenuLabels[A_List]
 Gui, chMacro:Default
 Gui, chMacro:Submit, NoHide
 Gui, chMacro:ListView, InputList%A_List%
@@ -8606,7 +8605,7 @@ GoSub, LoadData
 GoSub, RowCheck
 GuiControl, 28:, OSHK, %A_List%
 GoSub, PrevRefresh
-Menu, CopyTo, Check, % CopyMenuLabels[A_List]
+Try Menu, CopyTo, Check, % CopyMenuLabels[A_List]
 return
 
 TabClose:
