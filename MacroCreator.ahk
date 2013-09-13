@@ -1099,11 +1099,11 @@ Gui, 2:Hide
 return
 
 EditScript:
-Preview := LV_Export(A_List)
-If (Preview = "")
+EdPreview := sciPrev.GetText(sciPrev.getLength()+1)
+If (EdPreview = "")
 	return
 ExFileName := "PMC_" A_Now ".ahk"
-FileAppend, %Preview%, %A_Temp%\%ExFileName%, UTF-8
+FileAppend, %EdPreview%, %A_Temp%\%ExFileName%, UTF-8
 Run, %DefaultEditor% %A_Temp%\%ExFileName%, %A_Temp%
 return
 
