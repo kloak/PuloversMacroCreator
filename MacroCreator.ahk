@@ -2974,6 +2974,10 @@ Gui, 5:Default
 If (s_Caller = "Edit")
 {
 	EscCom("Details|TimesX|DelayX|Target|Window", 1)
+	GuiControl, 5:, TimesX, %TimesX%
+	GuiControl, 5:, EdRept, %TimesX%
+	GuiControl, 5:, DelayX, %DelayX%
+	GuiControl, 5:, DelayC, %DelayX%
 	If InStr(Action, "Left")
 		GuiControl, 5:, LB, 1
 	If InStr(Action, "Right")
@@ -3137,10 +3141,6 @@ If (s_Caller = "Edit")
 	}
 	If InStr(Details, "Rel")
 		GuiControl, 5:, MRel, 1
-	GuiControl, 5:, TimesX, %TimesX%
-	GuiControl, 5:, EdRept, %TimesX%
-	GuiControl, 5:, DelayX, %DelayX%
-	GuiControl, 5:, DelayC, %DelayX%
 	If ((Action = Action2) || (Action = Action3))
 	{
 		If (Type = cType13)
@@ -5682,6 +5682,10 @@ Gui, 19:Default
 If (s_Caller = "Edit")
 {
 	EscCom("Details|TimesX|DelayX|Target|Window", 1)
+	GuiControl, 19:, TimesX, %TimesX%
+	GuiControl, 19:, EdRept, %TimesX%
+	GuiControl, 19:, DelayX, %DelayX%
+	GuiControl, 19:, DelayC, %DelayX%
 	Loop, Parse, Action, `,,%A_Space%
 		Act%A_Index% := A_LoopField
 	GuiControl, 19:ChooseString, IfFound, %Act1%
@@ -5728,10 +5732,6 @@ If (s_Caller = "Edit")
 	GuiControl, 19:, ePosY, %Det4%
 	GuiControl, 19:, ImgFile, %Det5%
 	GuiControl, 19:ChooseString, CoordPixel, %Window%
-	GuiControl, 19:, TimesX, %TimesX%
-	GuiControl, 19:, EdRept, %TimesX%
-	GuiControl, 19:, DelayX, %DelayX%
-	GuiControl, 19:, DelayC, %DelayX%
 	If Target = Break
 		GuiControl, 19:, BreakLoop, 1
 	GuiControl, 19:Enable, ImageApply
