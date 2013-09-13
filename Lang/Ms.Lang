@@ -790,12 +790,6 @@
 	ApplyL_TT =	Memasukkan dari Box (Insert)
 	InsertKey_TT =	Memasukkan keystroke (Ctrl+Sisipan)
 	InsertKeyT_TT =	Memasukkan keystroke
-	OpenT_TT =	Terbuka (Ctrl+O)
-	SaveT_TT =	Simpan (Ctrl+S)
-	CutT_TT =	Potong
-	CopyT_TT =	Menyalin
-	PasteT_TT =	Tampal
-	SelAllT_TT =	Pilih Semua
 	DefaultMacro_TT =	Pilih fail untuk memuatkan pada permulaan program
 	VarCopyA_TT =	Menyalin kandungan ubah semasa
 	VarCopyB_TT =	Menyalin kandungan ubah semasa

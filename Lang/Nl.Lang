@@ -790,12 +790,6 @@
 	ApplyL_TT =	Invoegen van Box (Insert)
 	InsertKey_TT =	Steek Toetsaanslag (Ctrl+Insert)
 	InsertKeyT_TT =	Steek Toetsaanslag
-	OpenT_TT =	Openen (Ctrl+O)
-	SaveT_TT =	Opslaan (Ctrl+S)
-	CutT_TT =	Snijden
-	CopyT_TT =	Kopieer
-	PasteT_TT =	Plakken
-	SelAllT_TT =	Alles selecteren
 	DefaultMacro_TT =	Selecteer bestand te laden bij het opstarten van het programma
 	VarCopyA_TT =	Kopieer huidige variabele inhoud
 	VarCopyB_TT =	Kopieer huidige variabele inhoud

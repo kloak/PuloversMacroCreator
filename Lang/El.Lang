@@ -790,12 +790,6 @@
 	ApplyL_TT =	Εισαγωγή από Box (Insert)
 	InsertKey_TT =	Εισάγετε Πληκτρολόγησης (Ctrl+Insert)
 	InsertKeyT_TT =	Εισάγετε Πληκτρολόγησης
-	OpenT_TT =	Άνοιγμα (Ctrl+O)
-	SaveT_TT =	Αποθήκευση (Ctrl+S)
-	CutT_TT =	Κόβω
-	CopyT_TT =	Αντιγραφή
-	PasteT_TT =	Πάστα
-	SelAllT_TT =	Επιλογή όλων
 	DefaultMacro_TT =	Επιλέξτε το αρχείο να φορτώσει κατά την εκκίνηση του προγράμματος
 	VarCopyA_TT =	Αντιγράψτε σημερινό περιεχόμενο των μεταβλητών
 	VarCopyB_TT =	Αντιγράψτε σημερινό περιεχόμενο των μεταβλητών

@@ -790,12 +790,6 @@
 	ApplyL_TT =	Inserisci da scatola (Insert)
 	InsertKey_TT =	Inserire Battitura (Ctrl+Insert)
 	InsertKeyT_TT =	Inserire Battitura
-	OpenT_TT =	Apri (Ctrl+O)
-	SaveT_TT =	Salva (Ctrl+S)
-	CutT_TT =	Taglio
-	CopyT_TT =	Copiare
-	PasteT_TT =	Incollare
-	SelAllT_TT =	Seleziona tutto
 	DefaultMacro_TT =	Seleziona il file da caricare all'avvio del programma
 	VarCopyA_TT =	Copiare il contenuto delle variabili correnti
 	VarCopyB_TT =	Copiare il contenuto delle variabili correnti

@@ -790,12 +790,6 @@
 	ApplyL_TT =	Inserte de Caja (Insert)
 	InsertKey_TT =	Insertar Pulsaciones (Ctrl+Insert)
 	InsertKeyT_TT =	Insertar Pulsaciones
-	OpenT_TT =	Abrir (Ctrl+O)
-	SaveT_TT =	Guardar (Ctrl+S)
-	CutT_TT =	Cortar
-	CopyT_TT =	Copiar
-	PasteT_TT =	Pegar
-	SelAllT_TT =	Seleccionar todo
 	DefaultMacro_TT =	Selecciona archivo a cargar en el arranque del programa
 	VarCopyA_TT =	Copie los contenidos actuales de las variables
 	VarCopyB_TT =	Copie los contenidos actuales de las variables

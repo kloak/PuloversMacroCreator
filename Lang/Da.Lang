@@ -790,12 +790,6 @@
 	ApplyL_TT =	Indsæt fra kassen (Insert)
 	InsertKey_TT =	Indsæt Tastetryk (Ctrl+Insert)
 	InsertKeyT_TT =	Indsæt Tastetryk
-	OpenT_TT =	Åbn (Ctrl+O)
-	SaveT_TT =	Gem (Ctrl+S)
-	CutT_TT =	Klip
-	CopyT_TT =	Kopiér
-	PasteT_TT =	Indsæt
-	SelAllT_TT =	Vælg alt
 	DefaultMacro_TT =	Vælg fil at indlæse på programmets opstart
 	VarCopyA_TT =	Kopier nuværende variable indhold
 	VarCopyB_TT =	Kopier nuværende variable indhold

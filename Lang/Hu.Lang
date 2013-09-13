@@ -790,12 +790,6 @@
 	ApplyL_TT =	Beszúrás box (Insert)
 	InsertKey_TT =	Be Gombnyomás (Ctrl+Insert)
 	InsertKeyT_TT =	Be Gombnyomás
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Mentés (Ctrl+S)
-	CutT_TT =	Vágott
-	CopyT_TT =	Másolás
-	PasteT_TT =	Paszta
-	SelAllT_TT =	Az összes kijelölése
 	DefaultMacro_TT =	Válassza ki a fájlt betölteni a program indításakor
 	VarCopyA_TT =	Másolása a jelenlegi változó tartalmát
 	VarCopyB_TT =	Másolása a jelenlegi változó tartalmát

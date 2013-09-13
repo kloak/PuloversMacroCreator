@@ -790,12 +790,6 @@
 	ApplyL_TT =	从框中插入（Insert）
 	InsertKey_TT =	插入击键 (Ctrl+Insert)
 	InsertKeyT_TT =	插入击键
-	OpenT_TT =	开放（按Ctrl+O）
-	SaveT_TT =	保存（Ctrl+S）
-	CutT_TT =	切
-	CopyT_TT =	复制
-	PasteT_TT =	贴
-	SelAllT_TT =	全选
 	DefaultMacro_TT =	选择要加载的文件在程序启动
 	VarCopyA_TT =	复制当前变量的内容
 	VarCopyB_TT =	复制当前变量的内容

@@ -790,12 +790,6 @@
 	ApplyL_TT =	Inseriu de Caixa (Insert)
 	InsertKey_TT =	Inserir Pulsacions (Ctrl+Insert)
 	InsertKeyT_TT =	Inserir Pulsacions
-	OpenT_TT =	Obrir (Ctrl+O)
-	SaveT_TT =	Desa (Ctrl+S)
-	CutT_TT =	Tallar
-	CopyT_TT =	Copieu
-	PasteT_TT =	Enganxar
-	SelAllT_TT =	Selecciona tot
 	DefaultMacro_TT =	Selecciona arxiu a carregar en l'arrencada del programa
 	VarCopyA_TT =	Copia contingut actual de variables
 	VarCopyB_TT =	Copia contingut actual de variables

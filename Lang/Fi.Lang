@@ -790,12 +790,6 @@
 	ApplyL_TT =	Insertin laatikko (Insert)
 	InsertKey_TT =	Aseta Näppäilyn (Ctrl+Insert)
 	InsertKeyT_TT =	Aseta Näppäilyn
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Tallenna (Ctrl+S)
-	CutT_TT =	Leikata
-	CopyT_TT =	Kopioi
-	PasteT_TT =	Tahna
-	SelAllT_TT =	Valitse kaikki
 	DefaultMacro_TT =	Valitse ladattava tiedosto on ohjelman käynnistyessä
 	VarCopyA_TT =	Kopioi nykyinen muuttujan sisältö
 	VarCopyB_TT =	Kopioi nykyinen muuttujan sisältö

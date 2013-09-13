@@ -790,12 +790,6 @@
 	ApplyL_TT =	Инсерт из Бок (Insert)
 	InsertKey_TT =	Убаците Пречицу (Ctrl+Insert)
 	InsertKeyT_TT =	Убаците Пречицу
-	OpenT_TT =	Отворени (Цтрл+О)
-	SaveT_TT =	Саве (Цтрл+С)
-	CutT_TT =	Исећи
-	CopyT_TT =	Копирајте
-	PasteT_TT =	Паста
-	SelAllT_TT =	Изабери све
 	DefaultMacro_TT =	Изаберите фајл за учитавање програма на старту
 	VarCopyA_TT =	Копирање тренутне променљивог садржаја
 	VarCopyB_TT =	Копирање тренутне променљивог садржаја

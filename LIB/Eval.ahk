@@ -44,8 +44,8 @@ Eval(x, l_Point) { ; non-recursive PRE/POST PROCESSING: I/O forms, numbers, ops,
 				Found2 := DerefVars("%" Found2 "%")
 		}
 		y := %Found1%[Found2]
-		Try _isobj := IsObject(y)
-		If _isobj
+		Try _isObj := IsObject(y)
+		If _isObj
 			return y
 		Else
 			x := RegExReplace(x, Found, y)

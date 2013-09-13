@@ -790,12 +790,6 @@
 	ApplyL_TT =	Chèn từ Box (Insert)
 	InsertKey_TT =	Chèn Tổ hợp phím (Ctrl + Insert)
 	InsertKeyT_TT =	Chèn Tổ hợp phím
-	OpenT_TT =	Mở (Ctrl + O)
-	SaveT_TT =	Save (Ctrl + S)
-	CutT_TT =	Cắt
-	CopyT_TT =	Sao chép
-	PasteT_TT =	Dán
-	SelAllT_TT =	Chọn tất cả
 	DefaultMacro_TT =	Chọn tập tin để tải về khởi động chương trình
 	VarCopyA_TT =	Sao chép nội dung biến hiện nay
 	VarCopyB_TT =	Sao chép nội dung biến hiện nay

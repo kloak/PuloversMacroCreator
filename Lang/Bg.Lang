@@ -790,12 +790,6 @@
 	ApplyL_TT =	Поставете от кутия (Insert)
 	InsertKey_TT =	Вмъкнете Натискане На Клавиш (Ctrl+Insert)
 	InsertKeyT_TT =	Вмъкнете Натискане На Клавиш
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Save (Ctrl+S)
-	CutT_TT =	Рязане
-	CopyT_TT =	Копирайте
-	PasteT_TT =	Паста
-	SelAllT_TT =	Избери всички
 	DefaultMacro_TT =	Изберете файл за зареждане на стартиране на програмата
 	VarCopyA_TT =	Копиране на текущите променливи съдържание
 	VarCopyB_TT =	Копиране на текущите променливи съдържание

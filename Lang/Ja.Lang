@@ -790,12 +790,6 @@
 	ApplyL_TT =	ボックスから挿入（Insert）
 	InsertKey_TT =	キーストロークを挿入 (Ctrl+Insert)
 	InsertKeyT_TT =	キーストロークを挿入
-	OpenT_TT =	開く（Ctrl+Oキー）
-	SaveT_TT =	保存（Ctrl+S）
-	CutT_TT =	カット
-	CopyT_TT =	コピー
-	PasteT_TT =	貼り付ける
-	SelAllT_TT =	[すべて]を選択します
 	DefaultMacro_TT =	プログラムの起動時にロードするファイルを選択してください
 	VarCopyA_TT =	現在の変数の内容をコピーします
 	VarCopyB_TT =	現在の変数の内容をコピーします

@@ -790,12 +790,6 @@
 	ApplyL_TT =	Einfügen aus Box (Einfg)
 	InsertKey_TT =	Tastendruck einfügen (Strg+Insert)
 	InsertKeyT_TT =	Tastendruck einfügen
-	OpenT_TT =	Öffnen (Strg+O)
-	SaveT_TT =	Speichern (Strg+S)
-	CutT_TT =	Ausschneiden
-	CopyT_TT =	Kopieren
-	PasteT_TT =	Einfügen
-	SelAllT_TT =	Alles auswählen
 	DefaultMacro_TT =	Datei wählen, die beim Programmstart geladen werden soll
 	VarCopyA_TT =	Aktuelle Variablen-Inhalte kopieren
 	VarCopyB_TT =	Aktuelle Variablen-Inhalte kopieren

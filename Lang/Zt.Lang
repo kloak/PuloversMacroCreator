@@ -790,12 +790,6 @@
 	ApplyL_TT =	插入盒（插入）
 	InsertKey_TT =	插入擊鍵 (Ctrl+Insert)
 	InsertKeyT_TT =	插入擊鍵
-	OpenT_TT =	開放（按Ctrl+O）
-	SaveT_TT =	保存（Ctrl+S）
-	CutT_TT =	切
-	CopyT_TT =	複製
-	PasteT_TT =	貼
-	SelAllT_TT =	全選
 	DefaultMacro_TT =	選擇要加載的文件在程序啟動
 	VarCopyA_TT =	複製當前變量內容
 	VarCopyB_TT =	複製當前變量內容

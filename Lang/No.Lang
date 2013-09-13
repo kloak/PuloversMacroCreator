@@ -790,12 +790,6 @@
 	ApplyL_TT =	Sett fra boksen (Insert)
 	InsertKey_TT =	Sett Tastetrykk (Ctrl+Insert)
 	InsertKeyT_TT =	Sett Tastetrykk
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Lagre (Ctrl+S)
-	CutT_TT =	Kutt
-	CopyT_TT =	Kopier
-	PasteT_TT =	Lim
-	SelAllT_TT =	Velg Alle
 	DefaultMacro_TT =	Velg fil å laste på oppstart av programmet
 	VarCopyA_TT =	Kopier gjeldende variabelinnhold
 	VarCopyB_TT =	Kopier gjeldende variabelinnhold

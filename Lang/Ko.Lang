@@ -790,12 +790,6 @@
 	ApplyL_TT =	상자 삽입 (Insert)
 	InsertKey_TT =	키를 삽입 (Ctrl+Insert)
 	InsertKeyT_TT =	키를 삽입
-	OpenT_TT =	열기 (Ctrl 키+O)
-	SaveT_TT =	저장하기 (Ctrl+S)
-	CutT_TT =	절단
-	CopyT_TT =	복사
-	PasteT_TT =	붙여 넣기
-	SelAllT_TT =	모두 선택
 	DefaultMacro_TT =	프로그램 시작시로드 할 파일을 선택
 	VarCopyA_TT =	현재 변수 내용을 복사
 	VarCopyB_TT =	현재 변수 내용을 복사

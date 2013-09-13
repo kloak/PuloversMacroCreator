@@ -790,12 +790,6 @@
 	ApplyL_TT =	Insert from Box (Insert)
 	InsertKey_TT =	Insert Keystroke (Ctrl+Insert)
 	InsertKeyT_TT =	Insert Keystroke
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Save (Ctrl+S)
-	CutT_TT =	Cut
-	CopyT_TT =	Copy
-	PasteT_TT =	Paste
-	SelAllT_TT =	Select All
 	DefaultMacro_TT =	Select file to load on program startup
 	VarCopyA_TT =	Copy current variable contents
 	VarCopyB_TT =	Copy current variable contents

@@ -790,12 +790,6 @@
 	ApplyL_TT =	Wstaw z pudełkiem (Insert)
 	InsertKey_TT =	Włóż Klawiszy (Ctrl+Insert)
 	InsertKeyT_TT =	Włóż Klawiszy
-	OpenT_TT =	Otwórz (Ctrl+O)
-	SaveT_TT =	Zapisz (Ctrl+S)
-	CutT_TT =	Ciąć
-	CopyT_TT =	Skopiuj
-	PasteT_TT =	Pasta
-	SelAllT_TT =	Zaznacz wszystko
 	DefaultMacro_TT =	Wybierz plik do załadowania przy starcie programu
 	VarCopyA_TT =	Skopiuj aktualnej zmiennej treści
 	VarCopyB_TT =	Skopiuj aktualnej zmiennej treści

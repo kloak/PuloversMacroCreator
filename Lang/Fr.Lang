@@ -790,12 +790,6 @@
 	ApplyL_TT =	Insérez de la case (Insert)
 	InsertKey_TT =	Insérer Frappe (Ctrl+Insert)
 	InsertKeyT_TT =	Insérer Frappe
-	OpenT_TT =	Ouvrir (Ctrl+O)
-	SaveT_TT =	Enregistrer (Ctrl+S)
-	CutT_TT =	Couper
-	CopyT_TT =	Copier
-	PasteT_TT =	Coller
-	SelAllT_TT =	Sélectionner tout
 	DefaultMacro_TT =	Sélectionnez le fichier à charger au démarrage du programme
 	VarCopyA_TT =	Copiez le contenu des variables actuelles
 	VarCopyB_TT =	Copiez le contenu des variables actuelles

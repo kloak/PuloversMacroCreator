@@ -790,12 +790,6 @@
 	ApplyL_TT =	Inserir da Caixa (Insert)
 	InsertKey_TT =	Inserir Tecla (Ctrl+Insert)
 	InsertKeyT_TT =	Inserir Tecla
-	OpenT_TT =	Abrir (Ctrl+O)
-	SaveT_TT =	Salvar (Ctrl+S)
-	CutT_TT =	Recortar
-	CopyT_TT =	Copiar
-	PasteT_TT =	Colar
-	SelAllT_TT =	Selecionar Tudo
 	DefaultMacro_TT =	Selecione um arquivo para abrir ao iniciar
 	VarCopyA_TT =	Copy current variable contents
 	VarCopyB_TT =	Copy current variable contents

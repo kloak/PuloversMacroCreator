@@ -257,7 +257,7 @@ IniRead, Exe_Exp, %IniFilePath%, ExportOptions, Exe_Exp, 0
 IniRead, ShowExpOpt, %IniFilePath%, ExportOptions, ShowExpOpt, 0
 IniRead, MainWinSize, %IniFilePath%, WindowOptions, MainWinSize, W930 H630
 IniRead, MainWinPos, %IniFilePath%, WindowOptions, MainWinPos, Center
-IniRead, WinState, %IniFilePath%, WindowOptions, WinState, 0
+IniRead, WinState, %IniFilePath%, WindowOptions, WinState, 1
 IniRead, ColSizes, %IniFilePath%, WindowOptions, ColSizes, 70,130,190,50,40,85,95,95,60,40
 IniRead, ColOrder, %IniFilePath%, WindowOptions, ColOrder, 1,2,3,4,5,6,7,8,9,10
 IniRead, PrevWinSize, %IniFilePath%, WindowOptions, PrevWinSize, W450 H500
@@ -743,7 +743,7 @@ Else
 	HistoryMacro1.Add()
 }
 Menu, Tray, Icon
-Gui, 1:Show, % ((WinState) ? "Maximize" : MainWinSize " " MainWinPos) ((HideWin) ? "Hide" : ""), %CurrentFileName% - %AppName% v%CurrentVersion%
+Gui, 1:Show, % ((WinState) ? "Maximize" : MainWinSize " " MainWinPos) ((HideWin) ? "Hide" : ""), % (CurrentFileName ? CurrentFileName " - " : "") AppName " v" CurrentVersion
 GoSub, LoadData
 TB_Edit(tbFile, "Preview", ShowPrev)
 ,	TB_Edit(TbSettings, "HideMainWin", HideMainWin), TB_Edit(TbSettings, "OnScCtrl", OnScCtrl)
@@ -808,14 +808,14 @@ TB_Define(TbFile, hTbFile, hIL_Icons, DefaultBar.File, DefaultBar.FileOpt)
 ,	TB_Define(TbOSC, hTbOSC, hIL_Icons, FixedBar.OSC, FixedBar.OSCOpt)
 ,	TB_Edit(TbOSC, "ProgBarToggle", ShowProgBar)
 ,	RbMain := New Rebar(hRbMain)
-,	TB_Rebar(RbMain, 1, TbFile), TB_Rebar(RbMain, 2, TbRecPlay), TB_Rebar(RbMain, 3, TbSettings)
-,	RbMain.InsertBand(hAutoKey, 0, "", 4, w_Lang005, 50, 0, "", 22, 50)
+,	TB_Rebar(RbMain, 1, TbFile), TB_Rebar(RbMain, 2, TbRecPlay), TB_Rebar(RbMain, 5, TbCommand)
 ,	RbMain.InsertBand(hTimesCh, 0, "FixedSize NoGripper", 11, w_Lang011 " (" t_Lang004 ")", 75 * (A_ScreenDPI/96), 0, "", 22, 75 * (A_ScreenDPI/96))
-,	TB_Rebar(RbMain, 5, TbCommand, "Break")
+,	TB_Rebar(RbMain, 9, TbEdit, "Break"), TB_Rebar(RbMain, 3, TbSettings)
+,	RbMain.InsertBand(hAutoKey, 0, "", 4, w_Lang005, 50, 0, "", 22, 50)
 ,	RbMain.InsertBand(hManKey, 0, "", 6, w_Lang007, 50, 0, "", 22, 50)
 ,	RbMain.InsertBand(hAbortKey, 0, "", 7, w_Lang008, 60, 0, "", 22, 50)
 ,	RbMain.InsertBand(hPauseKey, 0, "", 8, c_Lang003, 60, 0, "", 22, 50)
-,	TB_Rebar(RbMain, 9, TbEdit, "Break"), RbMain.SetMaxRows(3)
+,	RbMain.SetMaxRows(3)
 ,	TBHwndAll := [TbFile, TbRecPlay, TbSettings, TbCommand, TbEdit, TbPrev, TbPrevF, TbOSC]
 ,	RBIndexTB := [1, 2, 3, 5, 9], RBIndexHK := [4, 6, 7, 8]
 ,	Default_MainLayout := RbMain.GetLayout()
@@ -909,10 +909,9 @@ GoSub, BuildMacroWin
 GoSub, BuildPrevWin
 GoSub, BuildMixedControls
 GoSub, BuildOSCWin
-GuiGetSize(gWidth, gHeight), rHeight := gHeight-120
-,	RbMacro := New Rebar(hRbMacro)
-,	RbMacro.InsertBand(hMacroCh, 0, "NoGripper", 30, "", gWidth/2, 0, "", rHeight, 10, 10)
-,	RbMacro.InsertBand(hPrevCh, 0, "", 31, "", gWidth/2, 0, "", rHeight, 0)
+	RbMacro := New Rebar(hRbMacro)
+,	RbMacro.InsertBand(hMacroCh, 0, "NoGripper", 30, "", A_ScreenWidth/2, 0, "", "", 10, 10)
+,	RbMacro.InsertBand(hPrevCh, 0, "", 31, "", A_ScreenWidth/2, 0, "", "", 0)
 ,	(MacroLayout = "ERROR") ? "" : RbMacro.SetLayout(MacroLayout)
 ,	!ShowPrev ? RbMacro.ModifyBand(2, "Style", "Hidden")
 return
@@ -1061,7 +1060,7 @@ If !(ShowPrev)
 	return
 PrevPtr := FloatPrev ? sciPrevF : sciPrev
 Preview := LV_Export(A_List)
-,	PrevPtr.SetReadOnly(False), PrevPtr.ClearAll(), PrevPtr.SetText("", Preview)
+,	PrevPtr.SetReadOnly(""), PrevPtr.ClearAll(), PrevPtr.SetText("", Preview)
 ,	PrevPtr.ScrollToEnd(), PrevPtr.SetReadOnly(True)
 ,	calcMargin := StrLen(PrevPtr.GetLineCount())*10
 If (calcMargin <> lastCalcMargin)
@@ -2817,7 +2816,7 @@ UrlDownloadToFile, http://www.macrocreator.com/Docs/, %A_Temp%\PMCIndex.html
 FileRead, VerChk, %A_Temp%\PMCIndex.html
 VerChk := RegExReplace(VerChk, "s).*Version: ([\d\.]+).*", "$1", vFound)
 FileDelete, %A_Temp%\PMCIndex.html
-If vFound
+If (vFound)
 {
 	If (VerChk <> CurrentVersion)
 	{
@@ -11364,7 +11363,7 @@ AbortKey := "F8"
 ,	IncPmc := 0
 ,	Exe_Exp := 0
 ,	ShowExpOpt := 0
-,	WinState := 0
+,	WinState := 1
 ,	TbNoTheme := 0
 ,	MultInst := 0
 ,	EvalDefault := 0

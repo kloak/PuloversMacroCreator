@@ -790,12 +790,6 @@
 	ApplyL_TT =	Vložiť z Box (Insert)
 	InsertKey_TT =	Vložte stlačenie klávesy (Ctrl+Insert)
 	InsertKeyT_TT =	Vložte stlačenie klávesy
-	OpenT_TT =	Otvoriť (Ctrl+O)
-	SaveT_TT =	Uložiť (Ctrl+S)
-	CutT_TT =	Znížiť
-	CopyT_TT =	Kopírovať
-	PasteT_TT =	Pasta
-	SelAllT_TT =	Vybrať všetko
 	DefaultMacro_TT =	Vyberte súbor, ktorý chcete nahrať na štarte programu
 	VarCopyA_TT =	Skopírujte bežný variabilný obsah
 	VarCopyB_TT =	Skopírujte bežný variabilný obsah

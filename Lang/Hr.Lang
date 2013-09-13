@@ -790,12 +790,6 @@
 	ApplyL_TT =	Stavite na kutiji (Insert)
 	InsertKey_TT =	Umetnite Pritisak Na Tipku (Ctrl+Insert)
 	InsertKeyT_TT =	Umetnite Pritisak Na Tipku
-	OpenT_TT =	Open (Ctrl+O)
-	SaveT_TT =	Spremi (Ctrl+S)
-	CutT_TT =	Rezati
-	CopyT_TT =	Kopirajte
-	PasteT_TT =	Zalijepiti
-	SelAllT_TT =	Odaberi sve
 	DefaultMacro_TT =	Odaberite datoteku za učitavanje na pokretanju programa
 	VarCopyA_TT =	Kopirajte trenutne varijabilne sadržaj
 	VarCopyB_TT =	Kopirajte trenutne varijabilne sadržaj

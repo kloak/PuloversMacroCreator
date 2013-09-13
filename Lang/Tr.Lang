@@ -790,12 +790,6 @@
 	ApplyL_TT =	Kutusundan Ekle (Insert)
 	InsertKey_TT =	Tuş Eklemek (Ctrl+Insert)
 	InsertKeyT_TT =	Tuş Eklemek
-	OpenT_TT =	Aç (Ctrl+O)
-	SaveT_TT =	Kaydet (Ctrl+S)
-	CutT_TT =	Kesmek
-	CopyT_TT =	Kopyala
-	PasteT_TT =	Yapıştırmak
-	SelAllT_TT =	Tümünü Seç
 	DefaultMacro_TT =	Program başlangıçta yüklemek için dosyayı seçin
 	VarCopyA_TT =	Akım değişken içeriğini kopyalama
 	VarCopyB_TT =	Akım değişken içeriğini kopyalama
