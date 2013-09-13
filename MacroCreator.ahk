@@ -258,7 +258,7 @@ IniRead, ShowExpOpt, %IniFilePath%, ExportOptions, ShowExpOpt, 0
 IniRead, MainWinSize, %IniFilePath%, WindowOptions, MainWinSize, W930 H630
 IniRead, MainWinPos, %IniFilePath%, WindowOptions, MainWinPos, Center
 IniRead, WinState, %IniFilePath%, WindowOptions, WinState, 1
-IniRead, ColSizes, %IniFilePath%, WindowOptions, ColSizes, 70,130,190,50,40,85,95,95,60,40
+IniRead, ColSizes, %IniFilePath%, WindowOptions, ColSizes, 70,185,335,60,60,100,150,225,85,50
 IniRead, ColOrder, %IniFilePath%, WindowOptions, ColOrder, 1,2,3,4,5,6,7,8,9,10
 IniRead, PrevWinSize, %IniFilePath%, WindowOptions, PrevWinSize, W450 H500
 IniRead, ShowPrev, %IniFilePath%, WindowOptions, ShowPrev, 0
@@ -418,7 +418,7 @@ GoSub, LoadLang
 GoSub, ObjCreate
 ToggleMode := ToggleC ? "T" : "P"
 If (ColSizes = "0,0,0,0,0,0,0,0,0,0")
-	ColSizes := "70,130,190,50,40,85,95,95,60,40"
+	ColSizes := "70,185,335,60,60,100,150,225,85,50"
 Loop, Parse, ColSizes, `,
 	Col_%A_Index% := A_LoopField
 Loop, Parse, ShowBands, `,
@@ -983,24 +983,24 @@ Gui, chPrev:Show, W450 H600 Hide
 TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	TbPrev.ModifyButton(8, "Hide")
 ,	sciPrev := new scintilla(hSciPrev)
-,	sciPrev.SetMarginWidthN(0, 10)
-,	sciPrev.SetMarginWidthN(1, 0)
+,	sciPrev.SetMarginWidthN(0x0, 0xA)
+,	sciPrev.SetMarginWidthN(0x1, 0x0)
 ,	sciPrev.SetWrapMode(TextWrap)
-,	sciPrev.SetLexer(200)
+,	sciPrev.SetLexer(0xC8)
 ,	sciPrev.StyleClearAll()
-,	sciPrev.StyleSetFore(11, 0x0086B3)
-,	sciPrev.StyleSetFore(12, 0x990000), sciPrev.StyleSetBold(12, True)
-,	sciPrev.StyleSetFore(13, 0x009B4E), sciPrev.StyleSetBold(13, True)
-,	sciPrev.StyleSetFore(16, 0x008080)
-,	sciPrev.StyleSetFore(15, 0xDD1144)
-,	sciPrev.StyleSetFore(33, 0x808080),	sciPrev.StyleSetSize(33, 7)
-,	sciPrev.SetKeywords(0, SyHi_Com)
-,	sciPrev.SetKeywords(1, SyHi_Fun)
-,	sciPrev.SetKeywords(2, SyHi_Keys)
-,	sciPrev.SetKeywords(5, SyHi_BIVar)
-,	sciPrev.SetKeywords(4, SyHi_Param)
+,	sciPrev.StyleSetFore(0xB, 0x0086B3)
+,	sciPrev.StyleSetFore(0xC, 0x990000), sciPrev.StyleSetBold(0x12, 0x1)
+,	sciPrev.StyleSetFore(0xD, 0x009B4E), sciPrev.StyleSetBold(0x13, 0x1)
+,	sciPrev.StyleSetFore(0x10, 0x008080)
+,	sciPrev.StyleSetFore(0xF, 0xDD1144)
+,	sciPrev.StyleSetFore(0x21, 0x808080),	sciPrev.StyleSetSize(0x21, 0x7)
+,	sciPrev.SetKeywords(0x0, SyHi_Com)
+,	sciPrev.SetKeywords(0x1, SyHi_Fun)
+,	sciPrev.SetKeywords(0x2, SyHi_Keys)
+,	sciPrev.SetKeywords(0x5, SyHi_BIVar)
+,	sciPrev.SetKeywords(0x4, SyHi_Param)
 ,	sciPrev.SetText("", Preview)
-,	sciPrev.SetReadOnly(True)
+,	sciPrev.SetReadOnly(0x1)
 
 Gui, 2:+Resize +MinSize215x20 +hwndPrevID
 Gui, 2:Add, Custom, ClassToolbarWindow32 hwndhTbPrevF gtbPrevF 0x0800 0x0100 0x0040 0x0008
@@ -1009,24 +1009,24 @@ Gui, 2:Add, StatusBar
 TB_Define(TbPrevF, hTbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	tbPrevF.ModifyButtonInfo(1, "Text", t_Lang125),	tbPrevF.ModifyButtonInfo(1, "Image", 93)
 ,	sciPrevF := new scintilla(hSciPrevF)
-,	sciPrevF.SetMarginWidthN(0, 10)
-,	sciPrevF.SetMarginWidthN(1, 0)
+,	sciPrevF.SetMarginWidthN(0x0, 0xA)
+,	sciPrevF.SetMarginWidthN(0x1, 0x0)
 ,	sciPrevF.SetWrapMode(TextWrap)
-,	sciPrevF.SetLexer(200)
+,	sciPrevF.SetLexer(0xC8)
 ,	sciPrevF.StyleClearAll()
-,	sciPrevF.StyleSetFore(11, 0x0086B3)
-,	sciPrevF.StyleSetFore(12, 0x990000), sciPrevF.StyleSetBold(12, True)
-,	sciPrevF.StyleSetFore(13, 0x009B4E), sciPrevF.StyleSetBold(13, True)
-,	sciPrevF.StyleSetFore(16, 0x008080)
-,	sciPrevF.StyleSetFore(15, 0xDD1144)
-,	sciPrevF.StyleSetFore(33, 0x808080), sciPrevF.StyleSetSize(33, 7)
-,	sciPrevF.SetKeywords(0, SyHi_Com)
-,	sciPrevF.SetKeywords(1, SyHi_Fun)
-,	sciPrevF.SetKeywords(2, SyHi_Keys)
-,	sciPrevF.SetKeywords(5, SyHi_BIVar)
-,	sciPrevF.SetKeywords(4, SyHi_Param)
+,	sciPrevF.StyleSetFore(0xB, 0x0086B3)
+,	sciPrevF.StyleSetFore(0xC, 0x990000), sciPrevF.StyleSetBold(0x12, 0x1)
+,	sciPrevF.StyleSetFore(0xD, 0x009B4E), sciPrevF.StyleSetBold(0x13, 0x1)
+,	sciPrevF.StyleSetFore(0x10, 0x008080)
+,	sciPrevF.StyleSetFore(0xF, 0xDD1144)
+,	sciPrevF.StyleSetFore(0x21, 0x808080),	sciPrevF.StyleSetSize(0x21, 0x7)
+,	sciPrevF.SetKeywords(0x0, SyHi_Com)
+,	sciPrevF.SetKeywords(0x1, SyHi_Fun)
+,	sciPrevF.SetKeywords(0x2, SyHi_Keys)
+,	sciPrevF.SetKeywords(0x5, SyHi_BIVar)
+,	sciPrevF.SetKeywords(0x4, SyHi_Param)
 ,	sciPrevF.SetText("", Preview)
-,	sciPrevF.SetReadOnly(True)
+,	sciPrevF.SetReadOnly(0x1)
 Gui, 2:Default
 SB_SetParts(150, 150)
 ,	SB_SetText("Macro" A_List ": " o_AutoKey[A_List], 1)
@@ -1060,13 +1060,13 @@ If !(ShowPrev)
 	return
 PrevPtr := FloatPrev ? sciPrevF : sciPrev
 Preview := LV_Export(A_List)
-,	PrevPtr.SetReadOnly(""), PrevPtr.ClearAll(), PrevPtr.SetText("", Preview)
-,	PrevPtr.ScrollToEnd(), PrevPtr.SetReadOnly(True)
+,	PrevPtr.SetReadOnly(0x0), PrevPtr.ClearAll(), PrevPtr.SetText("", Preview)
+,	PrevPtr.ScrollToEnd(), PrevPtr.SetReadOnly(0x1)
 ,	calcMargin := StrLen(PrevPtr.GetLineCount())*10
 If (calcMargin <> lastCalcMargin)
 {
 	lastCalcMargin := calcMargin
-	,	PrevPtr.SetMarginWidthN(0, calcMargin)
+	,	PrevPtr.SetMarginWidthN(0x0, calcMargin)
 }
 Gui, 2:Default
 SB_SetText("Macro" A_List ": " o_AutoKey[A_List], 1)
@@ -1707,7 +1707,7 @@ Gui, chMacro:Listview, InputList%A_List%
 HistoryMacro1 := new LV_Rows()
 HistoryMacro1.Add()
 GuiControl, 1:, Capt, 0
-Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "" : "Hide"), %CurrentFileName% - %AppName% v%CurrentVersion%
+Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "" : "Hide"), % (CurrentFileName ? CurrentFileName " - " : "") AppName " v" CurrentVersion
 SplitPath, CurrentFileName,, wDir
 SetWorkingDir %wDir%
 Gui, chMacro:Submit, NoHide
@@ -1793,7 +1793,7 @@ Loop, %TabCount%
 ,	LV_Data := PMCSet . PMC.LVGet("InputList" A_Index).Text . "`n"
 	FileAppend, %LV_Data%, %CurrentFileName%
 }
-Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "NA" : "Hide"), %CurrentFileName% - %AppName% v%CurrentVersion%
+Gui, 1:Show, % ((WinExist("ahk_id" PMCWinID)) ? "NA" : "Hide"), % (CurrentFileName ? CurrentFileName " - " : "") AppName " v" CurrentVersion
 SplitPath, CurrentFileName,, wDir
 SetWorkingDir %wDir%
 SavePrompt := False
@@ -5296,9 +5296,9 @@ Gui, 11:Add, Text, W120, %c_Lang207%:
 Gui, 11:Add, DDL, W120 -Multi vWCmd gWCmd, %WinCmd%
 Gui, 11:Add, Text, yp-10 x+10 W20 vTValue Disabled, 255
 Gui, 11:Add, Slider, y+0 W100 Buddy2TValue vN gN Range0-255 Disabled, 255
-Gui, 11:Add, Radio, -Wrap Checked yp+2 x+30 W70 vAoT R1, Toggle
-Gui, 11:Add, Radio, -Wrap yp x+5 W45 R1 vOTOn, On
-Gui, 11:Add, Radio, -Wrap yp x+5 W45 R1 vOTOff, Off
+Gui, 11:Add, Radio, -Wrap Checked yp+2 x+30 W70 vAoT1 R1, Toggle
+Gui, 11:Add, Radio, -Wrap yp x+5 W45 R1 vAoT2, On
+Gui, 11:Add, Radio, -Wrap yp x+5 W45 R1 vAoT3, Off
 Gui, 11:Add, Text, xs+10 y+10 W80 vValueT, %c_Lang056%:
 Gui, 11:Add, Edit, W430 -Multi Disabled vValue
 Gui, 11:Add, Text, W180, %c_Lang057%:
@@ -5338,7 +5338,7 @@ If (s_Caller = "Edit")
 		GuiControl, 11:ChooseString, WCmd, %WCmd%
 		SetTitleMatchMode, 3
 		If (WCmd = "AlwaysOnTop")
-			GuiControl, 11:, %Values%, 1
+			GuiControl, 11:, % (Values = "On") ? "Aot2" : (Values = "Off") ? "AoT3" : "", 1
 		Else If (WCmd = "Transparent")
 		{
 			GuiControl, 11:, N, %Values%
@@ -5415,10 +5415,9 @@ If (VState = 0)
 	Value := ""
 If (WinCom = "WinSet")
 {
-	GuiControlGet, Radio,, Button%AoT%, Text
 	Details := WCmd
 	If (WCmd = "AlwaysOnTop")
-		Details .= ", " Radio
+		Details .= ", " (Aot1 ? "Toggle" : Aot2 ? "On" : "Off")
 	Else If (WCmd = "Transparent")
 		Details .= ", " N
 	Else If VState = 1
@@ -5576,15 +5575,15 @@ Else
 }
 If ((WinCom = "WinSet") && (WCmd = "AlwaysOnTop"))
 {
-	GuiControl, 11:Enable, AoT
-	GuiControl, 11:Enable, OTOn
-	GuiControl, 11:Enable, OTOff
+	GuiControl, 11:Enable, AoT1
+	GuiControl, 11:Enable, AoT2
+	GuiControl, 11:Enable, AoT3
 }
 Else
 {
-	GuiControl, 11:Disable, AoT
-	GuiControl, 11:Disable, OTOn
-	GuiControl, 11:Disable, OTOff
+	GuiControl, 11:Disable, AoT1
+	GuiControl, 11:Disable, AoT2
+	GuiControl, 11:Disable, AoT3
 }
 If (WinCom = "WinSet")
 {
@@ -11162,7 +11161,7 @@ If WinExist("ahk_id" PMCWinID)
 Else
 {
 	Menu, Tray, Rename, %y_Lang002%, %y_Lang001%
-	Gui, 1:Show,, %CurrentFileName% - %AppName% v%CurrentVersion%
+	Gui, 1:Show,, % (CurrentFileName ? CurrentFileName " - " : "") AppName " v" CurrentVersion
 	GoSub, GuiSize
 }
 return
@@ -11363,7 +11362,6 @@ AbortKey := "F8"
 ,	IncPmc := 0
 ,	Exe_Exp := 0
 ,	ShowExpOpt := 0
-,	WinState := 1
 ,	TbNoTheme := 0
 ,	MultInst := 0
 ,	EvalDefault := 0
@@ -11405,7 +11403,8 @@ ColOrder := "1,2,3,4,5,6,7,8,9,10"
 Loop, %TabCount%
 	LVOrder_Set(10, ColOrder, ListID%A_Index%)
 SetColSizes:
-ColSizes := "70,130,190,50,40,85,95,95,60,40"
+WinGet, WinState, MinMax, ahk_id %PMCWinID%
+ColSizes := WinState ? "70,185,335,60,60,100,150,225,85,50" : "70,130,190,50,40,85,95,95,60,40"
 Loop, Parse, ColSizes, `,
 	Col_%A_Index% := A_LoopField
 Gui, chMacro:Default
