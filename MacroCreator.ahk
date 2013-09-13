@@ -985,7 +985,7 @@ TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	sciPrev := new scintilla(hSciPrev)
 ,	sciPrev.SetMarginWidthN(0x0, 0xA)
 ,	sciPrev.SetMarginWidthN(0x1, 0x0)
-,	sciPrev.SetWrapMode(TextWrap)
+,	sciPrev.SetWrapMode(TextWrap ? 0x1 : 0x0)
 ,	sciPrev.SetLexer(0xC8)
 ,	sciPrev.StyleClearAll()
 ,	sciPrev.StyleSetFore(0xB, 0x0086B3)
@@ -1011,7 +1011,7 @@ TB_Define(TbPrevF, hTbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	sciPrevF := new scintilla(hSciPrevF)
 ,	sciPrevF.SetMarginWidthN(0x0, 0xA)
 ,	sciPrevF.SetMarginWidthN(0x1, 0x0)
-,	sciPrevF.SetWrapMode(TextWrap)
+,	sciPrevF.SetWrapMode(TextWrap ? 0x1 : 0x0)
 ,	sciPrevF.SetLexer(0xC8)
 ,	sciPrevF.StyleClearAll()
 ,	sciPrevF.StyleSetFore(0xB, 0x0086B3)
@@ -1079,7 +1079,7 @@ TextWrap:
 TabIndent:
 TB_Edit(TbPrev, A_ThisLabel, %A_ThisLabel% := !%A_ThisLabel%)
 ,	TB_Edit(TbPrevF, A_ThisLabel, %A_ThisLabel%)
-,	sciPrev.SetWrapMode(TextWrap), sciPrevF.SetWrapMode(TextWrap)
+,	sciPrev.SetWrapMode(TextWrap ? 0x1 : 0x0), sciPrevF.SetWrapMode(TextWrap ? 0x1 : 0x0)
 GoSub, PrevRefresh
 return
 
@@ -11376,12 +11376,12 @@ AbortKey := "F8"
 ,	OSCaption := 0
 ,	CustomColors := 0
 ,	OnFinishCode := 1
-,	sciPrev.SetWrapMode(TextWrap)
-,	sciPrevF.SetWrapMode(TextWrap)
-,	TB_Edit(TbPrev, "TextWrap", TextWrap)
-,	TB_Edit(TbPrevF, "TextWrap", TextWrap)
-,	TB_Edit(TbPrev, "TabIndent", TabIndent)
-,	TB_Edit(TbPrevF, "TabIndent", TabIndent)
+,	sciPrev.SetWrapMode(0x0)
+,	sciPrevF.SetWrapMode(0x0)
+,	TB_Edit(TbPrev, "TextWrap", 0)
+,	TB_Edit(TbPrevF, "TextWrap", 0)
+,	TB_Edit(TbPrev, "TabIndent", 1)
+,	TB_Edit(TbPrevF, "TabIndent", 1)
 
 WinSet, Transparent, %OSTrans%, ahk_id %PMCOSC%
 GuiControl, 28:, OSTrans, 255
