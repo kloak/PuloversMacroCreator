@@ -370,7 +370,7 @@
 	c_Lang126 =	Code zur virtuelle Tastaturliste hinzugefügt.
 	c_Lang127 =	Geben Sie einen Namen für die Ausgabevariable ein
 	c_Lang128 =	Funktion aus externer Datei verwenden 
-	c_Lang130 =	Schleife unterbechen, wenn gefunden
+	c_Lang130 =	Wiederholen, bis
 	c_Lang131 =	Anwenden
 	c_Lang132 =	Schleife
 	c_Lang133 =	Datei
@@ -601,6 +601,7 @@
 	t_Lang149 =	Anwendung schließen
 	t_Lang150 =	Minimieren in den Tray
 	t_Lang151 =	Anzeige Bestätigung beim Schließen eines Makros
+	t_Lang152 =	Erstellen Sie Backups automatisch
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Öffnen
@@ -741,6 +742,7 @@
 	d_Lang080 =	Sie können dies in den Optionen > Einstellungen > Allgemein ändern.
 	d_Lang081 =	Sie können sich ändern und anpassen Layouts im Menü Ansicht.
 	d_Lang082 =	Die Datei wurde nicht gefunden!
+	d_Lang083 =	Ein Backup-Datei gefunden wurde. Möchten Sie es zu öffnen?
 		
 ; Start-up Tips		
 	Start_Tips =	

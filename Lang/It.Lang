@@ -370,7 +370,7 @@
 	c_Lang126 =	Codice aggiunto a Virtual List Keys!
 	c_Lang127 =	Digitare un nome per la variabile
 	c_Lang128 =	Utilizzare funzione da file esterno
-	c_Lang130 =	Loop Break se trovato
+	c_Lang130 =	Ripetere fino a quando
 	c_Lang131 =	Applicare
 	c_Lang132 =	Anello
 	c_Lang133 =	File
@@ -601,6 +601,7 @@
 	t_Lang149 =	Chiudi applicazione
 	t_Lang150 =	Riduci a icona nella tray
 	t_Lang151 =	Display di conferma quando si chiude una macro
+	t_Lang152 =	Creare automaticamente copie di backup
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Aperto
@@ -741,6 +742,7 @@
 	d_Lang080 =	È possibile modificare questo in Opzioni > Impostazioni > Generale.
 	d_Lang081 =	È possibile modificare e personalizzare i layout nel menu Visualizza.
 	d_Lang082 =	Il file non è stato trovato!
+	d_Lang083 =	È stato trovato un file di backup. Ti piacerebbe aprirlo?
 		
 ; Start-up Tips		
 	Start_Tips =	

@@ -199,6 +199,7 @@ IniRead, DefaultMacro, %IniFilePath%, Options, DefaultMacro, %A_Space%
 IniRead, StdLibFile, %IniFilePath%, Options, StdLibFile, %A_Space%
 IniRead, KeepDefKeys, %IniFilePath%, Options, KeepDefKeys, 0
 IniRead, TbNoTheme, %IniFilePath%, Options, TbNoTheme, 0
+IniRead, AutoBackup, %IniFilePath%, Options, AutoBackup, 1
 IniRead, MultInst, %IniFilePath%, Options, MultInst, 0
 IniRead, EvalDefault, %IniFilePath%, Options, EvalDefault, 0
 IniRead, CloseAction, %IniFilePath%, Options, CloseAction, %A_Space%
@@ -791,6 +792,18 @@ Else
 		GoSub, ShowTips
 	If (AutoUpdate)
 		SetTimer, CheckUpdates, -1
+	IfExist, %SettingsFolder%\~ActiveProject.pmc
+	{
+		Gui, 1:+OwnDialogs
+		MsgBox, 36, %AppName%, %d_Lang083%
+		IfMsgBox, Yes
+		{
+			Files := SettingsFolder "\~ActiveProject.pmc"
+			GoSub, OpenFile
+			CurrentFileName := "", SavePrompt := True
+			Gui, 1:Show,, %AppName% v%CurrentVersion%
+		}
+	}
 }
 HideWin := "", PlayHK := "", AutoPlay := "", TimerPlay := ""
 FreeMemory()
@@ -898,7 +911,10 @@ If (A_GuiEvent = "N")
 	If (rbEventCode = -835) ; RBN_BEGINDRAG
 		OnMessage(WM_NOTIFY, ""), LV_Colors.Detach(ListID%A_List%)
 	If (rbEventCode = -836) ; RBN_ENDDRAG
+	{
 		GoSub, RowCheck
+		GoSub, chMacroGuiSize
+	}
 }
 return
 
@@ -1825,6 +1841,19 @@ FileAppend, %LV_Data%, %ThisListFile%
 GoSub, RecentFiles
 return
 
+ProjBackup:
+If !(SavePrompt)
+	return
+Loop, %TabCount%
+{
+	PMCSet := "[PMC Code]|" o_AutoKey[A_Index]
+	. "|" o_ManKey[A_Index] "|" o_TimesG[A_Index]
+	. "|" CoordMouse "|" OnFinishCode "|" TabGetText(TabSel, A_Index) "`n"
+,	LV_Data := PMCSet . PMC.LVGet("InputList" A_Index).Text . "`n"
+	FileAppend, %LV_Data%, %SettingsFolder%\~ActiveProject.pmc
+}
+return
+
 RecentFiles:
 If (PmcRecentFiles <> "")
 {
@@ -2507,8 +2536,9 @@ Gui, 4:Add, Edit, vScreenDir W350 R1 -Multi, %ScreenDir%
 Gui, 4:Add, Button, -Wrap yp-1 x+0 W30 H23 vSearchScreen gSearchDir, ...
 Gui, 4:Tab, 5
 ; General
-Gui, 4:Add, GroupBox, Section ym xm+170 W400 H140, %t_Lang018%:
-Gui, 4:Add, Checkbox, -Wrap Checked%MultInst% ys+20 xs+10 vMultInst W380 R1, %t_Lang089%
+Gui, 4:Add, GroupBox, Section ym xm+170 W400 H155, %t_Lang018%:
+Gui, 4:Add, Checkbox, -Wrap Checked%AutoBackup% ys+20 xs+10 vAutoBackup W380 R1, %t_Lang152%
+Gui, 4:Add, Checkbox, -Wrap Checked%MultInst% vMultInst W380 R1, %t_Lang089%
 Gui, 4:Add, Checkbox, -Wrap Checked%TbNoTheme% vTbNoTheme W380 R1, %t_Lang142%
 Gui, 4:Add, Checkbox, -Wrap Checked%EvalDefault% vEvalDefault W380 R1, %t_Lang059%
 Gui, 4:Add, Checkbox, -Wrap Checked%ConfirmDelete% vConfirmDelete W380 R1, %t_Lang151%
@@ -2524,8 +2554,8 @@ Gui, 4:Add, Text, yp x+20 W85, %t_Lang082% "*"
 Gui, 4:Add, Text, yp x+10 W40 vIfLVColor gEditColor c%IfLVColor%, ██████
 Gui, 4:Add, Checkbox, -Wrap Checked%ShowActIdent% y+15 xs+10 vShowActIdent W380 R1, %t_Lang083%
 Gui, 4:Add, Text, W380, %t_Lang084%
-Gui, 4:Add, GroupBox, Section y+15 xs W400 H120, %t_Lang062%:
-Gui, 4:Add, Edit, ys+20 xs+10 W380 r5 vEditMod, %VirtualKeys%
+Gui, 4:Add, GroupBox, Section y+15 xs W400 H100, %t_Lang062%:
+Gui, 4:Add, Edit, ys+20 xs+10 W380 r3 vEditMod, %VirtualKeys%
 Gui, 4:Add, Button, -Wrap y+0 W75 H23 gConfigRestore, %t_Lang063%
 Gui, 4:Add, Button, -Wrap yp x+10 W75 H23 gKeyHistory, %c_Lang124%
 Gui, 4:Tab, 6
@@ -5632,10 +5662,10 @@ Gui, 19:Add, Button, -Wrap yp xs+240 W25 H23 hwndColorPick vColorPick gGetPixel 
 	ILButton(ColorPick, ResDllPath ":" 100)
 Gui, 19:Add, Edit, y+5 xs+10 vImgFile W225 R1 -Multi
 Gui, 19:Add, Button, -Wrap yp-1 x+0 W30 H23 vSearchImg gSearchImg, ...
-Gui, 19:Add, Text, y+5 xs+10 W173 R1 Right, %c_Lang067%:
-Gui, 19:Add, DDL, yp-2 x+10 W70 vIfFound gIfFound, Continue||Break|Stop|Prompt|Move|Left Click|Right Click|Middle Click
-Gui, 19:Add, Text, y+5 xs+10 W173 R1 Right, %c_Lang068%:
-Gui, 19:Add, DDL, yp-2 x+10 W70 vIfNotFound, Continue||Break|Stop|Prompt
+Gui, 19:Add, Text, y+5 xs+10 W163 R1 Right, %c_Lang067%:
+Gui, 19:Add, DDL, yp-2 x+10 W80 vIfFound gIfFound, Continue||Break|Stop|Prompt|Move|Left Click|Right Click|Middle Click
+Gui, 19:Add, Text, y+5 xs+10 W163 R1 Right, %c_Lang068%:
+Gui, 19:Add, DDL, yp-2 x+10 W80 vIfNotFound, Continue||Break|Stop|Prompt
 Gui, 19:Add, CheckBox, Checked -Wrap y+0 xs+10 W180 vAddIf, %c_Lang162%
 Gui, 19:Add, Text, -Wrap y+5 xs+10 W250 r1 cGray, %c_Lang069%
 ; Preview
@@ -5672,7 +5702,8 @@ Gui, 19:Add, Edit, yp x+10 W120 vDelayC
 Gui, 19:Add, UpDown, vDelayX 0x80 Range0-999999999, %DelayG%
 Gui, 19:Add, Radio, -Wrap Checked W120 vMsc R1, %c_Lang018%
 Gui, 19:Add, Radio, -Wrap W120 vSec R1, %c_Lang019%
-Gui, 19:Add, Checkbox, ys+75 xs+10 W125 vBreakLoop R2, %c_Lang130%
+Gui, 19:Add, Checkbox, -Wrap ys+65 xs+10 W125 vBreakLoop gLoopUntil R1, %c_Lang130%
+Gui, 19:Add, DDL, -Wrap W100 vLoopUntil Disabled, Found||Not Found
 Gui, 19:Add, Button, -Wrap Section Default xm W75 H23 gImageOK, %c_Lang020%
 Gui, 19:Add, Button, -Wrap ys W75 H23 gImageCancel, %c_Lang021%
 Gui, 19:Add, Button, -Wrap ys W75 H23 vImageApply gImageApply Disabled, %c_Lang131%
@@ -5732,8 +5763,17 @@ If (s_Caller = "Edit")
 	GuiControl, 19:, ePosY, %Det4%
 	GuiControl, 19:, ImgFile, %Det5%
 	GuiControl, 19:ChooseString, CoordPixel, %Window%
-	If Target = Break
+	If (Target = "Break")
+	{
 		GuiControl, 19:, BreakLoop, 1
+		GoSub, LoopUntil
+	}
+	Else If (Target = "Continue")
+	{
+		GuiControl, 19:, BreakLoop, 1
+		GoSub, LoopUntil
+		GuiControl, 19:Choose, LoopUntil, 2
+	}
 	GuiControl, 19:Enable, ImageApply
 	GuiControl, 19:, AddIf, 0
 	GuiControl, 19:Disable, AddIf
@@ -5782,7 +5822,16 @@ Details := iPosX "`, " iPosY "`, " ePosX "`, " ePosY "`, " ImgFile
 If PixelS = 1
 	Type := cType15, Details .= ", " Variat "," (Fast ? " Fast" : "") (RGB ? " RGB" : "")
 Details := RTrim(Details, ", ")
-Target := BreakLoop ? "Break" : ""
+If (BreakLoop)
+{
+	TimesX := 1
+	If (LoopUntil = "Found")
+		Target := "Break"
+	Else
+		Target := "Continue"
+}
+Else
+	Target := ""
 EscCom("Details|TimesX|DelayX|CoordPixel")
 If (A_ThisLabel <> "ImageApply")
 {
@@ -5968,6 +6017,13 @@ Else If OnEnter = 1
 Gui, 19:-Disabled
 Gui, 25:Destroy
 Gui, 19:Default
+return
+
+LoopUntil:
+Gui, 19:Submit, NoHide
+GuiControl, 19:Enable%BreakLoop%, LoopUntil
+GuiControl, 19:Disable%BreakLoop%, EdRept
+GuiControl, 19:Disable%BreakLoop%, TimesX
 return
 
 ImgConfigCancel:
@@ -8132,6 +8188,8 @@ If !WinExist("ahk_id" PMCWinID)
 Else If !ListCount
 	return
 Gui, chMacro:Submit, NoHide
+If (AutoBackup)
+	GoSub, ProjBackup
 GoSub, PlayActive
 If (ActiveKeys = "Error")
 	return
@@ -11266,6 +11324,7 @@ Loop, 9
 StringTrimRight, ShowBands, ShowBands, 1
 GoSub, WriteSettings
 IL_Destroy(hIL_Icons)
+FileDelete, %SettingsFolder%\~ActiveProject.pmc
 Loop, %A_Temp%\PMC_*.ahk
 	FileDelete, %A_LoopFileFullPath%
 ExitApp
@@ -11365,6 +11424,7 @@ AbortKey := "F8"
 ,	Exe_Exp := 0
 ,	ShowExpOpt := 0
 ,	TbNoTheme := 0
+,	AutoBackup := 1
 ,	MultInst := 0
 ,	EvalDefault := 0
 ,	CloseAction := ""
@@ -11587,6 +11647,7 @@ IniWrite, %DefaultMacro%, %IniFilePath%, Options, DefaultMacro
 IniWrite, %StdLibFile%, %IniFilePath%, Options, StdLibFile
 IniWrite, %KeepDefKeys%, %IniFilePath%, Options, KeepDefKeys
 IniWrite, %TbNoTheme%, %IniFilePath%, Options, TbNoTheme
+IniWrite, %AutoBackup%, %IniFilePath%, Options, AutoBackup
 IniWrite, %MultInst%, %IniFilePath%, Options, MultInst
 IniWrite, %EvalDefault%, %IniFilePath%, Options, EvalDefault
 IniWrite, %CloseAction%, %IniFilePath%, Options, CloseAction

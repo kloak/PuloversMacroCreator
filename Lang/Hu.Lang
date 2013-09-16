@@ -370,7 +370,7 @@
 	c_Lang126 =	Code adunk virtuális Keys listája!
 	c_Lang127 =	Írjon be egy nevet a változónak
 	c_Lang128 =	A funkció a külső fájl
-	c_Lang130 =	Szünet loop ha találtak
+	c_Lang130 =	Ismételje addig, amíg
 	c_Lang131 =	Alkalmaz
 	c_Lang132 =	Hurok
 	c_Lang133 =	Fájl
@@ -601,6 +601,7 @@
 	t_Lang149 =	Bezár alkalmazás
 	t_Lang150 =	Tálcára
 	t_Lang151 =	Jelenítsen meg bezárásakor a makró
+	t_Lang152 =	Létrehozása mentések automatikusan
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Nyitva
@@ -741,6 +742,7 @@
 	d_Lang080 =	Ezt meg lehet változtani az Opciók > Beállítások > Általános.
 	d_Lang081 =	Meg lehet változtatni, és testre elrendezést a Nézet menüben.
 	d_Lang082 =	A fájl nem található!
+	d_Lang083 =	A biztonsági mentés találtak. Szeretnéd, hogy nyissa meg?
 		
 ; Start-up Tips		
 	Start_Tips =	

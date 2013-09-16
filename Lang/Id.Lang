@@ -370,7 +370,7 @@
 	c_Lang126 =	Kode ditambahkan ke Virtual Keys Daftar!
 	c_Lang127 =	Ketik nama untuk variabel
 	c_Lang128 =	Gunakan Fungsi dari Eksternal Berkas
-	c_Lang130 =	Istirahat loop jika ditemukan
+	c_Lang130 =	Ulangi sampai
 	c_Lang131 =	Menerapkan
 	c_Lang132 =	Putaran
 	c_Lang133 =	Berkas
@@ -601,6 +601,7 @@
 	t_Lang149 =	Tutup aplikasi
 	t_Lang150 =	Minimalkan ke tray
 	t_Lang151 =	Tampilan konfirmasi ketika menutup makro
+	t_Lang152 =	Buat backup otomatis
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Buka
@@ -741,6 +742,7 @@
 	d_Lang080 =	Anda dapat mengubah ini dalam Pilihan > Pengaturan > Umum.
 	d_Lang081 =	Anda dapat mengubah dan menyesuaikan tata letak dalam menu View.
 	d_Lang082 =	Berkas tidak ditemukan!
+	d_Lang083 =	Sebuah file cadangan telah ditemukan. Apakah Anda ingin membukanya?
 		
 ; Start-up Tips		
 	Start_Tips =	

@@ -370,7 +370,7 @@
 	c_Lang126 =	Código añadió a la lista de teclas virtuales!
 	c_Lang127 =	Escriba un nombre para la variable
 	c_Lang128 =	Utilizar función de archivo externo
-	c_Lang130 =	Iterrumpir loop si encontrado
+	c_Lang130 =	Repita hasta que
 	c_Lang131 =	Aplicar
 	c_Lang132 =	Loop
 	c_Lang133 =	Archivo
@@ -601,6 +601,7 @@
 	t_Lang149 =	Cerrar la aplicación
 	t_Lang150 =	Minimizar a la bandeja
 	t_Lang151 =	Pantalla de confirmación al cerrar una macro
+	t_Lang152 =	Crear copias de seguridad de forma automática
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Abierto
@@ -741,6 +742,7 @@
 	d_Lang080 =	Usted puede cambiar esto en Opciones > Configuración > General.
 	d_Lang081 =	Usted puede cambiar y personalizar los diseños en el menú View.
 	d_Lang082 =	El archivo no se ha encontrado!
+	d_Lang083 =	Se ha encontrado un archivo de copia de seguridad. ¿Quieres abrirlo?
 		
 ; Start-up Tips		
 	Start_Tips =	

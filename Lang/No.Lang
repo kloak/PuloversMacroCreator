@@ -370,7 +370,7 @@
 	c_Lang126 =	Kode lagt til Virtual Keys List!
 	c_Lang127 =	Skriv inn et navn på variabelen
 	c_Lang128 =	Bruk funksjon fra ekstern fil
-	c_Lang130 =	Bryt sløyfe hvis det blir funnet
+	c_Lang130 =	Gjenta til
 	c_Lang131 =	Påfør
 	c_Lang132 =	Loop
 	c_Lang133 =	Fil
@@ -601,6 +601,7 @@
 	t_Lang149 =	Lukk programmet
 	t_Lang150 =	Minimere å brett
 	t_Lang151 =	Vise bekreftelse når du lukker en makro
+	t_Lang152 =	Lag backup automatisk
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Åpent
@@ -741,6 +742,7 @@
 	d_Lang080 =	Du kan endre dette i Alternativer > Innstillinger > Generelt.
 	d_Lang081 =	Du kan endre og tilpasse layout på Vis-menyen.
 	d_Lang082 =	Filen ble ikke funnet!
+	d_Lang083 =	En backup filen har blitt funnet. Vil du åpne den?
 		
 ; Start-up Tips		
 	Start_Tips =	

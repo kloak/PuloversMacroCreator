@@ -370,7 +370,7 @@
 	c_Lang126 =	Kod Sanal Keys Listesi'ne eklendi!
 	c_Lang127 =	Değişken için bir ad yazın
 	c_Lang128 =	Harici Dosyadan Fonksiyon kullanın
-	c_Lang130 =	Bulursa döngü kırmak
+	c_Lang130 =	Tekrar kadar
 	c_Lang131 =	Uygulamak
 	c_Lang132 =	Döngü
 	c_Lang133 =	Dosya
@@ -601,6 +601,7 @@
 	t_Lang149 =	yakın başvuru
 	t_Lang150 =	Tepsisine küçült
 	t_Lang151 =	Bir makro kapatırken onayını görüntüleyebilir
+	t_Lang152 =	Otomatik yedekleme oluşturma
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Açık
@@ -741,6 +742,7 @@
 	d_Lang080 =	Seçenekler > Ayarlar > Genel değiştirebilirsiniz.
 	d_Lang081 =	Değiştirmek Görünüm menüsünden düzenleri özelleştirebilirsiniz.
 	d_Lang082 =	Dosya bulunamadı!
+	d_Lang083 =	Bir yedekleme dosyası tespit edilmiştir. Bunu açmak ister misiniz?
 		
 ; Start-up Tips		
 	Start_Tips =	

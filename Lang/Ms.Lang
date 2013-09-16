@@ -370,7 +370,7 @@
 	c_Lang126 =	Kod ditambah kepada Maya Senarai Keys!
 	c_Lang127 =	Taip nama untuk berubah-ubah
 	c_Lang128 =	Gunakan Fungsi dari Fail Luar
-	c_Lang130 =	Cuti gelung jika didapati
+	c_Lang130 =	Ulangi sehingga
 	c_Lang131 =	Memohon
 	c_Lang132 =	Loop
 	c_Lang133 =	Fail
@@ -601,6 +601,7 @@
 	t_Lang149 =	Tutup permohonan
 	t_Lang150 =	Kurangkan ke dulang
 	t_Lang151 =	Memaparkan pengesahan apabila menutup makro
+	t_Lang152 =	Membuat sandaran secara automatik
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Buka
@@ -741,6 +742,7 @@
 	d_Lang080 =	Anda boleh menukar ini dalam Pilihan > Tetapan > Umum.
 	d_Lang081 =	Anda boleh menukar dan menyesuaikan susun atur dalam menu View.
 	d_Lang082 =	Fail tidak dijumpai!
+	d_Lang083 =	Satu fail sandaran yang telah dijumpai. Adakah anda ingin membukanya?
 		
 ; Start-up Tips		
 	Start_Tips =	

@@ -370,7 +370,7 @@
 	c_Lang126 =	Kod dodan Virtualni ključevi listu!
 	c_Lang127 =	Upišite naziv za promjenjive
 	c_Lang128 =	Pomoću funkcije s vanjske datoteke
-	c_Lang130 =	Break petlju ako se otkrije
+	c_Lang130 =	Ponovite sve dok
 	c_Lang131 =	Primijeniti
 	c_Lang132 =	Petlja
 	c_Lang133 =	File
@@ -601,6 +601,7 @@
 	t_Lang149 =	Zatvori prijava
 	t_Lang150 =	Smanji u ladicu
 	t_Lang151 =	Prikaz potvrdu prilikom zatvaranja makro
+	t_Lang152 =	Stvaranje sigurnosne kopije automatski
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Otvoreno
@@ -741,6 +742,7 @@
 	d_Lang080 =	Možete promijeniti u Opcije > Postavke > Općenito.
 	d_Lang081 =	Možete promijeniti i prilagoditi izglede u izborniku View.
 	d_Lang082 =	Datoteka nije pronađena!
+	d_Lang083 =	Kopija je pronađena. Želite li ga otvoriti?
 		
 ; Start-up Tips		
 	Start_Tips =	

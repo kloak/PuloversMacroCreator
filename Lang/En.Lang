@@ -370,7 +370,7 @@
 	c_Lang126 =	Code added to Virtual Keys List!
 	c_Lang127 =	Type a name for the variable
 	c_Lang128 =	Use Function from External File
-	c_Lang130 =	Break loop if found
+	c_Lang130 =	Repeat until
 	c_Lang131 =	Apply
 	c_Lang132 =	Loop
 	c_Lang133 =	File
@@ -601,6 +601,7 @@
 	t_Lang149 =	Close application
 	t_Lang150 =	Minimize to tray
 	t_Lang151 =	Display confirmation when closing a macro
+	t_Lang152 =	Create backups automatically
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Open
@@ -741,6 +742,7 @@
 	d_Lang080 =	You can change this in Options > Settings > General.
 	d_Lang081 =	You can change and customize layouts in the View menu.
 	d_Lang082 =	The file was not found!
+	d_Lang083 =	A backup file has been found. Would you like to open it?
 		
 ; Start-up Tips		
 	Start_Tips =	

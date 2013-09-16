@@ -370,7 +370,7 @@
 	c_Lang126 =	Kód pridaný do virtuálnych tlačidiel List!
 	c_Lang127 =	Zadajte názov premennej
 	c_Lang128 =	Použitie funkcie z externého súboru
-	c_Lang130 =	Prestávka slučku Ak sa nájde
+	c_Lang130 =	Opakujte, kým
 	c_Lang131 =	Platiť
 	c_Lang132 =	Slučka
 	c_Lang133 =	Súbor
@@ -601,6 +601,7 @@
 	t_Lang149 =	Zavrieť aplikácie
 	t_Lang150 =	Minimalizovať do tray
 	t_Lang151 =	Zobraziť potvrdenie pri zatváraní makra
+	t_Lang152 =	Vytvorenie zálohy automaticky
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Otvorené
@@ -741,6 +742,7 @@
 	d_Lang080 =	Toto nastavenie môžete zmeniť v Možnosti > Nastavenie > Všeobecné.
 	d_Lang081 =	Môžete zmeniť a prispôsobiť rozvrhnutie v ponuke Zobraziť.
 	d_Lang082 =	Súbor nebol nájdený!
+	d_Lang083 =	Záložný súbor nebol nájdený. Chceli by ste ho otvoriť?
 		
 ; Start-up Tips		
 	Start_Tips =	

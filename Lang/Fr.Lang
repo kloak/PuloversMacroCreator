@@ -370,7 +370,7 @@
 	c_Lang126 =	Code ajouté à la liste des touches virtuelles!
 	c_Lang127 =	Tapez le nom de la variable
 	c_Lang128 =	Utilisez la fonction de fichier externe
-	c_Lang130 =	Casser boucle s'il est trouvé
+	c_Lang130 =	Répétez jusqu'à ce que
 	c_Lang131 =	Appliquer
 	c_Lang132 =	Boucle
 	c_Lang133 =	Dossier
@@ -601,6 +601,7 @@
 	t_Lang149 =	Fermer l'application
 	t_Lang150 =	Réduire en icône
 	t_Lang151 =	Afficher confirmation lors de la fermeture d'une macro
+	t_Lang152 =	Créer des sauvegardes automatiquement
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Ouvert
@@ -741,6 +742,7 @@
 	d_Lang080 =	Vous pouvez modifier ce paramètre dans Options > Paramètres > Général.
 	d_Lang081 =	Vous pouvez modifier et personnaliser la disposition dans le menu Affichage.
 	d_Lang082 =	Le fichier n'a pas été trouvé!
+	d_Lang083 =	Un fichier de sauvegarde a été trouvé. Voulez-vous ouvrir?
 		
 ; Start-up Tips		
 	Start_Tips =	

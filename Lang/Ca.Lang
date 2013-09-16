@@ -370,7 +370,7 @@
 	c_Lang126 =	Codi afegida a la llista de tecles virtuals!
 	c_Lang127 =	Escriviu el nom de la variable
 	c_Lang128 =	Utilitzeu la funció d'arxiu extern
-	c_Lang130 =	Trencament de llaç si es troba
+	c_Lang130 =	Repetiu fins que
 	c_Lang131 =	Aplicar
 	c_Lang132 =	Bucle
 	c_Lang133 =	Expedient
@@ -601,6 +601,7 @@
 	t_Lang149 =	Tancar l'aplicació
 	t_Lang150 =	Minimitza a la safata
 	t_Lang151 =	Pantalla de confirmació en tancar una macro
+	t_Lang152 =	Crea còpies de seguretat de forma automàtica
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Obert
@@ -741,6 +742,7 @@
 	d_Lang080 =	Vostè pot canviar això a Opcions > Configuració > General.
 	d_Lang081 =	Vostè pot canviar i personalitzar els dissenys al menú View.
 	d_Lang082 =	El fitxer no s'ha trobat!
+	d_Lang083 =	S'ha trobat un fitxer de còpia de seguretat. Vols obrir-lo?
 		
 ; Start-up Tips		
 	Start_Tips =	

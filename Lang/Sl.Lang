@@ -370,7 +370,7 @@
 	c_Lang126 =	Koda doda Virtual Seznam Keys!
 	c_Lang127 =	Vnesite ime za spremenljivko
 	c_Lang128 =	Uporabite funkcijo iz zunanje datoteke
-	c_Lang130 =	Prekinil zanko, če je ugotovljeno,
+	c_Lang130 =	Ponavljajte, dokler
 	c_Lang131 =	Uporabi
 	c_Lang132 =	Zanka
 	c_Lang133 =	Datoteka
@@ -601,6 +601,7 @@
 	t_Lang149 =	Zapri aplikacija
 	t_Lang150 =	Zmanjšati v pladenj
 	t_Lang151 =	Prikaže potrditev pri zapiranju makro
+	t_Lang152 =	Ustvarite varnostne kopije samodejno
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Odprite
@@ -741,6 +742,7 @@
 	d_Lang080 =	To lahko spremenite v Možnosti > Nastavitve > Splošno.
 	d_Lang081 =	Lahko spremenite in prilagodite postavitev v meniju Pogled.
 	d_Lang082 =	Datoteke ni bilo mogoče najti!
+	d_Lang083 =	Varnostna kopija je bila najdena. Bi radi, da jo odprete?
 		
 ; Start-up Tips		
 	Start_Tips =	

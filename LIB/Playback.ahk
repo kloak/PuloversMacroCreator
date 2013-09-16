@@ -429,7 +429,7 @@
 				}
 				This_Point := PointMarker
 				GoSub, SplitStep
-				Loop, %TimesX%
+				While, TimesX
 				{
 					If StopIt
 					{
@@ -439,13 +439,22 @@
 					}
 					GoSub, pb_%Type%
 					LastError := ErrorLevel
+					If ((Type = cType15) || (Type = cType16))
+					{
+						If ((TakeAction = "Break") || ((Target = "Break") && (SearchResult = 0)))
+						{
+							TakeAction := 0
+							break
+						}
+						Else If ((Target = "Continue") && (SearchResult))
+							break
+						Else If (Target = "")
+							TimesX--
+					}
+					Else
+						TimesX--
 					If Type in Sleep,KeyWait,MsgBox
 						continue
-					If ((TakeAction = "Break") || ((Target = "Break") && (SearchResult = 0)))
-					{
-						TakeAction := 0
-						break
-					}
 					If !(Manual)
 						GoSub, pb_Sleep
 				}
@@ -820,19 +829,23 @@ LoopSection(Start, End, lcX, lcL, PointO, mainL, mainC)
 				}
 				This_Point := PointMarker
 				GoSub, SplitStep
-				Loop, %TimesX%
+				While, TimesX
 				{
 					If StopIt
 						break 3
 					GoSub, pb_%Type%
-					LastError := ErrorLevel
+					LastError := ErrorLevel, TimesX--
 					If Type in Sleep,KeyWait
 						continue
-					
-					If ((TakeAction = "Break") || ((Target = "Break") && (SearchResult = 0)))
+					If ((Type = cType15) || (Type = cType16))
 					{
-						TakeAction := 0
-						break
+						If ((TakeAction = "Break") || ((Target = "Break") && (SearchResult = 0)))
+						{
+							TakeAction := 0
+							break
+						}
+						Else If ((Target = "Continue") && (SearchResult = 0))
+							TimesX := 1
 					}
 					GoSub, pb_Sleep
 				}

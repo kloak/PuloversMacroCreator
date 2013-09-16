@@ -47,6 +47,7 @@ Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jör
 * Added Drag-Macros feature.
 * Added Close and Edit menu when clicking over a Macro tab.
 * Added Close with Mouse Middle click over a Macro tab.
+* Added *Loop until* option in Image/Pixel Search (replaces "Break if found").
 * Added individual *Pause* hotkey.
 * Added *Multiple Column* search in *Find/Replace* window.
 * Added *Set key delay* option in *Text* command window.
@@ -54,6 +55,7 @@ Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jör
 * Added *Edit Script* button in *Preview* window.
 * Added support for basic Arrays using the built-in function *Array*.
 * Added support for functions in *Assign Variable* window when using the *Expression* option.
+* Added automatic backups.
 * Added translations to Malay and Vietnamese.
 * Added *Portable Install* option in installer.
 * Paste command now works on mutiple selections.

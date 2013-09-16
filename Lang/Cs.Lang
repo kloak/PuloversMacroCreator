@@ -370,7 +370,7 @@
 	c_Lang126 =	Kód přidán do Virtual Keys seznam!
 	c_Lang127 =	Zadejte název proměnné
 	c_Lang128 =	Pomocí funkce z externího souboru
-	c_Lang130 =	Přestávka smyčku li nalezen
+	c_Lang130 =	Opakujte, dokud
 	c_Lang131 =	Platit
 	c_Lang132 =	Smyčka
 	c_Lang133 =	Soubor
@@ -601,6 +601,7 @@
 	t_Lang149 =	Zavřít aplikace
 	t_Lang150 =	Minimalizovat do tray
 	t_Lang151 =	Zobrazit potvrzení při zavírání makra
+	t_Lang152 =	Vytvoření zálohy automaticky
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Otevřít
@@ -741,6 +742,7 @@
 	d_Lang080 =	Toto nastavení můžete změnit v Možnosti > Nastavení > Obecné.
 	d_Lang081 =	Můžete změnit a přizpůsobit rozvržení v nabídce Zobrazit.
 	d_Lang082 =	Soubor nebyl nalezen!
+	d_Lang083 =	Záložní soubor nebyl nalezen. Chtěli byste jej otevřít?
 		
 ; Start-up Tips		
 	Start_Tips =	

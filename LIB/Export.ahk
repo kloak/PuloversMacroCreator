@@ -163,15 +163,15 @@
 				Else If (Act1 = "Stop")
 					RowData .= "`n`tReturn"
 				Else If (Act1 = "Move")
-					RowData .= "`n" ((Target = "Break") ? "{`n" : "`t") "Click, %FoundX%, %FoundY%, 0" ((Target = "Break") ? "`nBreak`n}" : "")
+					RowData .= "`nClick, %FoundX%, %FoundY%, 0"
 				Else If InStr(Act1, "Click")
 				{
 					Loop, Parse, Act1, %A_Space%
 						Action%A_Index% := A_LoopField
-					RowData .= "`n" ((Target = "Break") ? "{`n" : "`t") "Click, %FoundX%, %FoundY% " Action1 ", 1" ((Target = "Break") ? "`nBreak`n}" : "")
+					RowData .= "`nClick, %FoundX%, %FoundY% " Action1 ", 1"
 				}
 				Else If (Act1 = "Prompt")
-					RowData .= "`n{`nMsgBox, 49, " d_Lang035 ", " d_Lang036 " %FoundX%x%FoundY%.``n" d_Lang038 "`nIfMsgBox, Cancel`n`tReturn" ((Target = "Break") ? "`nBreak" : "") "`n}"
+					RowData .= "`n{`nMsgBox, 49, " d_Lang035 ", " d_Lang036 " %FoundX%x%FoundY%.``n" d_Lang038 "`nIfMsgBox, Cancel`n`tReturn`n}"
 			}
 			If (Act2 <> "Continue")
 			{
@@ -184,7 +184,11 @@
 					RowData .= "`n{`nMsgBox, 49, " d_Lang035 ", " d_Lang037 "``n" d_Lang038 "`nIfMsgBox, Cancel`n`tReturn`n}"
 			}
 			GoSub, Add_CD
-			If ((TimesX > 1) || InStr(TimesX, "%"))
+			If (Target = "Break")
+				RowData := "`nLoop`n{" RowData "`n}`nUntil ErrorLevel = 0"
+			Else If (Target = "Continue")
+				RowData := "`nLoop`n{" RowData "`n}`nUntil ErrorLevel"
+			Else If ((TimesX > 1) || InStr(TimesX, "%"))
 				RowData := "`nLoop, " TimesX "`n{" RowData "`n}"
 		}
 		Else If (Type = cType17)

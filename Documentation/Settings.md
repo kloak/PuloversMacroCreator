@@ -57,13 +57,17 @@ See [Playback Page](p3-Playback.html#playback-options).
 
 ## General
 
+**Create backups automatically**: If enabled the program will automatically create a backup file of the active project everytime the user presses the *Activate Macros* button (green play button).
+
 **Allow Multiple Instances**: Determines whether Macro Creator is allowed to run concurrent instances.
 
 **Remove Theme from Toolbars**: Removes the current theme colors from the main window toolbars (you must restart the application to apply the changes).
 
 **Use Expression by default for Variables Assignment**: Determines whether the *Expression* option will be enabled by default for new Variable Assignments.
 
-**Allow Dragging Rows**: Enables / Disables row dragging with mouse in the Macro lists.
+**Display confirmation when closing a macro**: Enables / Disables prompt before closing a macro.
+
+**Action of main window's close button**: Determines whether to close the application or minimize it to tray when the close button on the title bar is clicked or Alt+F4 is pressed.
 
 **Show Colors & Help Marks for Loops and Statements**: When activated rows inside Loops and text of rows inside Statements will be shown in colors, also braces and wildcards will be placed in front of command's index as representation to help visualize which rows are nested. Braces represent Loops and Wildcards represent If Statements, so for example *N* \*{\*{ is equivalent to:  
 > If

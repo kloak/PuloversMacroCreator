@@ -370,7 +370,7 @@
 	c_Lang126 =	Kod dodany do wirtualnej listy Keys!
 	c_Lang127 =	Wpisz nazwę zmiennej
 	c_Lang128 =	Użyj funkcji z zewnętrznego pliku
-	c_Lang130 =	Przerwa pętli w przypadku stwierdzenia
+	c_Lang130 =	Powtarzaj, aż
 	c_Lang131 =	Zastosować
 	c_Lang132 =	Pętla
 	c_Lang133 =	Plik
@@ -601,6 +601,7 @@
 	t_Lang149 =	Close aplikacji
 	t_Lang150 =	Zminimalizować do zasobnika
 	t_Lang151 =	Wyświetlanie potwierdzenia przy zamykaniu makro
+	t_Lang152 =	Tworzenie kopii zapasowych automatycznie
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Otwarte
@@ -741,6 +742,7 @@
 	d_Lang080 =	Można to zmienić w Opcje > Ustawienia > Ogólne.
 	d_Lang081 =	Możesz zmienić i dostosować układy w menu Widok.
 	d_Lang082 =	Plik nie został znaleziony!
+	d_Lang083 =	Plik kopii zapasowej został znaleziony. Czy chcesz go otworzyć?
 		
 ; Start-up Tips		
 	Start_Tips =	

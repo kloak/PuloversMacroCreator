@@ -370,7 +370,7 @@
 	c_Lang126 =	Mã thêm vào phím ảo Danh sách!
 	c_Lang127 =	Nhập tên cho biến
 	c_Lang128 =	Sử dụng chức năng từ tập tin bên ngoài
-	c_Lang130 =	Phá vỡ vòng lặp nếu tìm thấy
+	c_Lang130 =	Lặp lại cho đến khi
 	c_Lang131 =	Áp dụng
 	c_Lang132 =	Vòng lặp
 	c_Lang133 =	Tập tin
@@ -601,6 +601,7 @@
 	t_Lang149 =	Đóng ứng dụng
 	t_Lang150 =	Giảm thiểu để khay
 	t_Lang151 =	Hiển thị xác nhận khi đóng một vĩ mô
+	t_Lang152 =	Tạo bản sao lưu tự động
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Mở
@@ -741,6 +742,7 @@
 	d_Lang080 =	Bạn có thể thay đổi điều này trong Tùy chọn > Cài đặt > Chung.
 	d_Lang081 =	Bạn có thể thay đổi và tùy chỉnh bố trí trong menu View.
 	d_Lang082 =	Các tập tin không tìm thấy!
+	d_Lang083 =	Một tập tin sao lưu đã được tìm thấy. Bạn có muốn mở nó?
 		
 ; Start-up Tips		
 	Start_Tips =	

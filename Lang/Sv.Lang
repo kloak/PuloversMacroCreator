@@ -370,7 +370,7 @@
 	c_Lang126 =	Koden läggs till virtuella knapparna listan!
 	c_Lang127 =	Skriv ett namn för variabeln
 	c_Lang128 =	Använd funktionen från en extern fil
-	c_Lang130 =	Bryt slinga om de befinns
+	c_Lang130 =	Upprepa tills
 	c_Lang131 =	Ansök
 	c_Lang132 =	Loop
 	c_Lang133 =	Arkiv
@@ -601,6 +601,7 @@
 	t_Lang149 =	Stäng program
 	t_Lang150 =	Minimera till aktivitetsfältet
 	t_Lang151 =	Visa bekräftelse när du stänger ett makro
+	t_Lang152 =	Skapa säkerhetskopior automatiskt
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Öppet
@@ -741,6 +742,7 @@
 	d_Lang080 =	Du kan ändra detta i Alternativ > Inställningar > Allmänt.
 	d_Lang081 =	Du kan ändra och anpassa layouter på menyn Visa.
 	d_Lang082 =	Filen hittades inte!
+	d_Lang083 =	En backup-fil har hittats. Vill du öppna den?
 		
 ; Start-up Tips		
 	Start_Tips =	

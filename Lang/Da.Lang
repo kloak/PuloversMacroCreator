@@ -370,7 +370,7 @@
 	c_Lang126 =	Kode føjet til virtuelle taster List!
 	c_Lang127 =	Indtaste et navn til den variable
 	c_Lang128 =	Brug Funktion fra ekstern fil
-	c_Lang130 =	Break loop, hvis det findes
+	c_Lang130 =	Gentag indtil
 	c_Lang131 =	Anvend
 	c_Lang132 =	Loop
 	c_Lang133 =	File
@@ -601,6 +601,7 @@
 	t_Lang149 =	Luk ansøgning
 	t_Lang150 =	Minimer til bakken
 	t_Lang151 =	Display bekræftelse, når lukker en makro
+	t_Lang152 =	Opret sikkerhedskopier automatisk
 		
 ; Messages & Dialogs		
 	d_Lang001 =	Åbent
@@ -741,6 +742,7 @@
 	d_Lang080 =	Du kan ændre dette i Indstillinger > Indstillinger > Generelt.
 	d_Lang081 =	Du kan ændre og tilpasse layout i menuen Vis.
 	d_Lang082 =	Filen blev ikke fundet!
+	d_Lang083 =	En backup-fil er fundet. Kunne du tænke dig at åbne den?
 		
 ; Start-up Tips		
 	Start_Tips =	
