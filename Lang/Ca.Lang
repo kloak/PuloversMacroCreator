@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Edita Macros (Ctrl+Shift+E)
 	w_Lang053 =	Control de (F4)
 	w_Lang054 =	Pausa (F5)
 	w_Lang055 =	Bústia de missatges (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Trobar una ordre (Ctrl+Shift+F)
 	w_Lang092 =	Edita (Enter)
 	w_Lang093 =	Amagar
-	w_Lang094 =	Edita Macros (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Ratolí
@@ -275,8 +274,8 @@
 	c_Lang031 =	Roda de Down
 	c_Lang032 =	Arrossegueu && gota
 	c_Lang033 =	Coordina
-	c_Lang034 =	Clic
-	c_Lang035 =	Enviar
+	c_Lang034 =	Cercar
+	c_Lang035 =	Subcomando
 	c_Lang036 =	Relatiu
 	c_Lang037 =	Botó
 	c_Lang038 =	Esquerra
@@ -446,8 +445,6 @@
 	c_Lang203 =	Comparació de les variables
 	c_Lang204 =	Avaluar expressió
 	c_Lang205 =	Regió
-	c_Lang206 =	Cercar
-	c_Lang207 =	Subcomando
 		
 ; Other Windows		
 	t_Lang001 =	Exporta a AutoHotkey

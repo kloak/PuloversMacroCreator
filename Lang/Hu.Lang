@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Szerkeszteni Makrók (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Szünet (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Keresse meg a parancsot (Ctrl+Shift+F)
 	w_Lang092 =	Szerkeszt (Enter)
 	w_Lang093 =	Elrejt
-	w_Lang094 =	Szerkeszteni Makrók (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Egér
@@ -275,8 +274,8 @@
 	c_Lang031 =	Kerék Csökkenő
 	c_Lang032 =	Fogd és vidd
 	c_Lang033 =	Koordináták
-	c_Lang034 =	Kattintson a
-	c_Lang035 =	Küld
+	c_Lang034 =	Keresés
+	c_Lang035 =	Alparancs
 	c_Lang036 =	Relatív
 	c_Lang037 =	Gomb
 	c_Lang038 =	Bal
@@ -446,8 +445,6 @@
 	c_Lang203 =	Hasonlítsa össze a változókat
 	c_Lang204 =	Értékelje kifejezés
 	c_Lang205 =	Vidék
-	c_Lang206 =	Keresés
-	c_Lang207 =	Alparancs
 		
 ; Other Windows		
 	t_Lang001 =	Exportálás AutoHotkey

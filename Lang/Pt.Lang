@@ -197,7 +197,7 @@
 	w_Lang049 =	Temporizador (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Texto (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Editar Macros (Ctrl+Shift+E)
 	w_Lang053 =	Controle (F4)
 	w_Lang054 =	Pausa (F5)
 	w_Lang055 =	Caixa de Mensagem (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Localizar um comando (Ctrl+Shift+F)
 	w_Lang092 =	Editar (Enter)
 	w_Lang093 =	Ocultar
-	w_Lang094 =	Editar Macros (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mouse
@@ -275,8 +274,8 @@
 	c_Lang031 =	Rolar para Baixo
 	c_Lang032 =	Arrastar e Soltar
 	c_Lang033 =	Coordenadas
-	c_Lang034 =	Click
-	c_Lang035 =	Send
+	c_Lang034 =	Búsca
+	c_Lang035 =	Subcomando
 	c_Lang036 =	Relativo
 	c_Lang037 =	Botão
 	c_Lang038 =	Esquerdo
@@ -446,8 +445,6 @@
 	c_Lang203 =	Comparar variáveis
 	c_Lang204 =	Avaliar expressão
 	c_Lang205 =	Região
-	c_Lang206 =	Búsca
-	c_Lang207 =	Subcomando
 		
 ; Other Windows		
 	t_Lang001 =	Exportar para AutoHotkey

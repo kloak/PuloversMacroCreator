@@ -197,7 +197,7 @@
 	w_Lang049 =	Таймер (Ctrl+Shift+T)
 	w_Lang050 =	Мышь (F2)
 	w_Lang051 =	Текст (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Редактировать Макросы (Ctrl+Shift+E)
 	w_Lang053 =	Управления (F4)
 	w_Lang054 =	Пауза (F5)
 	w_Lang055 =	Сообщение Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Найти команду (Ctrl+Shift+F)
 	w_Lang092 =	Редактировать (Enter)
 	w_Lang093 =	Скрывать
-	w_Lang094 =	Редактировать Макросы (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Мышь
@@ -275,8 +274,8 @@
 	c_Lang031 =	Колесо вниз
 	c_Lang032 =	Перетаскивание
 	c_Lang033 =	Координаты
-	c_Lang034 =	Щелчок
-	c_Lang035 =	Послать
+	c_Lang034 =	Поиск
+	c_Lang035 =	Подкоманде
 	c_Lang036 =	Относительный
 	c_Lang037 =	Кнопка
 	c_Lang038 =	Левое
@@ -446,8 +445,6 @@
 	c_Lang203 =	Сравните переменных
 	c_Lang204 =	Вычисление выражения
 	c_Lang205 =	Регион
-	c_Lang206 =	Поиск
-	c_Lang207 =	Подкоманде
 		
 ; Other Windows		
 	t_Lang001 =	Экспорт в AutoHotkey

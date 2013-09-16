@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Edit Macros (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Pause (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Find a command (Ctrl+Shift+F)
 	w_Lang092 =	Edit (Enter)
 	w_Lang093 =	Hide
-	w_Lang094 =	Edit Macros (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mouse
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wheel Down
 	c_Lang032 =	Drag && Drop
 	c_Lang033 =	Coordinates
-	c_Lang034 =	Click
-	c_Lang035 =	Send
+	c_Lang034 =	Search
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Relative
 	c_Lang037 =	Button
 	c_Lang038 =	Left
@@ -446,8 +445,6 @@
 	c_Lang203 =	Compare variables
 	c_Lang204 =	Evaluate expression
 	c_Lang205 =	Region
-	c_Lang206 =	Search
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Export to AutoHotkey

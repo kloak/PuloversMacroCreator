@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Teks (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Mengedit Macro (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Jeda (F5)
 	w_Lang055 =	Kotak pesan (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Cari perintah (Ctrl+Shift+F)
 	w_Lang092 =	Mengedit (Enter)
 	w_Lang093 =	Menyembunyikan
-	w_Lang094 =	Mengedit Macro (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mouse
@@ -275,8 +274,8 @@
 	c_Lang031 =	Roda Bawah
 	c_Lang032 =	Drag && Drop
 	c_Lang033 =	Koordinat
-	c_Lang034 =	Klik
-	c_Lang035 =	Mengirim
+	c_Lang034 =	Cari
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Relatif
 	c_Lang037 =	Tombol
 	c_Lang038 =	Kiri
@@ -446,8 +445,6 @@
 	c_Lang203 =	Bandingkan variabel
 	c_Lang204 =	Evaluasi ekspresi
 	c_Lang205 =	Wilayah
-	c_Lang206 =	Cari
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Ekspor ke AutoHotkey

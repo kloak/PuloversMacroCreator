@@ -197,7 +197,7 @@
 	w_Lang049 =	타이머 (Ctrl+Shift+T)
 	w_Lang050 =	마우스 (F2​​)
 	w_Lang051 =	텍스트 (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	매크로 편집 (Ctrl+Shift+E)
 	w_Lang053 =	컨트롤 (F4)
 	w_Lang054 =	중지
 	w_Lang055 =	메시지 박스 (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	명령 찾기 (Ctrl+Shift+F)
 	w_Lang092 =	수정 (Enter)
 	w_Lang093 =	숨기기
-	w_Lang094 =	매크로 편집 (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	마우스
@@ -275,8 +274,8 @@
 	c_Lang031 =	휠 아래로
 	c_Lang032 =	드래그 앤 드롭
 	c_Lang033 =	위도와 경도
-	c_Lang034 =	를 클릭하십시오
-	c_Lang035 =	보내다
+	c_Lang034 =	검색
+	c_Lang035 =	하위
 	c_Lang036 =	친척
 	c_Lang037 =	단추
 	c_Lang038 =	왼쪽
@@ -446,8 +445,6 @@
 	c_Lang203 =	변수를 비교
 	c_Lang204 =	식을 계산
 	c_Lang205 =	지방
-	c_Lang206 =	검색
-	c_Lang207 =	하위
 		
 ; Other Windows		
 	t_Lang001 =	AutoHotkey로 내보내기

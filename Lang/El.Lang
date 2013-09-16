@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Κείμενο (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Επεξεργαστείτε Μακροεντολές (Ctrl+Shift+E)
 	w_Lang053 =	Ελέγχου (F4)
 	w_Lang054 =	Παύση (F5)
 	w_Lang055 =	Πλαίσιο Μηνύματος (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Βρείτε μια εντολή (Ctrl+Shift+F)
 	w_Lang092 =	Επεξεργασία (Enter)
 	w_Lang093 =	Κρύβω
-	w_Lang094 =	Επεξεργαστείτε Μακροεντολές (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Ποντίκι
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wheel Down
 	c_Lang032 =	Σύρετε && Drop
 	c_Lang033 =	Συντεταγμένες
-	c_Lang034 =	Κλικ
-	c_Lang035 =	Αποστολή
+	c_Lang034 =	Αναζήτηση
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Συγγενής
 	c_Lang037 =	Κουμπί
 	c_Lang038 =	Αριστερά
@@ -446,8 +445,6 @@
 	c_Lang203 =	Σύγκριση μεταβλητών
 	c_Lang204 =	Αξιολογήστε την έκφραση
 	c_Lang205 =	Περιοχή
-	c_Lang206 =	Αναζήτηση
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Εξαγωγή σε AutoHotkey

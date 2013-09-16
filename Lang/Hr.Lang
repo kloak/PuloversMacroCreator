@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Miš (F2)
 	w_Lang051 =	Tekst (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Uredi Makronaredbe (Ctrl+Shift+E)
 	w_Lang053 =	Kontrola (F4)
 	w_Lang054 =	Pauza (F5)
 	w_Lang055 =	Poruka Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Pronađite naredbu (Ctrl+Shift+C)
 	w_Lang092 =	Uredi (Enter)
 	w_Lang093 =	Sakriti
-	w_Lang094 =	Uredi Makronaredbe (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Miš
@@ -275,8 +274,8 @@
 	c_Lang031 =	Kotača Down
 	c_Lang032 =	Drag Drop &&
 	c_Lang033 =	Koordinate
-	c_Lang034 =	Klik
-	c_Lang035 =	Poslati
+	c_Lang034 =	Traži
+	c_Lang035 =	Podnaredbe
 	c_Lang036 =	Rođak
 	c_Lang037 =	Dugme
 	c_Lang038 =	Lijeva
@@ -446,8 +445,6 @@
 	c_Lang203 =	Usporedi varijable
 	c_Lang204 =	Procijenite izraz
 	c_Lang205 =	Regija
-	c_Lang206 =	Traži
-	c_Lang207 =	Podnaredbe
 		
 ; Other Windows		
 	t_Lang001 =	Izvoz u AutoHotkey

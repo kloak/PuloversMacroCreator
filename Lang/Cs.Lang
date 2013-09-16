@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Myš (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Úprava Makra (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Pauza (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Najít příkaz (Ctrl+Shift+F)
 	w_Lang092 =	Upravit (Enter)
 	w_Lang093 =	Schovat
-	w_Lang094 =	Úprava Makra (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Myš
@@ -275,8 +274,8 @@
 	c_Lang031 =	Kola Down
 	c_Lang032 =	Drag and Drop
 	c_Lang033 =	Souřadnice
-	c_Lang034 =	Klepněte na tlačítko
-	c_Lang035 =	Odeslat
+	c_Lang034 =	Vyhledávání
+	c_Lang035 =	Dílčí
 	c_Lang036 =	Relativní
 	c_Lang037 =	Tlačítko
 	c_Lang038 =	Levý
@@ -446,8 +445,6 @@
 	c_Lang203 =	Porovnání proměnné
 	c_Lang204 =	Vyhodnotit výraz
 	c_Lang205 =	Kraj
-	c_Lang206 =	Vyhledávání
-	c_Lang207 =	Dílčí
 		
 ; Other Windows		
 	t_Lang001 =	Export do AutoHotkey

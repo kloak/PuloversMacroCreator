@@ -197,7 +197,7 @@
 	w_Lang049 =	Hẹn giờ (Ctrl + Shift + T)
 	w_Lang050 =	Chuột (F2)
 	w_Lang051 =	Văn bản (F3)
-	w_Lang052 =	(Không sử dụng)
+	w_Lang052 =	Chỉnh Sửa Macro (Ctrl+Shift+E)
 	w_Lang053 =	Kiểm soát (F4)
 	w_Lang054 =	Tạm dừng (F5)
 	w_Lang055 =	Hộp tin nhắn (Shift + F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Tìm một lệnh (Ctrl + Shift + F)
 	w_Lang092 =	Chỉnh sửa (Enter)
 	w_Lang093 =	Che
-	w_Lang094 =	Chỉnh Sửa Macro (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Chuột
@@ -275,8 +274,8 @@
 	c_Lang031 =	Bánh xe xuống
 	c_Lang032 =	Kéo && thả
 	c_Lang033 =	Phối hợp
-	c_Lang034 =	Nhấp
-	c_Lang035 =	Gửi
+	c_Lang034 =	Tìm kiếm
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Tương đối
 	c_Lang037 =	Nút
 	c_Lang038 =	Lại
@@ -446,8 +445,6 @@
 	c_Lang203 =	So sánh các biến
 	c_Lang204 =	Đánh giá biểu thức
 	c_Lang205 =	Khu
-	c_Lang206 =	Tìm kiếm
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Xuất khẩu sang AutoHotkey

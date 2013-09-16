@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Skift+T)
 	w_Lang050 =	Mus (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Redigera Makron (Ctrl+Shift+E)
 	w_Lang053 =	Kontroll (F4)
 	w_Lang054 =	Paus (F5)
 	w_Lang055 =	Meddelanderuta (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Hitta ett kommando (Ctrl+Skift+F)
 	w_Lang092 =	Redigera (Enter)
 	w_Lang093 =	Dölj
-	w_Lang094 =	Redigera Makron (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mus
@@ -275,8 +274,8 @@
 	c_Lang031 =	Hjulet
 	c_Lang032 =	Dra och släpp
 	c_Lang033 =	Koordinater
-	c_Lang034 =	Klicka
-	c_Lang035 =	Skicka
+	c_Lang034 =	Sök
+	c_Lang035 =	Delkommando
 	c_Lang036 =	Relativ
 	c_Lang037 =	Knapp
 	c_Lang038 =	Vänster
@@ -446,8 +445,6 @@
 	c_Lang203 =	Jämför variabler
 	c_Lang204 =	Utvärdera uttryck
 	c_Lang205 =	Region
-	c_Lang206 =	Sök
-	c_Lang207 =	Delkommando
 		
 ; Other Windows		
 	t_Lang001 =	Exportera till AutoHotkey

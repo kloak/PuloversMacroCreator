@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Strg+Umschalt+T)
 	w_Lang050 =	Maus (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Makros Bearbeiten (Ctrl+Shift+E)
 	w_Lang053 =	Steuerelement (F4)
 	w_Lang054 =	Pause (F5)
 	w_Lang055 =	Messagebox (Umschalt+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Finden Sie einen Befehl (Strg+Umschalt+F)
 	w_Lang092 =	Bearbeiten
 	w_Lang093 =	Verbergen
-	w_Lang094 =	Makros Bearbeiten (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Maus
@@ -275,8 +274,8 @@
 	c_Lang031 =	Mausrad nach unten
 	c_Lang032 =	Drag and Drop
 	c_Lang033 =	Koordinaten
-	c_Lang034 =	Klicken
-	c_Lang035 =	Senden
+	c_Lang034 =	Suchen
+	c_Lang035 =	Unterbefehl
 	c_Lang036 =	Relativ
 	c_Lang037 =	Taste
 	c_Lang038 =	Links
@@ -446,8 +445,6 @@
 	c_Lang203 =	Vergleichen Variablen
 	c_Lang204 =	Bewerten Ausdruck
 	c_Lang205 =	Region
-	c_Lang206 =	Suchen
-	c_Lang207 =	Unterbefehl
 		
 ; Other Windows		
 	t_Lang001 =	Export nach AutoHotkey

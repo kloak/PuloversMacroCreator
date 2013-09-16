@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Myszy (F2)
 	w_Lang051 =	Tekst (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Edytowanie Makra (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Pauza (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Znajdź polecenia (Ctrl+Shift+F)
 	w_Lang092 =	Edytuj (Enter)
 	w_Lang093 =	Ukryć
-	w_Lang094 =	Edytowanie Makra (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mysz
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wheel dół
 	c_Lang032 =	Przeciągnij i upuść
 	c_Lang033 =	Współrzędne
-	c_Lang034 =	Kliknij
-	c_Lang035 =	Wysłać
+	c_Lang034 =	Szukaj
+	c_Lang035 =	Polecenie
 	c_Lang036 =	Względny
 	c_Lang037 =	Przycisk
 	c_Lang038 =	Lewa
@@ -446,8 +445,6 @@
 	c_Lang203 =	Porównaj zmienne
 	c_Lang204 =	Oceny ekspresji
 	c_Lang205 =	Region
-	c_Lang206 =	Szukaj
-	c_Lang207 =	Polecenie
 		
 ; Other Windows		
 	t_Lang001 =	Eksport do AutoHotkey

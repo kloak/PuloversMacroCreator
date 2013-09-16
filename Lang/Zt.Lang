@@ -197,7 +197,7 @@
 	w_Lang049 =	定時器（按Ctrl+Shift+T）
 	w_Lang050 =	鼠標（F2）
 	w_Lang051 =	文本（F3）
-	w_Lang052 =	(unused)
+	w_Lang052 =	編輯宏（按Ctrl+Shift+ E）
 	w_Lang053 =	控制（F4）
 	w_Lang054 =	暫停 （F5）
 	w_Lang055 =	消息框 （Shift+F5）
@@ -239,7 +239,6 @@
 	w_Lang091 =	查找命令（按Ctrl+Shift+ F）
 	w_Lang092 =	編輯（Enter）
 	w_Lang093 =	隱藏
-	w_Lang094 =	編輯宏（按Ctrl+Shift+ E）
 		
 ; Command Windows		
 	c_Lang001 =	鼠標
@@ -275,8 +274,8 @@
 	c_Lang031 =	滾輪向下
 	c_Lang032 =	拖動&&下降
 	c_Lang033 =	坐標
-	c_Lang034 =	點擊
-	c_Lang035 =	發送
+	c_Lang034 =	搜索
+	c_Lang035 =	子
 	c_Lang036 =	相對的
 	c_Lang037 =	鈕
 	c_Lang038 =	左
@@ -446,8 +445,6 @@
 	c_Lang203 =	比較變量
 	c_Lang204 =	計算表達式
 	c_Lang205 =	地區
-	c_Lang206 =	搜索
-	c_Lang207 =	子
 		
 ; Other Windows		
 	t_Lang001 =	導出到華民航空

@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Besedilo (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Uredi Makri (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Premor (F5)
 	w_Lang055 =	Polje sporočilo (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Najdi ukaz (Ctrl+Shift+F)
 	w_Lang092 =	Uredi (Enter)
 	w_Lang093 =	Skrij
-	w_Lang094 =	Uredi Makri (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Miška
@@ -275,8 +274,8 @@
 	c_Lang031 =	Kolo dol
 	c_Lang032 =	Povleci in spusti
 	c_Lang033 =	Koordinira
-	c_Lang034 =	Kliknite
-	c_Lang035 =	Pošlji
+	c_Lang034 =	Iskanje
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Relativna
 	c_Lang037 =	Button
 	c_Lang038 =	Levo
@@ -446,8 +445,6 @@
 	c_Lang203 =	Primerjajte spremenljivk
 	c_Lang204 =	Ovrednoti izraz
 	c_Lang205 =	Regija
-	c_Lang206 =	Iskanje
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Izvoz v AutoHotkey

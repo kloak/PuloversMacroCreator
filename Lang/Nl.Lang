@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Muis (F2)
 	w_Lang051 =	Tekst (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Macro's Bewerken (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Pauzeren (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Zoek een commando (Ctrl+Shift+F)
 	w_Lang092 =	Redigeren (Enter)
 	w_Lang093 =	Verbergen
-	w_Lang094 =	Macro's Bewerken (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Muis
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wiel Omlaag
 	c_Lang032 =	Slepen en neerzetten
 	c_Lang033 =	Coördinaten
-	c_Lang034 =	Klikken
-	c_Lang035 =	Sturen
+	c_Lang034 =	Zoeken
+	c_Lang035 =	Subopdracht
 	c_Lang036 =	Relatief
 	c_Lang037 =	Knop
 	c_Lang038 =	Links
@@ -446,8 +445,6 @@
 	c_Lang203 =	Vergelijk variabelen
 	c_Lang204 =	Evalueer meningsuiting
 	c_Lang205 =	Regio
-	c_Lang206 =	Zoeken
-	c_Lang207 =	Subopdracht
 		
 ; Other Windows		
 	t_Lang001 =	Exporteren naar AutoHotkey

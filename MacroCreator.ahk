@@ -2951,18 +2951,18 @@ Gui, 5:Add, Radio, -Wrap y+10 xp W115 vWDn gWDn R1, %c_Lang031%
 Gui, 5:Add, Radio, -Wrap y+10 xp W115 vDrag gDrag R1, %c_Lang032%
 ; Coordinates
 Gui, 5:Add, GroupBox, Section ys x+10 W250 H100, %c_Lang033%:
-Gui, 5:Add, Text, Section ys+25 xs+10, X:
+Gui, 5:Add, Text, Section ys+25 xs+10 W20 Right viX, X:
 Gui, 5:Add, Edit, ys-3 x+5 vIniX W70 Disabled
-Gui, 5:Add, Text, ys x+20, Y:
+Gui, 5:Add, Text, ys x+5 W20 Right viY, Y:
 Gui, 5:Add, Edit, ys-3 x+5 vIniY W70 Disabled
 Gui, 5:Add, Button, -Wrap ys-5 x+5 W30 H23 vMouseGetI gMouseGetI Disabled, ...
-Gui, 5:Add, Text, Section xs, X:
+Gui, 5:Add, Text, Section xs W20 Right veX, X:
 Gui, 5:Add, Edit, ys-3 x+5 vEndX W70 Disabled
-Gui, 5:Add, Text, ys x+20, Y:
+Gui, 5:Add, Text, ys x+5 W20 Right veY, Y:
 Gui, 5:Add, Edit, ys-3 x+5 vEndY W70 Disabled
 Gui, 5:Add, Button, -Wrap ys-4 x+5 W30 H23 vMouseGetE gMouseGetE Disabled, ...
-Gui, 5:Add, Radio, -Wrap Checked y+5 xs W65 vCL gCL R1, %c_Lang034%
-Gui, 5:Add, Radio, -Wrap yp x+5 W65 vSE gSE R1, %c_Lang035%
+Gui, 5:Add, Radio, -Wrap Checked y+5 xs W65 vCL gCL R1, Click
+Gui, 5:Add, Radio, -Wrap yp x+5 W65 vSE gSE R1, Send
 Gui, 5:Add, Checkbox, -Wrap yp x+5 vMRel gMRel Disabled W95 R1, %c_Lang036%
 ; Button
 Gui, 5:Add, GroupBox, Section xm W505 H70, %c_Lang037%:
@@ -2986,7 +2986,7 @@ Gui, 5:Add, UpDown, vDelayX 0x80 Range0-999999999, %DelayM%
 Gui, 5:Add, Radio, -Wrap Checked W125 vMsc R1, %c_Lang018%
 Gui, 5:Add, Radio, -Wrap W125 vSec R1, %c_Lang019%
 ; Control
-Gui, 5:Add, GroupBox, Section ys x+20 W250 H125
+Gui, 5:Add, GroupBox, Section ys x+10 W250 H125
 Gui, 5:Add, Checkbox, -Wrap ys+15 xs+10 W160 vCSend gCSend R1, %c_Lang016%:
 Gui, 5:Add, Edit, vDefCt W200 Disabled
 Gui, 5:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetCtrl gGetCtrl Disabled, ...
@@ -3191,6 +3191,7 @@ If (s_Caller = "Edit")
 				GuiControl, 5:, CCount, %Par4%
 		}
 	}
+	GoSub, MRel
 	GuiControl, 5:Enable, MouseApply
 }
 If (s_Caller = "Find")
@@ -3240,24 +3241,24 @@ MouseOK:
 Gui, 5:+OwnDialogs
 Gui, 5:Submit, NoHide
 DelayX := InStr(DelayC, "%") ? DelayC : DelayX
-If Sec = 1
+If (Sec = 1)
 	DelayX *= 1000
 TimesX := InStr(EdRept, "%") ? EdRept : TimesX
-If TimesX = 0
+If (TimesX = 0)
 	TimesX := 1
-If LB = 1
+If (LB = 1)
 	Button = Left
-If RB = 1
+If (RB = 1)
 	Button = Right
-If MB = 1
+If (MB = 1)
 	Button = Middle
-If X1 = 1
+If (X1 = 1)
 	Button = X1
-If X2 = 1
+If (X2 = 1)
 	Button = X2
-If Click = 1
+If (Click = 1)
 	GoSub, f_Click
-If Point = 1
+If (Point = 1)
 {
 	If ((IniX = "") || (IniY = ""))
 	{
@@ -3267,7 +3268,7 @@ If Point = 1
 	Else
 	GoSub, f_Point
 }
-If PClick = 1
+If (PClick = 1)
 {
 	If ((IniX = "") || (IniY = ""))
 	{
@@ -3277,7 +3278,7 @@ If PClick = 1
 	Else
 	GoSub, f_PClick
 }
-If Drag = 1
+If (Drag = 1)
 {
 	If ((IniX = "") || (IniY = "") || (EndX = "") || (EndY = ""))
 	{
@@ -3287,14 +3288,14 @@ If Drag = 1
 	Else
 	GoSub, f_Drag
 }
-If WUp = 1
+If (WUp = 1)
 	GoSub, f_WUp
-If WDn = 1
+If (WDn = 1)
 	GoSub, f_WDn
 Window := Title
 GuiControlGet, CtrlState, Enabled, DefCt
 GuiControlGet, SendState, Enabled, CSend
-If CtrlState = 1
+If (CtrlState = 1)
 {
 	If ((CSend = 1) && (SendState = 1))
 	{
@@ -3624,17 +3625,17 @@ GuiControl, 5:Enable, GetCtrl
 GuiControl, 5:Enable, Ident
 GuiControl, 5:Enable, Title
 GuiControl, 5:Enable, GetWin
-If Click = 1
+If (Click = 1)
 	GoSub, Click
-If Point = 1
+If (Point = 1)
 	GoSub, Point
-If PClick = 1
+If (PClick = 1)
 	GoSub, PClick
-If Drag = 1
+If (Drag = 1)
 	GoSub, Drag
-If WUp = 1
+If (WUp = 1)
 	GoSub, WUp
-If WDn = 1
+If (WDn = 1)
 	GoSub, WDn
 return
 
@@ -5322,7 +5323,7 @@ Gui, 1:+Disabled
 Gui, 11:Add, Groupbox, Section W450 H220
 Gui, 11:Add, Text, ys+15 xs+10 W120, %c_Lang055%:
 Gui, 11:Add, DDL, W120 vWinCom gWinCom, %WinCmdList%
-Gui, 11:Add, Text, W120, %c_Lang207%:
+Gui, 11:Add, Text, W120, %c_Lang035%:
 Gui, 11:Add, DDL, W120 -Multi vWCmd gWCmd, %WinCmd%
 Gui, 11:Add, Text, yp-10 x+10 W20 vTValue Disabled, 255
 Gui, 11:Add, Slider, y+0 W100 Buddy2TValue vN gN Range0-255 Disabled, 255
@@ -5651,7 +5652,7 @@ Gui, 19:Add, Edit, yp-3 x+5 vePosX W60, %A_ScreenWidth%
 Gui, 19:Add, Text, yp x+15, Y:
 Gui, 19:Add, Edit, yp x+5 vePosY W60, %A_ScreenHeight%
 ; Search
-Gui, 19:Add, GroupBox, Section y+12 xs W275 H158, %c_Lang206%:
+Gui, 19:Add, GroupBox, Section y+12 xs W275 H158, %c_Lang034%:
 Gui, 19:Add, Radio, -Wrap Checked ys+20 xs+10 W100 vImageS gImageS R1 Right, %c_Lang063%
 Gui, 19:Add, Radio, -Wrap yp xs+140 W95 vPixelS gPixelS R1 Right, %c_Lang064%
 Gui, 19:Add, Button, -Wrap yp-1 xs+115 W25 H23 hwndScreenshot vScreenshot gScreenshot
@@ -6979,7 +6980,7 @@ Gui, 1:+Disabled
 Gui, 23:Add, Groupbox, Section W450 H220
 Gui, 23:Add, Text, ys+15 xs+10 W120, %c_Lang055%:
 Gui, 23:Add, DDL, W120 vControlCmd gCtlCmd, %CtrlCmdList%
-Gui, 23:Add, Text, W120, %c_Lang207%:
+Gui, 23:Add, Text, W120, %c_Lang035%:
 Gui, 23:Add, DDL, W120 -Multi vCmd gCmd, %CtrlCmd%
 Gui, 23:Add, Text, W80, %c_Lang056%:
 Gui, 23:Add, Edit, W430 -Multi Disabled vValue
@@ -12599,7 +12600,7 @@ TB_Edit(tbEdit, "EditButton", "", "", w_Lang092)
 , TB_Edit(tbEdit, "MoveUp", "", "", w_Lang077), TB_Edit(tbEdit, "MoveDn", "", "", w_Lang078)
 , TB_Edit(tbEdit, "Duplicate", "", "", w_Lang079), TB_Edit(tbEdit, "CopyTo", "", "", w_Lang086) 
 , TB_Edit(tbEdit, "EditColor", "", "", w_Lang089), TB_Edit(tbEdit, "EditComm", "", "", w_Lang088), TB_Edit(tbEdit, "FindReplace", "", "", w_Lang087)
-, TB_Edit(tbEdit, "TabPlus", "", "", w_Lang072), TB_Edit(tbEdit, "TabClose", "", "", w_Lang073), TB_Edit(tbEdit, "DuplicateList", "", "", w_Lang074), TB_Edit(tbEdit, "EditMacros", "", "", w_Lang094)
+, TB_Edit(tbEdit, "TabPlus", "", "", w_Lang072), TB_Edit(tbEdit, "TabClose", "", "", w_Lang073), TB_Edit(tbEdit, "DuplicateList", "", "", w_Lang074), TB_Edit(tbEdit, "EditMacros", "", "", w_Lang052)
 , TB_Edit(tbEdit, "Import", "", "", w_Lang075), TB_Edit(tbEdit, "SaveCurrentList", "", "", w_Lang076)
 ; Preview
 TB_Edit(tbPrev, "PrevDock", "", "", t_Lang124)

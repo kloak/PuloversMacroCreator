@@ -197,7 +197,7 @@
 	w_Lang049 =	タイマー（Ctrl+Shift+Tを）
 	w_Lang050 =	マウス（F2）
 	w_Lang051 =	テキスト（F3）
-	w_Lang052 =	(unused)
+	w_Lang052 =	マクロを編集する（Ctrlキー+ Shiftキー+ E）
 	w_Lang053 =	コントロール（F4）
 	w_Lang054 =	一時停止 （F5）
 	w_Lang055 =	メッセージボックス （Shift+F5）
@@ -239,7 +239,6 @@
 	w_Lang091 =	コマンドを見つける（Ctrlキー+ Shiftキー+ F）
 	w_Lang092 =	編集（Enter）
 	w_Lang093 =	隠す
-	w_Lang094 =	マクロを編集する（Ctrlキー+ Shiftキー+ E）
 		
 ; Command Windows		
 	c_Lang001 =	マウス
@@ -275,8 +274,8 @@
 	c_Lang031 =	ホイールダウン
 	c_Lang032 =	ドラッグ·アンド·ドロップ
 	c_Lang033 =	座標
-	c_Lang034 =	クリック
-	c_Lang035 =	送信
+	c_Lang034 =	検索
+	c_Lang035 =	サブコマンド
 	c_Lang036 =	相対
 	c_Lang037 =	ボタン
 	c_Lang038 =	左
@@ -446,8 +445,6 @@
 	c_Lang203 =	Порівняйте змінних
 	c_Lang204 =	Обчислення виразу...
 	c_Lang205 =	地域
-	c_Lang206 =	検索
-	c_Lang207 =	サブコマンド
 		
 ; Other Windows		
 	t_Lang001 =	AutoHotkeyにエクスポート

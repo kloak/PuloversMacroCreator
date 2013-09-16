@@ -197,7 +197,7 @@
 	w_Lang049 =	Pemasa (Ctrl+Shift+T)
 	w_Lang050 =	Tetikus (F2)
 	w_Lang051 =	Text (F3)
-	w_Lang052 =	(Tidak digunakan)
+	w_Lang052 =	Edit Makro (Ctrl+Shift+E)
 	w_Lang053 =	Kawalan (F4)
 	w_Lang054 =	Jeda (F5)
 	w_Lang055 =	Box Mesej (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Cari arahan (Ctrl+Shift+F)
 	w_Lang092 =	Edit (Masukkan)
 	w_Lang093 =	Menyembunyikan
-	w_Lang094 =	Edit Makro (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mouse
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wheel Down
 	c_Lang032 =	Drag && Drop
 	c_Lang033 =	Menyelaras
-	c_Lang034 =	Klik
-	c_Lang035 =	Hantar
+	c_Lang034 =	Carian
+	c_Lang035 =	Subcommand
 	c_Lang036 =	Relatif
 	c_Lang037 =	Button
 	c_Lang038 =	Kiri
@@ -446,8 +445,6 @@
 	c_Lang203 =	Bandingkan pembolehubah
 	c_Lang204 =	Menilai ungkapan
 	c_Lang205 =	Wilayah
-	c_Lang206 =	Carian
-	c_Lang207 =	Subcommand
 		
 ; Other Windows		
 	t_Lang001 =	Eksport ke AutoHotkey

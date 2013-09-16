@@ -197,7 +197,7 @@
 	w_Lang049 =	Таймер (Ctrl+Shift+T)
 	w_Lang050 =	Mouse (F2)
 	w_Lang051 =	Текст (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Редактиране Macros (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Пауза (F5)
 	w_Lang055 =	Съобщение Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Намерете командата (Ctrl+Shift+F)
 	w_Lang092 =	Редактирам (Enter)
 	w_Lang093 =	Крия
-	w_Lang094 =	Редактиране Macros (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Мишка
@@ -275,8 +274,8 @@
 	c_Lang031 =	Колелото надолу
 	c_Lang032 =	Влачите и пускате
 	c_Lang033 =	Координати
-	c_Lang034 =	Щракнете
-	c_Lang035 =	Изпращам
+	c_Lang034 =	Търсене
+	c_Lang035 =	Подкомандата
 	c_Lang036 =	Относителен
 	c_Lang037 =	Бутон
 	c_Lang038 =	Left
@@ -446,8 +445,6 @@
 	c_Lang203 =	Сравни променливи
 	c_Lang204 =	Оценете израз
 	c_Lang205 =	Област
-	c_Lang206 =	Търсене
-	c_Lang207 =	Подкомандата
 		
 ; Other Windows		
 	t_Lang001 =	Износ за AutoHotkey

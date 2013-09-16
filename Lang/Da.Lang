@@ -197,7 +197,7 @@
 	w_Lang049 =	Timer (Ctrl+Shift+T)
 	w_Lang050 =	Mus (F2)
 	w_Lang051 =	Tekst (F3)
-	w_Lang052 =	(unused)
+	w_Lang052 =	Rediger Makroer (Ctrl+Shift+E)
 	w_Lang053 =	Control (F4)
 	w_Lang054 =	Pause (F5)
 	w_Lang055 =	Message Box (Shift+F5)
@@ -239,7 +239,6 @@
 	w_Lang091 =	Find en kommando (Ctrl+Shift+F)
 	w_Lang092 =	Rediger (Enter)
 	w_Lang093 =	Skjule
-	w_Lang094 =	Rediger Makroer (Ctrl+Shift+E)
 		
 ; Command Windows		
 	c_Lang001 =	Mus
@@ -275,8 +274,8 @@
 	c_Lang031 =	Wheel Down
 	c_Lang032 =	Træk og slip
 	c_Lang033 =	Koordinater
-	c_Lang034 =	Klik
-	c_Lang035 =	Send
+	c_Lang034 =	Søg
+	c_Lang035 =	Underkommando
 	c_Lang036 =	Relativ
 	c_Lang037 =	Knap
 	c_Lang038 =	Venstre
@@ -446,8 +445,6 @@
 	c_Lang203 =	Sammenlign variabler
 	c_Lang204 =	Evaluer udtryk
 	c_Lang205 =	Region
-	c_Lang206 =	Søg
-	c_Lang207 =	Underkommando
 		
 ; Other Windows		
 	t_Lang001 =	Eksporter til AutoHotkey
