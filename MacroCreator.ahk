@@ -1159,8 +1159,7 @@ If (Asc(sKey) < 192) && ((CaptKDn = 1) || InStr(sKey, "Control") || InStr(sKey, 
 		HotKey, ~*VKC2SC7E0 Up, RecKeyUp, On
 	Hotkey, If
 	#If
-	Hold%ScK% := 1
-	sKey .= " Down"
+	Hold%ScK% := 1, sKey .= " Down"
 }
 tKey := sKey, sKey := "{" sKey "}"
 If !Capt
@@ -1311,8 +1310,7 @@ Loop
 			HotKey, ~*VKC2SC7E0 Up, RecKeyUp, On
 		Hotkey, If
 		#If
-		Hold%ScK% := 1
-		sKey .= " Down"
+		Hold%ScK% := 1, sKey .= " Down"
 	}
 	tKey := sKey, sKey := "{" sKey "}"
 	If Record = 0
@@ -11935,6 +11933,8 @@ Hold%ScK% := 0, tKey := sKey, sKey := "{" sKey "}"
 If (Record || ListFocus)
 	GoSub, InsertRow
 HotKey, %A_ThisHotKey%, RecKeyUp, Off
+If InStr(A_ThisHotKey, "Win")
+	Send, %sKey%
 return
 
 ;##### Size & Position: #####

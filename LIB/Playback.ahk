@@ -20,6 +20,8 @@
 	{
 		If !WinExist("ahk_id " PMCOSC)
 			GoSub, ShowControls
+		Else
+			Gui, 28:+AlwaysOntop
 	}
 	PlayOSOn := 1, tbOSC.ModifyButtonInfo(1, "Image", 55), LastError := ""
 ,	CurrentRange := m_ListCount, ChangeProgBarColor("20D000", "OSCProg", 28)
@@ -487,6 +489,8 @@
 		{
 			If WinExist("ahk_id " PMCOSC)
 				GoSub, 28GuiClose
+			Else
+				Gui, 28:+AlwaysOntop
 		}
 	}
 	If (CloseAfterPlay)
