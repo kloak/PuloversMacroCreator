@@ -306,6 +306,8 @@
 						o_Loop%PointMarker% := ""
 						If IsObject(GoToLab)
 							return GoToLab
+						Else If (GoToLab = "_return")
+							break 2
 						Else If (GoToLab)
 						{
 							Lab := GoToLab, GoToLab := 0
@@ -726,7 +728,9 @@ LoopSection(Start, End, lcX, lcL, PointO, mainL, mainC)
 					,	GoToLab := LoopSection(Start%PointMarker%, End%PointMarker%, LoopCount%PointMarker%, lcL
 						, PointMarker, mainL, mainC)
 					,	o_Loop%PointMarker% := ""
-						If (GoToLab)
+						If (GoToLab = "_return")
+							return GoToLab
+						Else If (GoToLab)
 							return GoToLab
 						PointMarker--
 						LoopIndex := mLoopIndex
@@ -806,10 +810,7 @@ LoopSection(Start, End, lcX, lcL, PointO, mainL, mainC)
 				If InStr(Step, "``t")
 					StringReplace, Step, Step, ``t, `t, All
 				If (Type = "Return")
-				{
-					StopIt := 1
-					continue
-				}
+					return "_return"
 				If (Type = cType29)
 				{
 					If (PointMarker = 0)
