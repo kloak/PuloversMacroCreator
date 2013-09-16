@@ -247,10 +247,10 @@
 		Icon - Specify for n a number between 0 and 255 (inclusive) to indicate the allowed number of shades of variation in either direction for the intensity of the red, green, and blue components of each pixel's color.
 		Transparent - Specify one color within the image that will match any color on the screen.
 		Scale - Width and height to which to scale the image (this width and height also determines which icon to load from a multi-icon .ICO file).
-		Break loop if found - When setting more then 1 loop in the *Repeat* field, this option will break the loop if the image is found right after executing the selected action.
+		Repeat until - Loops the command until the image is found or not found, according to the option selected.
 
 	Remarks:
-		You may use the variables %FoundX% and %FoundY% on other commands like Mouse Move & Click when the image/pixel is found. To save the values to a different variable and to edit them use the [Assign Variable](Commands\Assign_Variable.html) tab of 'If Statements' window.
+		You may use the variables %FoundX% and %FoundY% on other commands like Mouse Move & Click when the image/pixel is found. To save the values to a different variable or increment the values, use the [Assign Variable](Commands\Assign_Variable.html) tab of 'If Statements' window.
 
 	Extra:
 		### Related
@@ -294,10 +294,10 @@
 		Variations - Specify for n a number between 0 and 255 (inclusive) to indicate the allowed number of shades of variation in either direction for the intensity of the red, green, and blue components of each pixel's color.
 		Fast - Uses a faster searching method that in most cases dramatically reduces the amount of CPU time used by the search.
 		RGB - Causes ColorID to be interpreted as an RGB value instead of BGR. This option affects the Color Picker Tool but the retrieved color will be reversed in preview and Color Pick Dialog.
-		Break loop if found - When setting more then 1 loop in the *Repeat* field, this option will break the loop if the image is found right after executing the selected action.
+		Repeat until - Loops the command until the image is found or not found, according to the option selected.
 
 	Remarks:
-		You may use the variables %FoundX% and %FoundY% on other commands like Mouse Move & Click when the image/pixel is found. To save the values to a different variable and to edit them use the [Assign Variable](Commands\Assign_Variable.html) tab of 'If Statements' window.
+		You may use the variables %FoundX% and %FoundY% on other commands like Mouse Move & Click when the image/pixel is found. To save the values to a different variable or increment the values, use the [Assign Variable](Commands\Assign_Variable.html) tab of 'If Statements' window.
 
 	Extra:
 		### Related
