@@ -8180,7 +8180,7 @@ PlayStart:
 Gui, 1:+OwnDialogs
 Gui, 1:Submit, NoHide
 GoSub, b_Enable
-If !WinExist("ahk_id" PMCWinID)
+If (!(PlayHK) && !(WinExist("ahk_id" PMCWinID)))
 {
 	GoSub, ShowHide
 	return
@@ -8206,7 +8206,7 @@ If !DontShowPb
 	Gui, 26:Add, Button, -Wrap Default xs y+10 W75 H23 gTipClose, %c_Lang020%
 	Gui, 26:Show,, %AppName%
 }
-If (HideMainWin)
+If (!(PlayHK) && (HideMainWin))
 	GoSub, ShowHide
 Else
 	WinMinimize, ahk_id %PMCWinID%
