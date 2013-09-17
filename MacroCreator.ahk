@@ -7021,6 +7021,7 @@ If (s_Caller = "Edit")
 		GuiControl, 23:ChooseString, Cmd, % cmd := RegExReplace(Details, "(^\w*).*", "$1")
 		GuiControl, 23:, Value, % RegExReplace(Details, "^\w*, ?(.*)", "$1")
 		GoSub, Cmd
+		SBShowTip("Control")
 	}
 	Else If (Type = cType10)
 	{
