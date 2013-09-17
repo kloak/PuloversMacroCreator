@@ -12381,7 +12381,8 @@ Loop, %TabCount%
 	Try Menu, CopyTo, Uncheck, % CopyMenuLabels[A_Index]
 	Menu, CopyTo, Add, % CopyMenuLabels[A_Index], CopyList
 }
-Menu, CopyTo, Check, % CopyMenuLabels[A_List]
+Gui, chMacro:Submit, NoHide
+Try Menu, CopyTo, Check, % CopyMenuLabels[A_List]
 return
 
 ; Playback / Recording options menu:
