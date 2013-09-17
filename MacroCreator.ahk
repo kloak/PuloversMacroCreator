@@ -2990,8 +2990,8 @@ Gui, 5:Add, GroupBox, Section ys x+10 W250 H125
 Gui, 5:Add, Checkbox, -Wrap ys+15 xs+10 W160 vCSend gCSend R1, %c_Lang016%:
 Gui, 5:Add, Edit, vDefCt W200 Disabled
 Gui, 5:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetCtrl gGetCtrl Disabled, ...
-Gui, 5:Add, DDL, y+5 xs+10 W75 vIdent Disabled, Title||Class|Process|ID|PID
-Gui, 5:Add, Text, -Wrap yp+5 x+5 W140 H20 vWinParsTip cGray, %wcmd_All%
+Gui, 5:Add, Text, -Wrap y+15 xs+10 W150 H20 vWinParsTip cGray, %wcmd_All%
+Gui, 5:Add, DDL, yp-5 x+5 W75 vIdent Disabled, Title||Class|Process|ID|PID
 Gui, 5:Add, Edit, y+5 xs+10 W200 vTitle Disabled, A
 Gui, 5:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin Disabled, ...
 Gui, 5:Add, Button, -Wrap Section Default xm W75 H23 gMouseOK, %c_Lang020%
@@ -4226,8 +4226,8 @@ Gui, 8:Add, GroupBox, Section ys x+20 W240 H135
 Gui, 8:Add, Checkbox, -Wrap ys+15 xs+10 W150 vCSend gCSend R1, %c_Lang016%:
 Gui, 8:Add, Edit, vDefCt W190 Disabled
 Gui, 8:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetCtrl gGetCtrl Disabled, ...
-Gui, 8:Add, DDL, y+20 xs+10 W75 vIdent Disabled, Title||Class|Process|ID|PID
-Gui, 8:Add, Text, -Wrap yp+5 x+5 W140 H20 vWinParsTip cGray, %wcmd_All%
+Gui, 8:Add, Text, -Wrap y+20 xs+10 W140 H20 vWinParsTip cGray, %wcmd_All%
+Gui, 8:Add, DDL, yp-5 x+5 W75 vIdent Disabled, Title||Class|Process|ID|PID
 Gui, 8:Add, Edit, y+5 xs+10 W190 vTitle Disabled, A
 Gui, 8:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin Disabled, ...
 ; Buttons
@@ -5335,10 +5335,10 @@ Gui, 11:Add, Edit, W430 -Multi Disabled vValue
 Gui, 11:Add, Text, W180, %c_Lang057%:
 Gui, 11:Add, Edit, W430 -Multi Disabled vVarName
 Gui, 11:Add, Text, xs+10 y+5 W430 r1 vCPosT
-Gui, 11:Add, Groupbox, Section xs y+15 W450 H85
-Gui, 11:Add, DDL, ys+15 xs+10 W75 vIdent, Title||Class|Process|ID|PID
-Gui, 11:Add, Text, -Wrap yp+5 x+5 W240 H20 vWinParsTip cGray, %wcmd_WinSet%
-Gui, 11:Add, Edit, xs+10 y+10 W400 vTitle, A
+Gui, 11:Add, Groupbox, Section xs y+15 W450 H80
+Gui, 11:Add, Text, -Wrap ys+20 xs+10 W350 H20 vWinParsTip cGray, %wcmd_WinSet%
+Gui, 11:Add, DDL, yp-5 x+5 W75 vIdent, Title||Class|Process|ID|PID
+Gui, 11:Add, Edit, xs+10 y+5 W400 vTitle, A
 Gui, 11:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin, ...
 Gui, 11:Add, Text, Section ym+20 xm+145 W104 R1 Right, %c_Lang058%
 Gui, 11:Add, Text, yp x+5 W10, X:
@@ -6872,9 +6872,9 @@ Gui, 22:Add, Groupbox, Section xs y+15 W450 H130
 Gui, 22:Add, Text, ys+15 xs+10, %c_Lang004%:
 Gui, 22:Add, Edit, vDefCt W400
 Gui, 22:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetCtrl gGetCtrl, ...
-Gui, 22:Add, DDL, xs+10 y+10 W75 vIdent, Title||Class|Process|ID|PID
-Gui, 22:Add, Text, -Wrap yp+5 x+5 W240 H20 vWinParsTip cGray, %wcmd_WinSet%
-Gui, 22:Add, Edit, xs+10 y+5 W400 vTitle, A
+Gui, 22:Add, Text, -Wrap y+10 xs+10 W350 H20 vWinParsTip cGray, %wcmd_WinSet%
+Gui, 22:Add, DDL, yp-5 x+5 W75 vIdent, Title||Class|Process|ID|PID
+Gui, 22:Add, Edit, y+5 xs+10 W400 vTitle, A
 Gui, 22:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin, ...
 Gui, 22:Add, Button, -Wrap Section Default xm W75 H23 gSendMsgOK, %c_Lang020%
 Gui, 22:Add, Button, -Wrap ys W75 H23 gSendMsgCancel, %c_Lang021%
@@ -6991,8 +6991,8 @@ Gui, 23:Add, Groupbox, Section xs y+15 W450 H130
 Gui, 23:Add, Text, ys+15 xs+10, %c_Lang004%:
 Gui, 23:Add, Edit, vDefCt W400
 Gui, 23:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetCtrl gGetCtrl, ...
-Gui, 23:Add, DDL, xs+10 y+10 W75 vIdent, Title||Class|Process|ID|PID
-Gui, 23:Add, Text, -Wrap yp+5 x+5 W240 H20 vWinParsTip cGray, %wcmd_WinSet%
+Gui, 23:Add, Text, -Wrap y+10 xs+10 W350 H20 vWinParsTip cGray, %wcmd_WinSet%
+Gui, 23:Add, DDL, yp-5 x+5 W75 vIdent, Title||Class|Process|ID|PID
 Gui, 23:Add, Edit, xs+10 y+5 W400 vTitle, A
 Gui, 23:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin, ...
 Gui, 23:Add, Text, Section ym+20 xm+145 W104 R1 Right, %c_Lang058%
@@ -9768,10 +9768,10 @@ Gui, 16:+owner1 -MinimizeBox +HwndCmdWin
 Gui, chMacro:Default
 Gui, 1:+Disabled
 Gui, 16:Add, Groupbox, W450 H75
-Gui, 16:Add, Text, ys+15 xs+10 W40 cBlue, #IfWin
+Gui, 16:Add, Text, ys+20 xs+10 W40 cBlue, #IfWin
 Gui, 16:Add, DDL, yp-3 x+5 W100 vIfDirectContext, None||Active|NotActive|Exist|NotExist
 Gui, 16:Add, DDL, yp x+210 W75 vIdent, Title||Class|Process|ID|PID
-Gui, 16:Add, Edit, y+10 xs+10 W400 vTitle R1 -Multi, %IfDirectWindow%
+Gui, 16:Add, Edit, y+5 xs+10 W400 vTitle R1 -Multi, %IfDirectWindow%
 Gui, 16:Add, Button, -Wrap yp-1 x+0 W30 H23 vGetWin gGetWin, ...
 Gui, 16:Add, Button, -Wrap Section Default xm W75 H23 gSWinOK, %c_Lang020%
 Gui, 16:Add, Button, -Wrap ys W75 H23 gSWinCancel, %c_Lang021%
