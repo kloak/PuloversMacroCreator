@@ -8627,6 +8627,7 @@ SelRow ? LV_Modify(SelRow, "Select Focus Vis")
 return
 
 TabPlus:
+L_List := A_List
 Gui, 1:Submit, NoHide
 Gui, chMacro:Default
 Gui, chMacro:Submit, NoHide
@@ -8649,6 +8650,7 @@ CopyMenuLabels[TabCount] := TabName
 Menu, CopyTo, Add, % CopyMenuLabels[TabCount], CopyList
 Try Menu, CopyTo, Check, % CopyMenuLabels[A_List]
 GuiControl, 28:+Range1-%TabCount%, OSHK
+A_List := L_List
 
 TabSel:
 GoSub, SaveData
