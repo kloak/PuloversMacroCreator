@@ -4207,7 +4207,7 @@ Gui, 8:Add, Radio, -Wrap W200 vComText gComText R1, %c_Lang046%
 Gui, 8:Add, Radio, -Wrap y+20 W200 vClip gClip R1, %c_Lang047%
 Gui, 8:Add, Radio, -Wrap W200 vEditPaste gEditPaste R1, %c_Lang048%
 Gui, 8:Add, Radio, -Wrap W200 vSetText gSetText R1, %c_Lang049%
-Gui, 8:Add, Checkbox, -Wrap yp-55 xp+15 W180 vComEvent gComEvent R1 Disabled, %c_Lang178%
+Gui, 8:Add, Checkbox, -Wrap yp-55 xp+15 W185 vComEvent gComEvent R1 Disabled, %c_Lang178%
 ; Repeat
 Gui, 8:Add, GroupBox, Section ys x+20 W230 H135
 Gui, 8:Add, Text, ys+15 xs+10 W100 R1 Right, %w_Lang015%:
@@ -6340,15 +6340,15 @@ Gui, 21:Add, Edit, W200 R1 -Multi vVarNameF
 Gui, 21:Add, Checkbox, W430 vUseExtFunc gUseExtFunc, %c_Lang128%
 Gui, 21:Add, Edit, W400 R1 -Multi vFileNameEx Disabled, %StdLibFile%
 Gui, 21:Add, Button, -Wrap yp-1 x+0 W30 H23 vSearchFEX gSearchAHK Disabled, ...
-Gui, 21:Add, Text, yp+30 xs+10 W130, %c_Lang089%:
+Gui, 21:Add, Text, y+6 xs+10 W130, %c_Lang089%:
 Gui, 21:Add, Combobox, W400 -Multi vFuncName gFuncName, %BuiltinFuncList%
 Gui, 21:Add, Button, -Wrap W25 yp-1 x+5 hwndFuncHelp vFuncHelp gFuncHelp Disabled
 	ILButton(FuncHelp, ResDllPath ":" 24)
 Gui, 21:Add, Text, W430 yp+25 xs+10, %c_Lang090%:
 Gui, 21:Add, Edit, W430 R1 -Multi vVarValueF
 Gui, 21:Add, Text, W430 R1 vFuncTip
-Gui, 21:Add, Text, y+7 W430 R1 cGray, %c_Lang091%
-Gui, 21:Add, Groupbox, Section xs y+15 W450 H50, %c_Lang010%:
+Gui, 21:Add, Text, y+10 W430 R1 cGray, %c_Lang091%
+Gui, 21:Add, Groupbox, Section xs y+10 W450 H50, %c_Lang010%:
 Gui, 21:Add, Button, -Wrap ys+18 xs+85 W75 H23 vVarCopyB gVarCopy, %c_Lang023%
 Gui, 21:Add, Button, -Wrap x+10 yp W75 H23 gReset, %c_Lang088%
 Gui, 21:Add, Button, -Wrap Section xm y+14 W75 H23 gVarOK, %c_Lang020%
