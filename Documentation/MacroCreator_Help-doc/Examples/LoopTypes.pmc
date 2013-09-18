@@ -6,7 +6,7 @@
 5|[LoopStart]|A_LoopReadLine`, ¢`, |1|0|LoopParse|||||
 6|[Assign Variable]|cFolder := %A_LoopField%|1|0|Variable|||||
 7|[LoopStart]|%A_LoopField%\*.*`, 1`, 0|1|0|LoopFilePattern|||||
-8|[Pause]|Folder:`n%cFolder%`n`nFile %A_Index%:`n%A_LoopFileName%|1|0|MsgBox|1||||
+8|[MsgBox]|Folder:`n%cFolder%`n`nFile %A_Index%:`n%A_LoopFileName%|1|0|MsgBox|1||||
 9|If Message Box|Cancel|1|0|If_Statement|||||
 10|Return||1|0|Return|||||
 11|[End If]|EndIf|1|0|If_Statement|||||

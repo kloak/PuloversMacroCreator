@@ -4,6 +4,6 @@
 3|[Assign Variable]|Y_Pos := %WinPos_H% / 2|1|0|Variable|Expression||||
 4|Move|%X_Pos%, %Y_Pos%, 0|1|10|Click|||||
 5|ToolTip|Mouse is at %X_Pos% x %Y_Pos%, %WinPos_X%, %WinPos_Y%|1|0|ToolTip|||||
-6|[Pause]|Today is %A_DDDD% and it's %A_Hour%:%A_Min%.|1|0|MsgBox|0||||
+6|[MsgBox]|Today is %A_DDDD% and it's %A_Hour%:%A_Min%.|1|0|MsgBox|0||||
 7|ToolTip||1|0|ToolTip|||||
 

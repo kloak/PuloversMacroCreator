@@ -2,7 +2,7 @@
 1|[Assign Variable]|TextVar := One-Two-Three|1|0|Variable|||||
 2|StringSplit|OutVar, TextVar, -|1|0|StringSplit|||||
 3|[LoopStart]|LoopStart|%OutVar0%|0|Loop|||||
-4|[Pause]|% OutVar%A_Index%|1|0|MsgBox|0||||
+4|[MsgBox]|% OutVar%A_Index%|1|0|MsgBox|0||||
 5|[LoopEnd]|LoopEnd|1|0|Loop|||||
-6|[Pause]|Finished!|1|0|MsgBox|0||||
+6|[MsgBox]|Finished!|1|0|MsgBox|0||||
 

@@ -1771,6 +1771,7 @@ return
 
 SaveAs:
 Input
+ActiveFileName := CurrentFileName
 GoSub, SelectFile
 GoSub, Save
 return
@@ -1779,8 +1780,11 @@ SelectFile:
 Gui 1:+OwnDialogs
 FileSelectFile, SelectedFileName, S16, %CurrentFileName%, %d_Lang005%, %d_Lang004% (*.pmc)
 FreeMemory()
-If SelectedFileName = 
+If (SelectedFileName = "")
+{
+	CurrentFileName := ActiveFileName
 	Exit
+}
 SplitPath, SelectedFileName,, wDir, ext
 If (ext <> "pmc")
 	SelectedFileName .= ".pmc"
@@ -1791,7 +1795,8 @@ return
 Save:
 Input
 GoSub, SaveData
-If CurrentFileName = 
+ActiveFileName := CurrentFileName
+If (CurrentFileName = "")
 	GoSub, SelectFile
 IfExist %CurrentFileName%
 {
@@ -1820,10 +1825,10 @@ return
 
 SaveCurrentList:
 Input
-ActiveFile := CurrentFileName, CurrentFileName := TabGetText(TabSel, A_List) ".pmc"
+ActiveFileName := CurrentFileName, CurrentFileName := TabGetText(TabSel, A_List) ".pmc"
 GoSub, SaveData
 GoSub, SelectFile
-ThisListFile := CurrentFileName, CurrentFileName := ActiveFile
+ThisListFile := CurrentFileName, CurrentFileName := ActiveFileName
 IfExist %ThisListFile%
 {
     FileDelete %ThisListFile%

@@ -9,5 +9,5 @@
 8|WinWait||1|333|WinWait||ahk_class #32770|||
 9|[Control]|Test.txt|1|0|ControlSetText|Edit1|ahk_class #32770|||
 10|[Control]|Choose`, 2|1|0|Control|ComboBox3|ahk_class #32770|||
-11|[Pause]|%noteVar%|1|0|MsgBox|262144||||
+11|[MsgBox]|%noteVar%|1|0|MsgBox|262144||||
 
