@@ -829,7 +829,7 @@ TB_Define(TbFile, hTbFile, hIL_Icons, DefaultBar.File, DefaultBar.FileOpt)
 ,	RbMain.InsertBand(hAbortKey, 0, "", 7, w_Lang008, 60, 0, "", 22, 50)
 ,	RbMain.InsertBand(hPauseKey, 0, "", 8, c_Lang003, 60, 0, "", 22, 50)
 ,	RbMain.SetMaxRows(3)
-,	TBHwndAll := [TbFile, TbRecPlay, TbSettings, TbCommand, TbEdit, TbPrev, TbPrevF, TbOSC]
+,	TBHwndAll := [TbFile, TbRecPlay, TbSettings, TbCommand, TbEdit, tbPrev, tbPrevF, TbOSC]
 ,	RBIndexTB := [1, 2, 3, 5, 9], RBIndexHK := [4, 6, 7, 8]
 ,	Default_MainLayout := RbMain.GetLayout()
 Loop, Parse, Default_MainLayout, |
@@ -871,7 +871,7 @@ TbSettings:
 TbEdit:
 TbText:
 TbOSC:
-TbPrev:
+tbPrev:
 tbPrevF:
 If (A_GuiEvent = "N")
 {
@@ -993,11 +993,11 @@ return
 BuildPrevWin:
 Gui, chPrev:+LastFound
 Gui, chPrev:+hwndhPrevCh -Resize -Caption +Parent1
-Gui, chPrev:Add, Custom, ClassToolbarWindow32 y+0 hwndhTbPrev gtbPrev 0x0800 0x0100 0x0040 0x0008
+Gui, chPrev:Add, Custom, ClassToolbarWindow32 y+0 hwndhtbPrev gtbPrev 0x0800 0x0100 0x0040 0x0008
 Gui, chPrev:Add, Custom, ClassScintilla x0 y25 hwndhSciPrev vLVPrev
 Gui, chPrev:Show, W450 H600 Hide
-TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
-,	TbPrev.ModifyButton(8, "Hide")
+TB_Define(tbPrev, htbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
+,	tbPrev.ModifyButton(8, "Hide")
 ,	sciPrev := new scintilla(hSciPrev)
 ,	sciPrev.SetMarginWidthN(0x0, 0xA)
 ,	sciPrev.SetMarginWidthN(0x1, 0x5)
@@ -1020,11 +1020,12 @@ TB_Define(TbPrev, hTbPrev, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	sciPrev.SetReadOnly(0x1)
 
 Gui, 2:+Resize +MinSize215x20 +hwndPrevID
-Gui, 2:Add, Custom, ClassToolbarWindow32 hwndhTbPrevF gtbPrevF 0x0800 0x0100 0x0040 0x0008
+Gui, 2:Add, Custom, ClassToolbarWindow32 hwndhtbPrevF gtbPrevF 0x0800 0x0100 0x0040 0x0008
 Gui, 2:Add, Custom, ClassScintilla x0 y34 hwndhSciPrevF vLVPrevF
 Gui, 2:Add, StatusBar
-TB_Define(TbPrevF, hTbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
+TB_Define(tbPrevF, htbPrevF, hIL_Icons, FixedBar.Preview, FixedBar.PrevOpt)
 ,	tbPrevF.ModifyButtonInfo(1, "Text", t_Lang125),	tbPrevF.ModifyButtonInfo(1, "Image", 93)
+,	tbPrevF.ModifyButton(11, "Hide")
 ,	sciPrevF := new scintilla(hSciPrevF)
 ,	sciPrevF.SetMarginWidthN(0x0, 0xA)
 ,	sciPrevF.SetMarginWidthN(0x1, 0x5)
@@ -1050,15 +1051,15 @@ SB_SetParts(150, 150)
 ,	SB_SetText("Macro" A_List ": " o_AutoKey[A_List], 1)
 ,	SB_SetText("Record Keys: " RecKey "/" RecNewKey, 2)
 ,	SB_SetText("CoordMode: " CoordMouse, 3)
-,	TB_Edit(TbPrev, "TextWrap", TextWrap)
-,	TB_Edit(TbPrevF, "TextWrap", TextWrap)
-,	TB_Edit(TbPrev, "TabIndent", TabIndent)
-,	TB_Edit(TbPrevF, "TabIndent", TabIndent)
+,	TB_Edit(tbPrev, "TextWrap", TextWrap)
+,	TB_Edit(tbPrevF, "TextWrap", TextWrap)
+,	TB_Edit(tbPrev, "TabIndent", TabIndent)
+,	TB_Edit(tbPrevF, "TabIndent", TabIndent)
 Gui, chMacro:Default
 return
 
 OnTop:
-TB_Edit(TbPrevF, "OnTop", OnTop := !OnTop)
+TB_Edit(tbPrevF, "OnTop", OnTop := !OnTop)
 Gui, % (OnTop) ? "2:+AlwaysOnTop" : "2:-AlwaysOnTop"
 return
 
@@ -1095,15 +1096,15 @@ return
 
 TextWrap:
 TabIndent:
-TB_Edit(TbPrev, A_ThisLabel, %A_ThisLabel% := !%A_ThisLabel%)
-,	TB_Edit(TbPrevF, A_ThisLabel, %A_ThisLabel%)
+TB_Edit(tbPrev, A_ThisLabel, %A_ThisLabel% := !%A_ThisLabel%)
+,	TB_Edit(tbPrevF, A_ThisLabel, %A_ThisLabel%)
 ,	sciPrev.SetWrapMode(TextWrap ? 0x1 : 0x0), sciPrevF.SetWrapMode(TextWrap ? 0x1 : 0x0)
 GoSub, PrevRefresh
 return
 
 AutoRefresh:
-TB_Edit(TbPrev, "PrevRefreshButton", AutoRefresh := !AutoRefresh)
-,	TB_Edit(TbPrevF, "PrevRefreshButton", AutoRefresh)
+TB_Edit(tbPrev, "PrevRefreshButton", AutoRefresh := !AutoRefresh)
+,	TB_Edit(tbPrevF, "PrevRefreshButton", AutoRefresh)
 GoSub, PrevRefresh
 return
 
@@ -2235,8 +2236,8 @@ Loop, %TabCount%
 Gui, 1:-Disabled
 Gui, 14:Destroy
 Gui, chMacro:Default
-	TB_Edit(TbPrev, "TabIndent", TabIndent)
-,	TB_Edit(TbPrevF, "TabIndent", TabIndent)
+	TB_Edit(tbPrev, "TabIndent", TabIndent)
+,	TB_Edit(tbPrevF, "TabIndent", TabIndent)
 return
 
 Exe_Exp:
@@ -8443,7 +8444,7 @@ Else
 	tbPtr := TB_GetHwnd(cHwnd)
 	If IsObject(tbPtr)
 	{
-		If ((tbPtr.tbHwnd = hTbPrev) || (tbPtr.tbHwnd = hTbPrevF))
+		If ((tbPtr.tbHwnd = htbPrev) || (tbPtr.tbHwnd = htbPrevF))
 			return
 		Menu, TbMenu, Add, %w_Lang090%, Customize
 		Menu, TbMenu, Add, %w_Lang093%, TbHide
@@ -11432,10 +11433,10 @@ AbortKey := "F8"
 ,	OnFinishCode := 1
 ,	sciPrev.SetWrapMode(0x0)
 ,	sciPrevF.SetWrapMode(0x0)
-,	TB_Edit(TbPrev, "TextWrap", 0)
-,	TB_Edit(TbPrevF, "TextWrap", 0)
-,	TB_Edit(TbPrev, "TabIndent", 1)
-,	TB_Edit(TbPrevF, "TabIndent", 1)
+,	TB_Edit(tbPrev, "TextWrap", 0)
+,	TB_Edit(tbPrevF, "TextWrap", 0)
+,	TB_Edit(tbPrev, "TabIndent", 1)
+,	TB_Edit(tbPrevF, "TabIndent", 1)
 
 WinSet, Transparent, %OSTrans%, ahk_id %PMCOSC%
 GuiControl, 28:, OSTrans, 255
@@ -12602,7 +12603,7 @@ TB_Edit(tbPrev, "PrevDock", "", "", t_Lang124)
 , TB_Edit(tbPrevF, "PrevDock", "", "", t_Lang125)
 , TB_Edit(tbPrevF, "PrevCopy", "", "", c_Lang023), TB_Edit(tbPrevF, "PrevRefreshButton", "", "", t_Lang014)
 , TB_Edit(tbPrevF, "AutoRefresh", "", "", t_Lang015), TB_Edit(tbPrevF, "TextWrap", "", "", t_Lang052), TB_Edit(tbPrevF, "TabIndent", "", "", t_Lang011), TB_Edit(tbPrevF, "OnTop", "", "", t_Lang016)
-, TB_Edit(tbPrevF, "EditScript", "", "", t_Lang138)
+, TB_Edit(tbPrevF, "EditScript", "", "", t_Lang138), TB_Edit(tbPrevF, "Preview", "", "", c_Lang022)
 ; OSC
 TB_Edit(tbOSC, "OSPlay", "", "", t_Lang112), TB_Edit(tbOSC, "OSStop", "", "", t_Lang113), TB_Edit(tbOSC, "ShowPlayMenu", "", "", t_Lang114)
 , TB_Edit(tbOSC, "RecStart", "", "", t_Lang115), TB_Edit(tbOSC, "RecStartNew", "", "", t_Lang116), TB_Edit(tbOSC, "ShowRecMenu", "", "", t_Lang117)

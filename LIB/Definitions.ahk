@@ -903,7 +903,7 @@ DefaultBar := {FileOpt: "Enabled AutoSize", File: ["New=" w_Lang040 ":41", "Open
 FixedBar :=	{PrevOpt: "Enabled AutoSize", Preview: ["PrevDock=" t_Lang124 ":17"
 														, "", "PrevCopy=" c_Lang023 ":8", "PrevRefreshButton=" t_Lang014 ":90(Enabled Dropdown)"
 														, "", "TabIndent=" t_Lang011 ":85", "TextWrap=" t_Lang052 ":96", "OnTop=" t_Lang016 ":81"
-														, "", "EditScript=" t_Lang138 ":14"]
+														, "", "EditScript=" t_Lang138 ":14", "Preview=" c_Lang022 ":15"]
 			, TextOpt: "Enabled AutoSize", Text: ["OpenT=" t_Lang126 ":42", "SaveT=" t_Lang127 ":59"
 														, "", "CutT=" t_Lang128 ":9", "CopyT=" t_Lang129 ":8", "PasteT=" t_Lang130 ":44"
 														, "", "RemoveT=" t_Lang132 ":10", "SelAllT=" t_Lang131 ":99"]
