@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal lahjoituksen
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Luoja Home
-	h_Lang002 =	&AHK Online Documentation
-	h_Lang003 =	&Tarkista päivitykset...
-	h_Lang004 =	Ta&rkista käynnistettäessä
-	h_Lang005 =	&Noin
-	h_Lang006 =	&vinkkejä
-	h_Lang007 =	&Foorumi
+	h_Lang001 =	&Apua
+	h_Lang002 =	&Oppaat
+	h_Lang003 =	&Vinkkejä
+	h_Lang004 =	&Makro Luoja Home
+	h_Lang005 =	&Foorumi
+	h_Lang006 =	A&HK Online Documentation
+	h_Lang007 =	&Tarkista päivitykset...
+	h_Lang008 =	Ta&rkista käynnistettäessä
+	h_Lang009 =	&Noin
 		
 ; Tray Menu		
 	y_Lang001 =	Piilota ikkuna

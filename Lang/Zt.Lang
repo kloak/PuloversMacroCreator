@@ -132,13 +132,15 @@
 	p_Lang001 =	PayPal捐贈
 		
 ; Help Sub Menu		
-	h_Lang001 =	宏造物主首頁
-	h_Lang002 =	AHK在線文檔
-	h_Lang003 =	檢查更新...
-	h_Lang004 =	檢查啟動
-	h_Lang005 =	關於
-	h_Lang006 =	溫馨提示
-	h_Lang007 =	論壇
+	h_Lang001 =	幫助
+	h_Lang002 =	教程
+	h_Lang003 =	溫馨提示
+	h_Lang004 =	宏造物主首頁
+	h_Lang005 =	論壇
+	h_Lang006 =	AHK在線文檔
+	h_Lang007 =	檢查更新...
+	h_Lang008 =	檢查啟動
+	h_Lang009 =	關於
 		
 ; Tray Menu		
 	y_Lang001 =	隱藏窗口

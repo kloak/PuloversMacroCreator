@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Donation
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Macro Creator Αρχική
-	h_Lang002 =	&AHK Online Τεκμηρίωση
-	h_Lang003 =	&Έλεγχος για ενημερώσεις...
-	h_Lang004 =	Έ&λεγχος κατά την εκκίνηση
-	h_Lang005 =	&Περίπου
-	h_Lang006 =	&Συμβουλές
-	h_Lang007 =	&Φόρουμ
+	h_Lang001 =	&Βοήθεια
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	&Συμβουλές
+	h_Lang004 =	&Macro Creator Αρχική
+	h_Lang005 =	&Φόρουμ
+	h_Lang006 =	&AHK Online Τεκμηρίωση
+	h_Lang007 =	&Έλεγχος για ενημερώσεις...
+	h_Lang008 =	Έ&λεγχος κατά την εκκίνηση
+	h_Lang009 =	&Περίπου
 		
 ; Tray Menu		
 	y_Lang001 =	Απόκρυψη Παράθυρο

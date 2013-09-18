@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Spende
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Webseite
-	h_Lang002 =	&AHK Online-Dokumentation
-	h_Lang003 =	&Nach Updates suchen...
-	h_Lang004 =	&Beim Start überprüfen
-	h_Lang005 =	&Über
-	h_Lang006 =	&Tipps
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Hilfe
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	T&ipps
+	h_Lang004 =	&Makro Creator Webseite
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Online-Dokumentation
+	h_Lang007 =	&Nach Updates suchen...
+	h_Lang008 =	&Beim Start überprüfen
+	h_Lang009 =	&Über
 		
 ; Tray Menu		
 	y_Lang001 =	Fenster schließen

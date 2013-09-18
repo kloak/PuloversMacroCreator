@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Bağış
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Home
-	h_Lang002 =	&AHK Çevrimiçi Belgeler
-	h_Lang003 =	&Güncellemeleri kontrol...
-	h_Lang004 =	&Başlangıçta kontrol edin
-	h_Lang005 =	&Hakkında
-	h_Lang006 =	&İpuçları
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Yardım
+	h_Lang002 =	&Öğreticiler
+	h_Lang003 =	&İpuçları
+	h_Lang004 =	&Makro Creator Home
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Çevrimiçi Belgeler
+	h_Lang007 =	&Güncellemeleri kontrol...
+	h_Lang008 =	&Başlangıçta kontrol edin
+	h_Lang009 =	&Hakkında
 		
 ; Tray Menu		
 	y_Lang001 =	Pencere gizle

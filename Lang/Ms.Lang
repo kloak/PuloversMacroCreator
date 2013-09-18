@@ -132,13 +132,15 @@
 	p_Lang001 =	Derma PayPal
 		
 ; Help Sub Menu		
-	h_Lang001 =	Makro Pencipta Home
-	h_Lang002 =	AHK Dokumentasi Dalam Talian
-	h_Lang003 =	Semak kemas kini...
-	h_Lang004 =	Semak pada permulaan
-	h_Lang005 =	Mengenai
-	h_Lang006 =	Tips
-	h_Lang007 =	Forum
+	h_Lang001 =	&Bantuan
+	h_Lang002 =	&Tutorial
+	h_Lang003 =	T&ips
+	h_Lang004 =	&Makro Pencipta Home
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Dokumentasi Dalam Talian
+	h_Lang007 =	&Semak kemas kini...
+	h_Lang008 =	S&emak pada permulaan
+	h_Lang009 =	Me&ngenai
 		
 ; Tray Menu		
 	y_Lang001 =	Sembunyikan Tetingkap

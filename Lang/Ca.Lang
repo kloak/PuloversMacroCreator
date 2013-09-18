@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Donació
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Macro Creator Home
-	h_Lang002 =	&AHK Documentació en línia
-	h_Lang003 =	A &buscar actualitzacions...
-	h_Lang004 =	&Comproveu en l'arrencada
-	h_Lang005 =	&Sobre
-	h_Lang006 =	C&onsells
-	h_Lang007 =	&Fòrum
+	h_Lang001 =	&Ajudar
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	&Consells
+	h_Lang004 =	&Macro Creator Home
+	h_Lang005 =	&Fòrum
+	h_Lang006 =	A&HK Documentació en línia
+	h_Lang007 =	A &buscar actualitzacions...
+	h_Lang008 =	C&omproveu en l'arrencada
+	h_Lang009 =	&Sobre
 		
 ; Tray Menu		
 	y_Lang001 =	Hide Window

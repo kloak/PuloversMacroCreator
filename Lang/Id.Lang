@@ -132,13 +132,15 @@
 	p_Lang001 =	&Donasi PayPal
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Pencipta Depan
-	h_Lang002 =	&AHK Dokumentasi Online
-	h_Lang003 =	&Periksa pembaruan...
-	h_Lang004 =	P&eriksa pada startup
-	h_Lang005 =	&Tentang
-	h_Lang006 =	T&ips
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Membantu
+	h_Lang002 =	&Tutorial
+	h_Lang003 =	T&ips
+	h_Lang004 =	M&akro Pencipta Depan
+	h_Lang005 =	&Forum
+	h_Lang006 =	A&HK Dokumentasi Online
+	h_Lang007 =	&Periksa pembaruan...
+	h_Lang008 =	P&eriksa pada startup
+	h_Lang009 =	Te&ntang
 		
 ; Tray Menu		
 	y_Lang001 =	Sembunyikan Jendela

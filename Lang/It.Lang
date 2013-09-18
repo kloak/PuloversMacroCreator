@@ -132,13 +132,15 @@
 	p_Lang001 =	&Donazione PayPal
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Macro Home Creator
-	h_Lang002 =	&AHK Documentazione in linea
-	h_Lang003 =	&Controllare gli aggiornamenti...
-	h_Lang004 =	C&ontrolla all'avvio
-	h_Lang005 =	C&irca
-	h_Lang006 =	&Suggerimenti
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Aiuto
+	h_Lang002 =	&Tutorial
+	h_Lang003 =	&Suggerimenti
+	h_Lang004 =	&Macro Home Creator
+	h_Lang005 =	&Forum
+	h_Lang006 =	A&HK Documentazione in linea
+	h_Lang007 =	&Controllare gli aggiornamenti...
+	h_Lang008 =	C&ontrolla all'avvio
+	h_Lang009 =	C&irca
 		
 ; Tray Menu		
 	y_Lang001 =	Nascondi la finestra

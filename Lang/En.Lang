@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Donation
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Macro Creator Home
-	h_Lang002 =	&AHK Online Documentation
-	h_Lang003 =	&Check for updates...
-	h_Lang004 =	Check on &startup
-	h_Lang005 =	Abo&ut
-	h_Lang006 =	&Tips
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Help
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	T&ips
+	h_Lang004 =	&Macro Creator Home
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Online Documentation
+	h_Lang007 =	&Check for updates...
+	h_Lang008 =	Ch&eck on startup
+	h_Lang009 =	A&bout
 		
 ; Tray Menu		
 	y_Lang001 =	Hide Window

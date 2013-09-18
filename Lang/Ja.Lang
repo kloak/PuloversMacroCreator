@@ -132,13 +132,15 @@
 	p_Lang001 =	PayPalの寄付
 		
 ; Help Sub Menu		
-	h_Lang001 =	マクロクリエーターホーム
-	h_Lang002 =	AHKオンライン·ドキュメント
-	h_Lang003 =	アップデートを確認...
-	h_Lang004 =	起動時にチェック
-	h_Lang005 =	約
-	h_Lang006 =	ヒント
-	h_Lang007 =	フォーラム
+	h_Lang001 =	助ける
+	h_Lang002 =	チュートリアル
+	h_Lang003 =	ヒント
+	h_Lang004 =	マクロクリエーターホーム
+	h_Lang005 =	フォーラム
+	h_Lang006 =	AHKオンライン·ドキュメント
+	h_Lang007 =	アップデートを確認...
+	h_Lang008 =	起動時にチェック
+	h_Lang009 =	約
 		
 ; Tray Menu		
 	y_Lang001 =	ウィンドウを非表示

@@ -132,13 +132,15 @@
 	p_Lang001 =	페이팔 기부
 		
 ; Help Sub Menu		
-	h_Lang001 =	매크로 작성기 홈
-	h_Lang002 =	AHK 온라인 설명서
-	h_Lang003 =	업데이트 확인...
-	h_Lang004 =	시작을 확인
-	h_Lang005 =	약
-	h_Lang006 =	팁 
-	h_Lang007 =	포럼
+	h_Lang001 =	도움
+	h_Lang002 =	자습서
+	h_Lang003 =	팁 
+	h_Lang004 =	매크로 작성기 홈
+	h_Lang005 =	포럼
+	h_Lang006 =	AHK 온라인 설명서
+	h_Lang007 =	업데이트 확인...
+	h_Lang008 =	시작을 확인
+	h_Lang009 =	약
 		
 ; Tray Menu		
 	y_Lang001 =	창 숨기기

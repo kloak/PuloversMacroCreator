@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Dar
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Home
-	h_Lang002 =	&AHK online dokumentácia
-	h_Lang003 =	&Skontrolovať aktualizácie...
-	h_Lang004 =	&Pozrite sa na štarte
-	h_Lang005 =	&O
-	h_Lang006 =	&Tipy
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Pomoc
+	h_Lang002 =	&Návody
+	h_Lang003 =	&Tipy
+	h_Lang004 =	&Makro Creator Home
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK online dokumentácia
+	h_Lang007 =	&Skontrolovať aktualizácie...
+	h_Lang008 =	P&ozrite sa na štarte
+	h_Lang009 =	O
 		
 ; Tray Menu		
 	y_Lang001 =	Hide Window

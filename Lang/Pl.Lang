@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Darowizna
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Home
-	h_Lang002 =	&AHK Dokumentacja online
-	h_Lang003 =	&Sprawdzić dostępność aktualizacji...
-	h_Lang004 =	S&prawdź na starcie
-	h_Lang005 =	&O
-	h_Lang006 =	Po&rady
-	h_Lang007 =	&Форум...
+	h_Lang001 =	&Pomocy
+	h_Lang002 =	P&oradniki
+	h_Lang003 =	Po&rady
+	h_Lang004 =	&Makro Creator Home
+	h_Lang005 =	&Форум...
+	h_Lang006 =	&AHK Dokumentacja online
+	h_Lang007 =	&Sprawdzić dostępność aktualizacji...
+	h_Lang008 =	Spra&wdź na starcie
+	h_Lang009 =	O
 		
 ; Tray Menu		
 	y_Lang001 =	Ukryj okno

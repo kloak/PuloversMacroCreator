@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Donatie
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Macro Schepper Startpagina
-	h_Lang002 =	&AHK Online Documentatie
-	h_Lang003 =	&Controleren op updates...
-	h_Lang004 =	C&ontroleer bij opstarten
-	h_Lang005 =	O&ver
-	h_Lang006 =	&tips
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Help
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	T&ips
+	h_Lang004 =	&Macro Schepper Startpagina
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Online Documentatie
+	h_Lang007 =	&Controleren op updates...
+	h_Lang008 =	C&ontroleer bij opstarten
+	h_Lang009 =	O&ver
 		
 ; Tray Menu		
 	y_Lang001 =	Venster te verbergen

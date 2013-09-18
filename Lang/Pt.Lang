@@ -132,13 +132,15 @@
 	p_Lang001 =	&Doação via PayPal
 		
 ; Help Sub Menu		
-	h_Lang001 =	Site do &Macro Creator
-	h_Lang002 =	Documentação &AHK Online
-	h_Lang003 =	&Verificar atualizações...
-	h_Lang004 =	Verificar ao &iniciar
-	h_Lang005 =	&Sobre
-	h_Lang006 =	&Dicas
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Ajuda
+	h_Lang002 =	&Tutoriais
+	h_Lang003 =	&Dicas
+	h_Lang004 =	&Site do Macro Creator
+	h_Lang005 =	&Forum
+	h_Lang006 =	D&ocumentação AHK Online
+	h_Lang007 =	&Verificar atualizações...
+	h_Lang008 =	V&erificar ao iniciar
+	h_Lang009 =	So&bre
 		
 ; Tray Menu		
 	y_Lang001 =	Ocultar Janela

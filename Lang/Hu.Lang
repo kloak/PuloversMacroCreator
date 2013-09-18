@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal adomány
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makró Creator Főoldal
-	h_Lang002 =	&AHK Online dokumentáció
-	h_Lang003 =	&Ellenőrizze a frissítéseket...
-	h_Lang004 =	E&llenőrizze indításkor
-	h_Lang005 =	&Ról
-	h_Lang006 =	&tippek
-	h_Lang007 =	&Fórum
+	h_Lang001 =	&Segítség
+	h_Lang002 =	&Oktatóanyagok
+	h_Lang003 =	&Tippek
+	h_Lang004 =	&Makró Creator Főoldal
+	h_Lang005 =	&Fórum
+	h_Lang006 =	&AHK Online dokumentáció
+	h_Lang007 =	&Ellenőrizze a frissítéseket...
+	h_Lang008 =	E&llenőrizze indításkor
+	h_Lang009 =	&Ról
 		
 ; Tray Menu		
 	y_Lang001 =	Ablak elrejtése

@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal Donacija
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Domov
-	h_Lang002 =	&AHK Online Dokumentacija
-	h_Lang003 =	&Preveri za posodobitve.
-	h_Lang004 =	P&reveri ob zagonu
-	h_Lang005 =	&O
-	h_Lang006 =	&Nasveti
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Help
+	h_Lang002 =	&Vaje
+	h_Lang003 =	&Nasveti
+	h_Lang004 =	&Makro Creator Domov
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Online Dokumentacija
+	h_Lang007 =	&Preveri za posodobitve.
+	h_Lang008 =	P&reveri ob zagonu
+	h_Lang009 =	&O
 		
 ; Tray Menu		
 	y_Lang001 =	Skrij okno

@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal donation
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Skapare Hem
-	h_Lang002 =	&AHK Online Dokumentation
-	h_Lang003 =	&Sök efter uppdateringar...
-	h_Lang004 =	&Kontrollera vid uppstart
-	h_Lang005 =	&Om
-	h_Lang006 =	&Tips
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Hjälp
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	T&ips
+	h_Lang004 =	&Makro Skapare Hem
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK Online Dokumentation
+	h_Lang007 =	&Sök efter uppdateringar...
+	h_Lang008 =	&Kontrollera vid uppstart
+	h_Lang009 =	&Om
 		
 ; Tray Menu		
 	y_Lang001 =	Dölj fönster

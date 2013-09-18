@@ -132,13 +132,15 @@
 	p_Lang001 =	&PayPal donasjon
 		
 ; Help Sub Menu		
-	h_Lang001 =	&Makro Creator Hjem
-	h_Lang002 =	&AHK-dokumentasjon
-	h_Lang003 =	&Se etter oppdateringer...
-	h_Lang004 =	S&jekk ved oppstart
-	h_Lang005 =	&Om
-	h_Lang006 =	&tips
-	h_Lang007 =	&Forum
+	h_Lang001 =	&Hjelp
+	h_Lang002 =	&Tutorials
+	h_Lang003 =	T&ips
+	h_Lang004 =	&Makro Creator Hjem
+	h_Lang005 =	&Forum
+	h_Lang006 =	&AHK-dokumentasjon
+	h_Lang007 =	&Se etter oppdateringer...
+	h_Lang008 =	S&jekk ved oppstart
+	h_Lang009 =	&Om
 		
 ; Tray Menu		
 	y_Lang001 =	Skjul vindu

@@ -2836,6 +2836,10 @@ Homepage:
 Run, http://www.macrocreator.com
 return
 
+Tutorials:
+Run, http://www.macrocreator.com/help
+return
+
 Forum:
 Run, http://www.autohotkey.com/board/topic/79763-macro-creator
 return
@@ -2870,7 +2874,7 @@ return
 
 AutoUpdate:
 AutoUpdate := !AutoUpdate
-Menu, HelpMenu, % (AutoUpdate) ? "Check" : "Uncheck", %h_Lang004%
+Menu, HelpMenu, % (AutoUpdate) ? "Check" : "Uncheck", %h_Lang008%
 return
 
 HelpAbout:
@@ -7898,9 +7902,9 @@ Gui, 31:Submit
 Gui, 31:Destroy
 Gui, 1:-Disabled
 If AutoUpdate
-	Menu, HelpMenu, Check, %h_Lang004%
+	Menu, HelpMenu, Check, %h_Lang008%
 Else
-	Menu, HelpMenu, Uncheck, %h_Lang004%
+	Menu, HelpMenu, Uncheck, %h_Lang008%
 If (Basic = 1)
 	UserLayout := "Basic"
 If (Default = 1)
@@ -12206,17 +12210,18 @@ Menu, OptionsMenu, Add
 Menu, OptionsMenu, Add, %o_Lang005%`t%_s%Alt+F6, DefaultHotkeys
 Menu, OptionsMenu, Add, %o_Lang006%`t%_s%Alt+F7, LoadDefaults
 
-Menu, HelpMenu, Add, %m_Lang010%`t%_s%F1, Help
-Menu, HelpMenu, Add, %h_Lang006%, ShowTips
+Menu, HelpMenu, Add, %h_Lang001%`t%_s%F1, Help
+Menu, HelpMenu, Add, %h_Lang002%, Tutorials
+Menu, HelpMenu, Add, %h_Lang003%, ShowTips
 Menu, HelpMenu, Add
-Menu, HelpMenu, Add, %h_Lang001%, Homepage
-Menu, HelpMenu, Add, %h_Lang007%, Forum
-Menu, HelpMenu, Add, %h_Lang002%, HelpAHK
+Menu, HelpMenu, Add, %h_Lang004%, Homepage
+Menu, HelpMenu, Add, %h_Lang005%, Forum
+Menu, HelpMenu, Add, %h_Lang006%, HelpAHK
 Menu, HelpMenu, Add
-Menu, HelpMenu, Add, %h_Lang003%, CheckNow
-Menu, HelpMenu, Add, %h_Lang004%, AutoUpdate
+Menu, HelpMenu, Add, %h_Lang007%, CheckNow
+Menu, HelpMenu, Add, %h_Lang008%, AutoUpdate
 Menu, HelpMenu, Add
-Menu, HelpMenu, Add, %h_Lang005%`t%_s%Shift+F1, HelpAbout
+Menu, HelpMenu, Add, %h_Lang009%`t%_s%Shift+F1, HelpAbout
 
 Loop, Parse, Start_Tips, `n
 {
@@ -12265,7 +12270,7 @@ Menu, Tray, Default, %w_Lang005%
 If KeepDefKeys
 	Menu, OptionsMenu, Check, %o_Lang002%
 If AutoUpdate
-	Menu, HelpMenu, Check, %h_Lang004%
+	Menu, HelpMenu, Check, %h_Lang008%
 If ShowLoopIfMark
 	Menu, ViewMenu, Check, %v_lang002%
 If ShowActIdent
@@ -12353,7 +12358,7 @@ Menu, MacroMenu, Icon, %r_Lang012%`t%_s%Ctrl+Shift+E, %ResDllPath%, 97
 Menu, MacroMenu, Icon, %r_Lang013%`t%_s%Ctrl+I, %ResDllPath%, 28
 Menu, MacroMenu, Icon, %r_Lang014%`t%_s%Ctrl+Alt+S, %ResDllPath%, 67
 Menu, OptionsMenu, Icon, %o_Lang001%`t%_s%Ctrl+G, %ResDllPath%, 43
-Menu, HelpMenu, Icon, %m_Lang010%`t%_s%F1, %ResDllPath%, 24
+Menu, HelpMenu, Icon, %h_Lang001%`t%_s%F1, %ResDllPath%, 24
 Menu, DonationMenu, Icon, %p_Lang001%, %ResDllPath%, 12
 Menu, Tray, Icon, %w_Lang005%, %ResDllPath%, 46
 Menu, Tray, Icon, %w_Lang008%, %ResDllPath%, 65

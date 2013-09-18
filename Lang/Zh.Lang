@@ -132,13 +132,15 @@
 	p_Lang001 =	PayPal捐赠
 		
 ; Help Sub Menu		
-	h_Lang001 =	宏造物主首页
-	h_Lang002 =	AHK在线文档
-	h_Lang003 =	检查更新...
-	h_Lang004 =	检查启动
-	h_Lang005 =	关于
-	h_Lang006 =	温馨提示
-	h_Lang007 =	论坛
+	h_Lang001 =	帮助
+	h_Lang002 =	教程
+	h_Lang003 =	温馨提示
+	h_Lang004 =	宏造物主首页
+	h_Lang005 =	论坛
+	h_Lang006 =	AHK在线文档
+	h_Lang007 =	检查更新...
+	h_Lang008 =	检查启动
+	h_Lang009 =	关于
 		
 ; Tray Menu		
 	y_Lang001 =	隐藏窗口

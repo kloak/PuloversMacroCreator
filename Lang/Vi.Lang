@@ -132,13 +132,15 @@
 	p_Lang001 =	Hiến PayPal
 		
 ; Help Sub Menu		
-	h_Lang001 =	Vĩ mô Đấng Tạo Hóa Trang chủ
-	h_Lang002 =	AHK Tài liệu trực tuyến
-	h_Lang003 =	Kiểm tra các bản cập nhật...
-	h_Lang004 =	Kiểm tra khi khởi động
-	h_Lang005 =	Về
-	h_Lang006 =	Mẹo
-	h_Lang007 =	Diễn đàn
+	h_Lang001 =	&Giúp
+	h_Lang002 =	&Hướng dẫn
+	h_Lang003 =	&Mẹo
+	h_Lang004 =	&Vĩ mô Đấng Tạo Hóa Trang chủ
+	h_Lang005 =	&Diễn đàn
+	h_Lang006 =	&AHK Tài liệu trực tuyến
+	h_Lang007 =	&Kiểm tra các bản cập nhật...
+	h_Lang008 =	K&iểm tra khi khởi động
+	h_Lang009 =	V&ề
 		
 ; Tray Menu		
 	y_Lang001 =	Hide Window
