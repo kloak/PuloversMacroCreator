@@ -1658,6 +1658,7 @@ FreeMemory(), OnFinishCode := 1
 SetWorkingDir %A_ScriptDir%
 GoSub, SetFinishButtom
 GoSub, RecentFiles
+GoSub, PrevRefresh
 SetTimer, FinishIcon, -1
 return
 
@@ -4701,8 +4702,6 @@ If (s_Caller = "Edit")
 	}
 	If (Type = cType6)
 	{
-		StringReplace, Details, Details, ``n, `n, All
-		StringReplace, Details, Details, ```,, `,, All
 		GuiControl, 3:, CancelB, 0
 		GuiControl, 3:, MsgPt, %Details%
 		GuiControl, 3:, Title, %Window%
@@ -4711,7 +4710,7 @@ If (s_Caller = "Edit")
 			GuiControl, 3:, TimeoutM, %DelayX%
 		Else
 			GuiControl, 3:, TimeoutMsg, %DelayX%
-		InStyles := "|"
+		InStyles := "|", MsgButton := 0
 		For i, v in MsgBoxStyles
 		{
 			If (Target & v)
@@ -4803,14 +4802,13 @@ Else If Min = 1
 	DelayX *= 60000
 If TabControl = 2
 {
-	StringReplace, MsgPT, MsgPT, `n, ``n, All
-	StringReplace, MsgPT, MsgPT, `,, ```,, All
 	Type := cType6, Details := MsgPT, DelayX := (InStr(TimeoutM, "%") ? TimeoutM : TimeoutMsg)
 ,	Target := 0
 ,	Target += Aot ? 262144 : 0
 ,	Target += (Default-1) * 256
 ,	Target += (Icon-1) * 16
 ,	Target += (Buttons-1)
+,	EscCom("Details|Title")
 }
 Else If TabControl = 3
 {
@@ -8482,13 +8480,6 @@ For Index, Ptr in TBHwndAll
 	}
 }
 GoSub, ShowHideBandOn
-return
-
-CopyTo:
-Gui, 1:Submit, NoHide
-Gui, chMacro:Default
-Gui, chMacro:ListView, InputList%A_List%
-Menu, CopyTo, Show
 return
 
 DuplicateList:

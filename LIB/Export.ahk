@@ -102,6 +102,7 @@
 				Step := "`n(LTrim`n" Step "`n)"
 			}
 			StringReplace, Step, Step, ```,, `````,, All
+			StringReplace, Window, Window, ```,, `````,, All
 			RowData := "`n" Type ", " Target ", " Window ", " Step ((DelayX > 0) ? ", " DelayX : "")
 			If (Comment <> "")
 				RowData .= "  " "; " Comment
