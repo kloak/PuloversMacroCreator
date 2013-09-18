@@ -8495,12 +8495,12 @@ return
 DuplicateList:
 Gui, chMacro:Default
 s_List := A_List
-GuiControlGet, c_Time, 1:, TimesG
+GuiControlGet, c_Time, chTimes:, TimesG
 GoSub, TabPlus
 d_List := TabCount, RowSelection := 0
 GoSub, CopySelection
 HistoryMacro%A_List% := new LV_Rows()
-GuiControl, 1:, TimesG, %c_Time%
+GuiControl, chTimes:, TimesG, %c_Time%
 GoSub, b_Start
 return
 
