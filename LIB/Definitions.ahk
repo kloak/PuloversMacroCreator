@@ -52,6 +52,7 @@ ListCount1 := 0
 ,	cType41 := "LoopRegistry"
 ,	cType42 := "VBScript"
 ,	cType43 := "JScript"
+,	cType44 := "Function"
 
 Action1 := "Click"
 ,	Action2 := "Move"
@@ -892,12 +893,11 @@ DefaultBar := {FileOpt: "Enabled AutoSize", File: ["New=" w_Lang040 ":41", "Open
 														, "", "Capt=" w_Lang012 ":83", "CheckHkOn=" w_Lang014 ":82"
 														, "", "OnFinish=" w_Lang020 ":20(Enabled WholeDropdown)", "SetWin=" t_Lang009 ":101"
 														, "", "WinKey=" w_Lang070 ":88", "SetJoyButton=" w_Lang071 ":32"]
-			, EditOpt: "Enabled AutoSize", Edit: ["EditButton=" w_Lang092 ":14"
-														, "", "CutRows=" w_Lang080 ":9", "CopyRows=" w_Lang081 ":8", "PasteRows=" w_Lang082 ":44", "Remove=" w_Lang083 ":10"
-														, "", "Undo=" w_Lang084 ":74", "Redo=" w_Lang085 ":56"
+			, EditOpt: "Enabled AutoSize", Edit: ["EditButton=" w_Lang092 ":14", "CutRows=" w_Lang080 ":9", "CopyRows=" w_Lang081 ":8", "PasteRows=" w_Lang082 ":44", "Remove=" w_Lang083 ":10"
+														, "", "Duplicate=" w_Lang079 ":13", "SelectMenu=" t_Lang139 ":99(Enabled WholeDropdown)", "CopyTo=" w_Lang086 ":8(Enabled WholeDropdown)"
 														, "" , "MoveUp=" w_Lang077 ":40", "MoveDn=" w_Lang078 ":39"
-														, "", "Duplicate=" w_Lang079 ":13", "CopyTo=" w_Lang086 ":8(Enabled WholeDropdown)"
-														, "", "EditColor=" w_Lang089 ":3", "EditComm=" w_Lang088 ":5", "FindReplace=" w_Lang087 ":19"
+														, "", "Undo=" w_Lang084 ":74", "Redo=" w_Lang085 ":56"
+														, "", "FindReplace=" w_Lang087 ":19", "EditComm=" w_Lang088 ":5", "EditColor=" w_Lang089 ":3"
 														, "", "TabPlus=" w_Lang072 ":66", "TabClose=" w_Lang073 ":68", "DuplicateList=" w_Lang074 ":69", "EditMacros=" w_Lang094 ":97"
 														, "", "Import=" w_Lang075 ":28", "SaveCurrentList=" w_Lang076 ":67"]}
 FixedBar :=	{PrevOpt: "Enabled AutoSize", Preview: ["PrevDock=" t_Lang124 ":17"
@@ -906,7 +906,7 @@ FixedBar :=	{PrevOpt: "Enabled AutoSize", Preview: ["PrevDock=" t_Lang124 ":17"
 														, "", "EditScript=" t_Lang138 ":14"]
 			, TextOpt: "Enabled AutoSize", Text: ["OpenT=" t_Lang126 ":42", "SaveT=" t_Lang127 ":59"
 														, "", "CutT=" t_Lang128 ":9", "CopyT=" t_Lang129 ":8", "PasteT=" t_Lang130 ":44"
-														, "", "SelAllT=" t_Lang131 ":99", "RemoveT=" t_Lang132 ":10"]
+														, "", "RemoveT=" t_Lang132 ":10", "SelAllT=" t_Lang131 ":99"]
 			, OSCOpt: "Enabled AutoSize", OSC: ["OSPlay=" t_Lang112 ":48", "OSStop=" t_Lang113 ":65", "ShowPlayMenu=" t_Lang114 ":47"
 														, "", "RecStart=" t_Lang115 ":54", "RecStartNew=" t_Lang116 ":89", "ShowRecMenu=" t_Lang117 ":53"
 														, "", "OSClear=" t_Lang118 ":10"

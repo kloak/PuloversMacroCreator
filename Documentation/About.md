@@ -24,14 +24,14 @@ Micahs for the [base code](http://www.autohotkey.com/board/topic/30486-listview-
 jaco0646 for the [function](http://www.autohotkey.com/board/topic/47439-user-defined-dynamic-hotkeys) to make hotkey controls detect other keys.  
 Laszlo for the [Monster function](http://www.autohotkey.com/board/topic/15675-monster) to solve expressions.  
 Jethrow for the [IEGet Function](http://www.autohotkey.com/board/topic/47052-basic-webpage-controls).  
-RaptorX for the [Scintilla Wrapper for AHK](http://www.autohotkey.com/board/topic/85928-wrapper-scintilla-wrapper).
+RaptorX for the [Scintilla Wrapper for AHK](http://www.autohotkey.com/board/topic/85928-wrapper-scintilla-wrapper).  
 majkinetor for the [Dlg_Color](http://www.autohotkey.com/board/topic/49214-ahk-ahk-l-forms-framework-08/) function.  
 rbrtryn for the [ChooseColor](http://www.autohotkey.com/board/topic/91229-windows-color-picker-plus/) function.  
 PhiLho and skwire for the [function](http://www.autohotkey.com/board/topic/11926-can-you-move-a-listview-column-programmatically/#entry237340) to Get/Set the order of columns.  
 fincs for [GenDocs](http://www.autohotkey.com/board/topic/71751-gendocs-v30-alpha002) and [SciLexer.dll custom builds](http://www.autohotkey.com/board/topic/54431-scite4autohotkey-v3004-updated-aug-14-2013/page-58#entry566139).  
 T800 for [Html Help utils](http://www.autohotkey.com/board/topic/17984-html-help-utils).  
 Thiago Talma for some improvements to the code, debugging and many suggestions.  
-Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jörg Schmalenberger (German).
+Translation revisions: Snow Flake (Swedish), huyaowen (Chinese Simplified), Jörg Schmalenberger (German).  
 
 
 # Change Log

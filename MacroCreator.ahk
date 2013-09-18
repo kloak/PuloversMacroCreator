@@ -4830,13 +4830,14 @@ If (A_ThisLabel <> "PauseApply")
 	Gui, 1:-Disabled
 	Gui, 3:Destroy
 }
+Action := (Type = cType5) ? "[Pause]" : "[" Type "]"
 Gui, chMacro:Default
 RowSelection := LV_GetCount("Selected")
 If (s_Caller = "Edit")
-	LV_Modify(RowNumber, "Col3", Details, TimesX, DelayX, Type, Target, Title)
+	LV_Modify(RowNumber, "Col2", Action, Details, TimesX, DelayX, Type, Target, Title)
 Else If RowSelection = 0
 {
-	LV_Add("Check", ListCount%A_List%+1, "[Pause]", Details, 1, DelayX, Type, Target, Title)
+	LV_Add("Check", ListCount%A_List%+1, Action, Details, 1, DelayX, Type, Target, Title)
 ,	LV_Modify(ListCount%A_List%+1, "Vis")
 }
 Else
@@ -4845,7 +4846,7 @@ Else
 	Loop, %RowSelection%
 	{
 		RowNumber := LV_GetNext(RowNumber)
-	,	LV_Insert(RowNumber, "Check", RowNumber, "[Pause]", Details, 1, DelayX, Type, Target, Title)
+	,	LV_Insert(RowNumber, "Check", RowNumber, Action, Details, 1, DelayX, Type, Target, Title)
 	,	RowNumber++
 		If (AddIf = 1)
 			break
@@ -6268,6 +6269,7 @@ Else
 }
 return
 
+EditFunc:
 EditVar:
 EditSt:
 s_Caller := "Edit"
@@ -6399,41 +6401,38 @@ If (s_Caller = "Edit")
 	}
 	Else If (A_ThisLabel = "EditVar")
 	{
-		If (Action = "[Assign Variable]")
-		{
-			StringReplace, Details, Details, ``n, `n, All
-			AssignReplace(Details), EscCom("VarValue", 1), GuiTitle := c_Lang010
-			GuiControl, 21:Choose, TabControl, 2
-			GuiControl, 21:, VarName, %VarName%
-			GuiControl, 21:ChooseString, Oper, %Oper%
-			GuiControl, 21:, VarValue, %VarValue%
-			If (Target = "Expression")
-				GuiControl, 21:, UseEval, 1
-			SBShowTip("SetEnv (Var = Value)")
-		}
-		Else
-		{
-			AssignReplace(Details), FuncName := Action, GuiTitle := c_Lang011
-			GuiControl, 21:Choose, TabControl, 3
-			If (VarName <> "_null")
-				GuiControl, 21:, VarNameF, %VarName%
-			If (IsBuiltIn)
-				GuiControl, 21:ChooseString, FuncName, %FuncName%
-			Else
-				GuiControl, 21:, FuncName, %FuncName%$$
-			GuiControl, 21:, VarValueF, %VarValue%
-			If (Target <> "")
-			{
-				UseExtFunc := 1, FileNameEx := Target
-				GuiControl, 21:, UseExtFunc, 1
-				GuiControl, 21:, FileNameEx, %Target%
-				GuiControl, 21:Enable, SearchAHK
-				GoSub, UseExtFunc
-				GuiControl, 21:ChooseString, FuncName, %FuncName%
-			}
-			GoSub, FuncName
-		}
+		StringReplace, Details, Details, ``n, `n, All
+		AssignReplace(Details), EscCom("VarValue", 1), GuiTitle := c_Lang010
+		GuiControl, 21:Choose, TabControl, 2
+		GuiControl, 21:, VarName, %VarName%
+		GuiControl, 21:ChooseString, Oper, %Oper%
+		GuiControl, 21:, VarValue, %VarValue%
+		If (Target = "Expression")
+			GuiControl, 21:, UseEval, 1
+		SBShowTip("SetEnv (Var = Value)")
 		GoSub, AsOper
+	}
+	Else If (A_ThisLabel = "EditFunc")
+	{
+		AssignReplace(Details), FuncName := Action, GuiTitle := c_Lang011
+		GuiControl, 21:Choose, TabControl, 3
+		If (VarName <> "_null")
+			GuiControl, 21:, VarNameF, %VarName%
+		If (IsBuiltIn)
+			GuiControl, 21:ChooseString, FuncName, %FuncName%
+		Else
+			GuiControl, 21:, FuncName, %FuncName%$$
+		GuiControl, 21:, VarValueF, %VarValue%
+		If (Target <> "")
+		{
+			UseExtFunc := 1, FileNameEx := Target
+			GuiControl, 21:, UseExtFunc, 1
+			GuiControl, 21:, FileNameEx, %Target%
+			GuiControl, 21:Enable, SearchAHK
+			GoSub, UseExtFunc
+			GuiControl, 21:ChooseString, FuncName, %FuncName%
+		}
+		GoSub, FuncName
 	}
 	GuiControl, 21:Enable, IfApply
 	GuiControl, 21:Enable, VarApplyA
@@ -6606,17 +6605,16 @@ StringReplace, VarValue, VarValue, `n, ``n, All
 If (s_Caller <> "Edit")
 	TimesX := 1
 If TabControl = 3
-	Action := FuncName, Details := VarName " := " VarValueF
+	Action := FuncName, Details := VarName " := " VarValueF, Type := cType44
 Else
 {
-	Action := "[Assign Variable]", Details := VarName " " Oper " " VarValue
+	Action := "[Assign Variable]", Details := VarName " " Oper " " VarValue, Type := cType21
 	If (UseEval = 1)
 		Target := "Expression"
 	Else
 		Target := ""
 	EscCom("Details|TimesX|DelayX|Target|Window")
 }
-Type := cType21
 If (A_ThisLabel <> "VarApply")
 {
 	Gui, 1:-Disabled
@@ -9317,6 +9315,8 @@ If Type in %cType15%,%cType16%
 	Goto, EditImage
 If (Type = cType21)
 	Goto, EditVar
+If (Type = cType44)
+	Goto, EditFunc
 If (Action = "[Control]")
 	Goto, EditControl
 If ((Details = "EndIf") || (Details = "Else") || (Action = "[LoopEnd]"))
@@ -9325,8 +9325,7 @@ If (Type = cType17)
 	Goto, EditSt
 If Type in %cType18%,%cType19%
 	Goto, EditMsg
-If ((Type = cType11) || (Type = cType14)
-|| InStr(FileCmdList, Type "|")) && (Action <> "[Pause]")
+If ((Type = cType11) || (Type = cType14) || InStr(FileCmdList, Type "|"))
 	Goto, EditRun
 If Type in %cType29%,%cType30%
 	return
@@ -11872,8 +11871,8 @@ Loop, % LV_GetCount()
 :	RegExMatch(Type, cType7 "|" cType38 "|" cType39 "|" cType40 "|" cType41) ? LV_Modify(A_Index, "Icon" 36)
 :	(Type = cType29) ? LV_Modify(A_Index, "Icon" 2)
 :	(Type = cType30) ? LV_Modify(A_Index, "Icon" 6)
-:	(Action = "[Assign Variable]") ? LV_Modify(A_Index, "Icon" 75)
-:	(Type = cType21) ? LV_Modify(A_Index, "Icon" 21)
+:	(Type = cType21) ? LV_Modify(A_Index, "Icon" 75)
+:	(Type = cType44) ? LV_Modify(A_Index, "Icon" 21)
 :	(Type = cType17) ? LV_Modify(A_Index, "Icon" 26)
 :	RegExMatch(Type, cType18 "|" cType19) ? LV_Modify(A_Index, "Icon" 61)
 :	(Type = cType15) ? LV_Modify(A_Index, "Icon" 3)
@@ -12116,29 +12115,28 @@ Menu, CopyTo, Add, % CopyMenuLabels[1], CopyList
 Menu, CopyTo, Check, % CopyMenuLabels[1]
 
 Menu, EditMenu, Add, %m_Lang004%`t%_s%Enter, EditButton
-Menu, EditMenu, Add, %e_Lang001%`t%_s%Ctrl+D, Duplicate
-Menu, EditMenu, Add, %e_Lang003%`t%_s%Ctrl+F, FindReplace
-Menu, EditMenu, Add, %e_Lang002%`t%_s%Ctrl+L, EditComm
-Menu, EditMenu, Add, %e_Lang015%`t%_s%Ctrl+M, EditColor
-Menu, EditMenu, Default, %m_Lang004%`t%_s%Enter
-Menu, EditMenu, Add
-Menu, EditMenu, Add, %m_Lang002%, :CommandMenu
-Menu, EditMenu, Add, %m_Lang003%, :SelectMenu
-Menu, EditMenu, Add, %e_Lang004%, :CopyTo
-Menu, EditMenu, Add
-Menu, EditMenu, Add, %e_Lang005%`t%_s%Ctrl+Z, Undo
-Menu, EditMenu, Add, %e_Lang006%`t%_s%Ctrl+Y, Redo
-Menu, EditMenu, Add
 Menu, EditMenu, Add, %e_Lang007%`t%_s%Ctrl+X, CutRows
 Menu, EditMenu, Add, %e_Lang008%`t%_s%Ctrl+C, CopyRows
 Menu, EditMenu, Add, %e_Lang009%`t%_s%Ctrl+V, PasteRows
 Menu, EditMenu, Add, %e_Lang010%`t%_s%Delete, Remove
 Menu, EditMenu, Add
-Menu, EditMenu, Add, %e_Lang013%`t%_s%Insert, ApplyL
-Menu, EditMenu, Add, %e_Lang014%`t%_s%Ctrl+Insert, InsertKey
+Menu, EditMenu, Add, %e_Lang001%`t%_s%Ctrl+D, Duplicate
+Menu, EditMenu, Add, %s_Lang001%`t%_s%Ctrl+A, SelectAll
+Menu, EditMenu, Add, %e_Lang004%, :CopyTo
 Menu, EditMenu, Add
 Menu, EditMenu, Add, %e_Lang011%`t%_s%Ctrl+PgUp, MoveUp
 Menu, EditMenu, Add, %e_Lang012%`t%_s%Ctrl+PgDn, MoveDn
+Menu, EditMenu, Add
+Menu, EditMenu, Add, %e_Lang005%`t%_s%Ctrl+Z, Undo
+Menu, EditMenu, Add, %e_Lang006%`t%_s%Ctrl+Y, Redo
+Menu, EditMenu, Add
+Menu, EditMenu, Add, %e_Lang003%`t%_s%Ctrl+F, FindReplace
+Menu, EditMenu, Add, %e_Lang002%`t%_s%Ctrl+L, EditComm
+Menu, EditMenu, Add, %e_Lang015%`t%_s%Ctrl+M, EditColor
+Menu, EditMenu, Add
+Menu, EditMenu, Add, %e_Lang013%`t%_s%Insert, ApplyL
+Menu, EditMenu, Add, %e_Lang014%`t%_s%Ctrl+Insert, InsertKey
+Menu, EditMenu, Default, %m_Lang004%`t%_s%Enter
 
 Menu, MacroMenu, Add, %r_Lang001%`t%_s%Ctrl+R, Record
 Menu, MacroMenu, Add
@@ -12332,20 +12330,20 @@ Menu, CommandMenu, Icon, %i_Lang018%`t%_s%Ctrl+F11, %ResDllPath%, 76
 Menu, CommandMenu, Icon, %i_Lang019%`t%_s%F12, %ResDllPath%, 61
 Menu, CommandMenu, Icon, %i_Lang020%`t%_s%Ctrl+Shift+F, %ResDllPath%, 92
 Menu, EditMenu, Icon, %m_Lang004%`t%_s%Enter, %ResDllPath%, 14
-Menu, EditMenu, Icon, %e_Lang001%`t%_s%Ctrl+D, %ResDllPath%, 13
-Menu, EditMenu, Icon, %e_Lang003%`t%_s%Ctrl+F, %ResDllPath%, 19
-Menu, EditMenu, Icon, %e_Lang002%`t%_s%Ctrl+L, %ResDllPath%, 5
-Menu, EditMenu, Icon, %e_Lang015%`t%_s%Ctrl+M, %ResDllPath%, 3
-Menu, EditMenu, Icon, %e_Lang005%`t%_s%Ctrl+Z, %ResDllPath%, 74
-Menu, EditMenu, Icon, %e_Lang006%`t%_s%Ctrl+Y, %ResDllPath%, 56
 Menu, EditMenu, Icon, %e_Lang007%`t%_s%Ctrl+X, %ResDllPath%, 9
 Menu, EditMenu, Icon, %e_Lang008%`t%_s%Ctrl+C, %ResDllPath%, 8
 Menu, EditMenu, Icon, %e_Lang009%`t%_s%Ctrl+V, %ResDllPath%, 44
 Menu, EditMenu, Icon, %e_Lang010%`t%_s%Delete, %ResDllPath%, 10
-Menu, EditMenu, Icon, %e_Lang013%`t%_s%Insert, %ResDllPath%, 31
-Menu, EditMenu, Icon, %e_Lang014%`t%_s%Ctrl+Insert, %ResDllPath%, 91
+Menu, EditMenu, Icon, %e_Lang001%`t%_s%Ctrl+D, %ResDllPath%, 13
 Menu, EditMenu, Icon, %e_Lang011%`t%_s%Ctrl+PgUp, %ResDllPath%, 40
 Menu, EditMenu, Icon, %e_Lang012%`t%_s%Ctrl+PgDn, %ResDllPath%, 39
+Menu, EditMenu, Icon, %e_Lang005%`t%_s%Ctrl+Z, %ResDllPath%, 74
+Menu, EditMenu, Icon, %e_Lang006%`t%_s%Ctrl+Y, %ResDllPath%, 56
+Menu, EditMenu, Icon, %e_Lang003%`t%_s%Ctrl+F, %ResDllPath%, 19
+Menu, EditMenu, Icon, %e_Lang002%`t%_s%Ctrl+L, %ResDllPath%, 5
+Menu, EditMenu, Icon, %e_Lang015%`t%_s%Ctrl+M, %ResDllPath%, 3
+Menu, EditMenu, Icon, %e_Lang013%`t%_s%Insert, %ResDllPath%, 31
+Menu, EditMenu, Icon, %e_Lang014%`t%_s%Ctrl+Insert, %ResDllPath%, 91
 Menu, MacroMenu, Icon, %r_Lang001%`t%_s%Ctrl+R, %ResDllPath%, 54
 Menu, MacroMenu, Icon, %r_Lang002%`t%_s%Ctrl+Enter, %ResDllPath%, 46
 Menu, MacroMenu, Icon, %r_Lang003%`t%_s%Ctrl+Shift+Enter, %ResDllPath%, 48
@@ -12598,12 +12596,11 @@ TB_Edit(tbSettings, "HideMainWin", "", "", w_Lang013), TB_Edit(tbSettings, "OnSc
 , TB_Edit(tbSettings, "OnFinish", "", "", w_Lang020) , TB_Edit(tbSettings, "SetWin", "", "", t_Lang009)
 , TB_Edit(tbSettings, "WinKey", "", "", w_Lang070), TB_Edit(tbSettings, "SetJoyButton", "", "", w_Lang071)
 ; Edit
-TB_Edit(tbEdit, "EditButton", "", "", w_Lang092)
-, TB_Edit(tbEdit, "CutRows", "", "", w_Lang080), TB_Edit(tbEdit, "CopyRows", "", "", w_Lang081), TB_Edit(tbEdit, "PasteRows", "", "", w_Lang082), TB_Edit(tbEdit, "Remove", "", "", w_Lang083)
-, TB_Edit(tbEdit, "Undo", "", "", w_Lang084), TB_Edit(tbEdit, "Redo", "", "", w_Lang085)
+TB_Edit(tbEdit, "EditButton", "", "", w_Lang092), TB_Edit(tbEdit, "CutRows", "", "", w_Lang080), TB_Edit(tbEdit, "CopyRows", "", "", w_Lang081), TB_Edit(tbEdit, "PasteRows", "", "", w_Lang082), TB_Edit(tbEdit, "Remove", "", "", w_Lang083)
+, TB_Edit(tbEdit, "Duplicate", "", "", w_Lang079), TB_Edit(tbEdit, "SelectMenu", "", "", t_Lang139), TB_Edit(tbEdit, "CopyTo", "", "", w_Lang086) 
 , TB_Edit(tbEdit, "MoveUp", "", "", w_Lang077), TB_Edit(tbEdit, "MoveDn", "", "", w_Lang078)
-, TB_Edit(tbEdit, "Duplicate", "", "", w_Lang079), TB_Edit(tbEdit, "CopyTo", "", "", w_Lang086) 
-, TB_Edit(tbEdit, "EditColor", "", "", w_Lang089), TB_Edit(tbEdit, "EditComm", "", "", w_Lang088), TB_Edit(tbEdit, "FindReplace", "", "", w_Lang087)
+, TB_Edit(tbEdit, "Undo", "", "", w_Lang084), TB_Edit(tbEdit, "Redo", "", "", w_Lang085)
+, TB_Edit(tbEdit, "FindReplace", "", "", w_Lang087), TB_Edit(tbEdit, "EditComm", "", "", w_Lang088), TB_Edit(tbEdit, "EditColor", "", "", w_Lang089)
 , TB_Edit(tbEdit, "TabPlus", "", "", w_Lang072), TB_Edit(tbEdit, "TabClose", "", "", w_Lang073), TB_Edit(tbEdit, "DuplicateList", "", "", w_Lang074), TB_Edit(tbEdit, "EditMacros", "", "", w_Lang052)
 , TB_Edit(tbEdit, "Import", "", "", w_Lang075), TB_Edit(tbEdit, "SaveCurrentList", "", "", w_Lang076)
 ; Preview
@@ -12625,7 +12622,7 @@ TB_Edit(tbOSC, "OSPlay", "", "", t_Lang112), TB_Edit(tbOSC, "OSStop", "", "", t_
 
 FixedBar.Text := ["OpenT=" t_Lang126 ":42", "SaveT=" t_Lang127 ":59"
 				, "", "CutT=" t_Lang128 ":9", "CopyT=" t_Lang129 ":8", "PasteT=" t_Lang130 ":44"
-				, "", "SelAllT=" t_Lang131 ":99", "RemoveT=" t_Lang132 ":10"]
+				, "", "RemoveT=" t_Lang132 ":10", "SelAllT=" t_Lang131 ":99"]
 GuiControl, 1:+Redraw, cRbMain
 
 Gui 7:+LastFoundExist
@@ -12683,6 +12680,7 @@ Type_Keywords := "
 " cType41 "
 " cType42 "
 " cType43 "
+" cType44 "
 InternetExplorer
 COMInterface
 )"
@@ -12709,6 +12707,7 @@ COMInterface
 " w_Lang060 "
 " w_Lang068 "
 " w_Lang068 "
+" w_Lang064 "
 " w_Lang066 "
 " w_Lang067 "
 )"
@@ -12735,6 +12734,7 @@ ComLoop
 ComLoop
 RunScrLet
 RunScrLet
+AsFunc
 IECom
 ComInt
 )"

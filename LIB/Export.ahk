@@ -11,7 +11,7 @@
 	{
 		LV_GetTexts(A_Index, Action, Step, TimesX, DelayX, Type, Target, Window, Comment)
 	,	IsChecked := LV_GetNext(A_Index-1, "Checked")
-		If ((InStr(FileCmdList, Type "|")) && (Action <> "[Pause]"))
+		If (InStr(FileCmdList, Type "|"))
 			StringReplace, Step, Step, ```,, `,, All
 		Step := CheckForExp(Step)
 	,	TimesX := CheckForExp(TimesX)
@@ -234,7 +234,7 @@
 			If ((TimesX > 1) || InStr(TimesX, "%"))
 				RowData := "`nLoop, " TimesX "`n{" RowData "`n}"
 		}
-		Else If (Type = cType21)
+		Else If ((Type = cType21) || (Type = cType44))
 		{
 			AssignReplace(Step)
 			If (VarValue = "")
@@ -249,7 +249,7 @@
 					VarValue := CheckExp(VarValue)
 				}
 			}
-			If (Action = "[Assign Variable]")
+			If (Type = cType21)
 			{
 				If InStr(VarValue, "``n")
 				{
@@ -576,7 +576,7 @@ Script_Header()
 
 IncludeFiles(L, N)
 {
-	global cType21
+	global cType44
 	
 	Gui, chMacro:Default
 	Gui, chMacro:ListView, InputList%L%
@@ -585,7 +585,7 @@ IncludeFiles(L, N)
 		If (LV_GetNext(A_Index-1, "Checked") <> A_Index)
 			continue
 		LV_GetText(Row_Type, A_Index, 6)
-		If (Row_Type <> cType21)
+		If (Row_Type <> cType44)
 			continue
 		LV_GetText(IncFile, A_Index, 7)
 		If ((IncFile <> "") && (IncFile <> "Expression"))
@@ -597,14 +597,14 @@ IncludeFiles(L, N)
 
 CheckForExp(Field)
 {
-	global cType21
+	global cType44
 	
 	RegExReplace(Field, "U)%\s+([\w%]+)\((.*)\)", "", iCount)
 	Match := 0
 	Loop, %iCount%
 	{
 		Match := RegExMatch(Field, "U)%\s+([\w%]+)\((.*)\)", Funct, Match+1)
-		If (Type = cType21)
+		If (Type = cType44)
 			StringReplace, Funct2, Funct2, `,, ```,
 		If ((ExpValue := CheckExp(Funct2)) = """""")
 			ExpValue := ""

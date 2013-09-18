@@ -106,7 +106,10 @@
 		{
 			Loop, % Col.MaxIndex()
 				Col[A_Index] := RegExReplace(Col[A_Index], "¢", "|")
-			chk := SubStr(Col[1], 1, 1), Col[6] := RegExReplace(Col[6], "\s", "_")
+			chk := SubStr(Col[1], 1, 1)
+		,	((Col[2] = "[Pause]") && (Col[6] <> "Sleep")) ? (Col[2] := "[" Col[6] "]") : ""
+		,	((Col[6] = "Variable") && (Col[2] <> "[Assign Variable]")) ? (Col[6] := "Function") : ""
+		,	Col[6] := RegExReplace(Col[6], "\s", "_")
 		,	LV_Add("Check" chk, Col*)
 		}
 		GuiControl, chMacro:+Redraw, %List%

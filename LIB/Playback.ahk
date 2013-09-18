@@ -327,13 +327,13 @@
 				}
 				If ((BreakIt > 0) || (SkipIt > 0))
 					continue
-				If (Type = cType21)
+				If ((Type = cType21) || (Type = cType44))
 				{
 					StringReplace, Step, Step, ``n, `n, All
 					StringReplace, Step, Step, ``t, `t, All
 					AssignReplace(Step)
 					CheckVars("Step|Target|Window|VarName|VarValue", PointMarker)
-					If (Action = "[Assign Variable]")
+					If (Type = cType21)
 					{
 						If RegExMatch(VarValue, "U)%\s([\w%]+)\((.*)\)")  ; Functions
 							StringReplace, VarValue, VarValue, `,, ```,, All
@@ -739,13 +739,13 @@ LoopSection(Start, End, lcX, lcL, PointO, mainL, mainC)
 				}
 				If ((BreakIt > 0) || (SkipIt > 0))
 					continue
-				If (Type = cType21)
+				If ((Type = cType21) || (Type = cType44))
 				{
 					StringReplace, Step, Step, ``n, `n, All
 					StringReplace, Step, Step, ``t, `t, All
 					AssignReplace(Step)
 					CheckVars("Step|Target|Window|VarName|VarValue", PointMarker)
-					If (Action = "[Assign Variable]")
+					If (Type = cType21)
 					{
 						If RegExMatch(VarValue, "U)%\s([\w%]+)\((.*)\)")  ; Functions
 							StringReplace, VarValue, VarValue, `,, ```,, All
