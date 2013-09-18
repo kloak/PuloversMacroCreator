@@ -8177,7 +8177,10 @@ Gui, chMacro:ListView, InputList%A_List%
 ActivateHotkeys(0, 0, 1, 1, 1)
 StopIt := 0
 Tooltip
-WinMinimize, ahk_id %PMCWinID%
+If (!(PlayHK) && (HideMainWin))
+	GoSub, ShowHide
+Else
+	WinMinimize, ahk_id %PMCWinID%
 aHK_On := [A_List]
 GoSub, f_RunMacro
 return
