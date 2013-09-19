@@ -107,9 +107,9 @@
 		
 	v_lang010 =	&Expediente
 	v_lang011 =	&Grabar y reproducir
-	v_lang012 =	&Opciones
-	v_lang013 =	&Comandos
-	v_lang014 =	E&ditar
+	v_lang012 =	&Comandos
+	v_lang013 =	E&ditar
+	v_lang014 =	&Opciones
 	v_lang015 =	&Personalizar
 		
 	v_lang016 =	&Automático

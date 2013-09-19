@@ -107,9 +107,9 @@
 		
 	v_lang010 =	&File
 	v_lang011 =	&Record  Play
-	v_lang012 =	&Options
-	v_lang013 =	&Commands
-	v_lang014 =	&Edit
+	v_lang012 =	&Commands
+	v_lang013 =	&Edit
+	v_lang014 =	&Options
 	v_lang015 =	C&ustomize
 		
 	v_lang016 =	&Automatic

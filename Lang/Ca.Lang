@@ -107,10 +107,10 @@
 		
 	v_lang010 =	&Expedient
 	v_lang011 =	&Gravar i reproduir
-	v_lang012 =	&Opcions
-	v_lang013 =	O&rdres
-	v_lang014 =	&Modifica
-	v_lang015 =	&Personalitzar
+	v_lang012 =	&Ordres
+	v_lang013 =	&Modifica
+	v_lang014 =	O&pcions
+	v_lang015 =	Pe&rsonalitzar
 		
 	v_lang016 =	&Automàtic
 	v_lang017 =	&Manual
