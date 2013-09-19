@@ -11013,8 +11013,14 @@ pb_IECOM_Set:
 	}
 	
 	If (Window = "LoadWait")
+	{
+		Try Menu, Tray, Icon, %ResDllPath%, 77
+		ChangeProgBarColor("Blue", "OSCProg", 28)
 		Try
 			IELoad(o_ie)
+		Try Menu, Tray, Icon, %ResDllPath%, 46
+		ChangeProgBarColor("20D000", "OSCProg", 28)
+	}
 return
 
 pb_IECOM_Get:
@@ -11064,8 +11070,14 @@ pb_IECOM_Get:
 	}
 	
 	If (Window = "LoadWait")
+	{
+		Try Menu, Tray, Icon, %ResDllPath%, 77
+		ChangeProgBarColor("Blue", "OSCProg", 28)
 		Try
 			IELoad(o_ie)
+		Try Menu, Tray, Icon, %ResDllPath%, 46
+		ChangeProgBarColor("20D000", "OSCProg", 28)
+	}
 return
 
 pb_VBScript:
@@ -11075,6 +11087,7 @@ StringReplace, Step, Step, `n, ``n, All
 Step := "Language := " Type "`nExecuteStatement(" Step ")"
 
 pb_COMInterface:
+	StringReplace, Step, Step, ø, `n, All
 	StringSplit, Act, Action, :
 
 	Try
@@ -11085,8 +11098,8 @@ pb_COMInterface:
 		StopIt := 1
 		return
 	}
-
-	Loop, Parse, Step, `n, %A_Space%%A_Tab%
+	
+	Loop, Parse, Step, `n, %A_Space%%A_Tab%`r
 	{
 		StringReplace, LoopField, A_LoopField, ``n, `n, All
 		Try
@@ -11107,10 +11120,16 @@ pb_COMInterface:
 			}
 		}
 	}
-
+	
 	If (Window = "LoadWait")
+	{
+		Try Menu, Tray, Icon, %ResDllPath%, 77
+		ChangeProgBarColor("Blue", "OSCProg", 28)
 		Try
 			IELoad(%Act1%)
+		Try Menu, Tray, Icon, %ResDllPath%, 46
+		ChangeProgBarColor("20D000", "OSCProg", 28)
+	}
 return
 
 TakeAction:

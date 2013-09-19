@@ -133,6 +133,7 @@
 			}
 			Text .= "`n"
 		}
+		StringReplace, Text, Text, `r,, All
 		Data := {Row: Row, Text: Text}
 		return Data
 	}

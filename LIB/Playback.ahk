@@ -1301,6 +1301,7 @@ DerefVars(v_String)
 			rMatch1 := RegExReplace(rMatch1, "\V+", "A_$0")
 		FoundVar := RegExReplace(%rMatch1%, "%", "¤")
 	,	FoundVar := RegExReplace(FoundVar, "\$", "$$$$")
+	,	FoundVar := RegExReplace(FoundVar, ",", "``,")
 	,	v_String := RegExReplace(v_String, rMatch, FoundVar)
 	}
 	return RegExReplace(v_String, "¤", "%")
