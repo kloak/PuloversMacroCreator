@@ -10319,6 +10319,13 @@ Try Menu, Tray, Icon, %DefaultIcon%, 1
 tbOSC.ModifyButtonInfo(1, "Image", 48)
 return
 
+NoKey:
+return
+
+EscNoKey:
+StopIt := 1
+return
+
 PauseKey:
 Gui, 1:Submit, NoHide
 return
@@ -12670,6 +12677,7 @@ Type_Keywords := "
 " cType7 "
 " cType15 "
 " cType16 "
+" cType17 "
 " cType18 "
 " cType19 "
 " cType20 "
@@ -12697,6 +12705,7 @@ COMInterface
 " w_Lang060 "
 " w_Lang058 "
 " w_Lang058 "
+" w_Lang063 "
 " w_Lang069 "
 " w_Lang069 "
 " w_Lang056 "
@@ -12712,7 +12721,7 @@ COMInterface
 " w_Lang060 "
 " w_Lang068 "
 " w_Lang068 "
-" w_Lang064 "
+" w_Lang065 "
 " w_Lang066 "
 " w_Lang067 "
 )"
@@ -12724,6 +12733,7 @@ MsgBox
 ComLoop
 Image
 Image
+IfSt
 SendMsg
 SendMsg
 KeyWait

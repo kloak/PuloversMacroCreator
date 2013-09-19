@@ -253,13 +253,3 @@ Exit
 Up::GoSub, PrevResult
 Down::GoSub, NextResult
 Enter::GoSub, GoResult
-
-#If
-
-NoKey:
-return
-
-EscNoKey:
-StopIt := 1
-return
-

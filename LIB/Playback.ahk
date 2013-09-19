@@ -1134,6 +1134,7 @@ class WaitFor
 		{
 			KeyWait, %Key%
 			KeyWait, %Key%, % (Delay > 0) ? "D T" Delay : "D T0.5"
+			Sleep, 10
 		}
 		Until ((ErrorLevel = 0)
 		|| ((ErrorLevel = 1) && Delay > 0)
