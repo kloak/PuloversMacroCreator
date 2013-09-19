@@ -8663,6 +8663,7 @@ GoSub, RowCheck
 GuiControl, 28:, OSHK, %A_List%
 GoSub, PrevRefresh
 Try Menu, CopyTo, Check, % CopyMenuLabels[A_List]
+GuiControl, chMacro:Focus, InputList%A_List%
 return
 
 TabClose:

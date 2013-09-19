@@ -143,12 +143,16 @@ DragToolbar()
 				Project := "", Proj_Opts := "", SavePrompt := 1
 				SetTimer, HitFix, -10
 			}
+			Else
+				SetTimer, SetListFocus, -10
 		}
 	}
 }
 
 HitFix:
 ControlClick,, ahk_id %cHwnd%,,,, x%HitX% y%HitY% NA
+SetListFocus:
+GuiControl, chMacro:Focus, InputList%A_List%
 return
 
 ShowContextHelp()
